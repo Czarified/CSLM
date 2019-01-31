@@ -23,4 +23,13 @@ In my mind, the main audience are the wonderful nerd over at [r/spacex](www.redd
 
 &#x200B;
 ## How!??
-Maybe later...
+Initially, a very very basic fem will be created which reasonably aproximates the size and shape of the Starship. The model will strive for "2 and half D" elements (shells wherever possible, combined with bars/beams to represent caps and integrated stiffeners).
+
+Right now I plan on using MSC Nastran (which can be downloaded for free if you create a student account), and outputting HDF5 results.
+
+
+&#x200B;
+After initial fem creation, loads development will commence. Loadcases will be determined and applied to the model a detailed as possible, with the objective to cover the full mission spectrum. Initially, the launch profile will be covered, then re-entry, spaceflight, and varying EDL (not necessarily in that order).
+
+&#x200B;
+After a loads drop release, the fem can be refined and modified to better represent the necessary structure and design changes known by the community. This may be the area where effects of design decisions can be explored, and result here could be very insightful.
