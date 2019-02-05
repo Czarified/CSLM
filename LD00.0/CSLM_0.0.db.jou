@@ -434,3 +434,1075 @@ ga_view_aa_set( 0., 0., 0. )
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 04-Feb-19 16:46:39
+$# Appending to existing journal file 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\CSLM_0.0.db.jou at 05-Feb-19 
+$# 07:32:46
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_center_set( -0.046366, -0.038639 )
+uil_toolbar.shaded_smooth(  )
+STRING sgm_sweep_surface_r_created_ids[VIRTUAL]
+sgm_const_surface_revolve( "1", "Coord 0.1", 360., 0., "Coord 0", "Curve 23",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 1
+sgm_const_surface_revolve( "2", "Coord 0.1", 360., 0., "Coord 0", "Curve 12",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 2
+ga_view_aa_set( 15.528123, 12.869383, -0.982299 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 1", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 1
+ga_view_center_set( 1.183544, 0.293731 )
+ga_view_center_set( -1.257206, -1.008003 )
+asm_delete_surface( "Surface 2", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 2
+ga_view_center_set( 1.030966, 0.274795 )
+ga_view_aa_set( 157., 34, -180. )
+ga_view_center_set( -8.513296, -4.575568 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_zoom_set( 29.728024 )
+ga_view_zoom_set( 18.874933 )
+ga_view_center_set( 1.490418, -0.423083 )
+ga_view_center_set( 0.357922, -1.366830 )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( 4.430094, -2.361197 )
+ga_view_zoom_set( 13.727224 )
+ga_view_zoom_set( 13.727224 )
+ga_view_zoom_set( 15.443128 )
+ga_view_center_set( 0.723743, -1.125747 )
+ga_view_center_set( -0.820569, -1.125747 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "24", "curve", "<-1 0 0>", 10., FALSE, "Coord 0",  @
+1, FALSE, "Curve 2", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 24
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_scale( "25", "curve", [1., 0.5, 0.5], "[0 0 0]", "Coord 0", 1,  @
+TRUE, "Curve 24", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 25
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 24
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 23", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 23
+ga_view_center_set( -2.318316, -1.700099 )
+STRING sgm_curve_loft_created_ids[VIRTUAL]
+sgm_const_curve_loft( "26", TRUE, "Point 5 7 1", " <-1 0 0>", " <0 1 0>",  @
+sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 26
+sgm_const_curve_loft( "27", TRUE, "Point 5 7 1", " <-1 0 0>", " <0 -1 0>",  @
+sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 27
+asm_delete_curve( "Curve 26", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 26
+ga_view_center_set( -2.163762, -1.390990 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "28", "Point 5", "Point 7", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 28
+uil_toolbar.wireframe(  )
+ga_view_center_set( -1.390990, -2.472870 )
+asm_const_line_2point( "29", "Point 7", "Point 1", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 29
+ga_view_center_set( -2.318316, -2.163762 )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 27", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 27
+sgm_const_curve_loft( "30", TRUE, "Point 5 7", " <-1 0 0>",  @
+"Construct CurvePointTangent(Evaluate Geometry(Curve 29))(Evaluate Geometr" // @
+"y(Point 7))", sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 30
+$# UNDO: Create Curve Loft for Point 7 1
+sgm_const_curve_loft( "31", TRUE, "Point 7 1",  @
+"Construct CurvePointTangent(Evaluate Geometry(Curve 29))(Evaluate Geometr" // @
+"y(Point 1))", "<0 -1 0>", sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 31
+asm_delete_curve( "Curve 30", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 30
+asm_delete_curve( "Curve 31", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 31
+ga_view_center_set( 2.163761, 2.318316 )
+ga_view_center_set( -0.661091, 1.171761 )
+ga_view_zoom_set( 11.240319 )
+ga_view_center_set( -1.297564, 1.208014 )
+ga_view_zoom_set( 8.174778 )
+ga_view_center_set( -1.760452, 1.234382 )
+ga_view_zoom_set( 5.945293 )
+ga_view_center_set( -1.297564, 1.208014 )
+ga_view_zoom_set( 8.174778 )
+ga_view_center_set( -0.661092, 1.171760 )
+ga_view_zoom_set( 11.240320 )
+ga_view_center_set( 0.214057, 1.121909 )
+ga_view_zoom_set( 15.455441 )
+ga_view_center_set( -2.258813, -2.278288 )
+asm_delete_curve( "Curve 28 29", asm_delete_curve_deleted_ids )
+$# 2 Curves Deleted: Curve 28 29
+ga_view_center_set( -1.795150, -1.969179 )
+asm_delete_curve( "Curve 25", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 25
+ga_view_center_set( -5.195346, -2.432843 )
+ga_view_center_set( -2.258813, -3.514723 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "13", "curve", "<-1 0 0>", 7., FALSE, "Coord 0",  @
+1, FALSE, "Curve 2", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 13
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_scale( "14", "curve", [1., 0.75, 0.75], "[0 0 0]", "Coord 0", 1, @
+ TRUE, "Curve 13", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 14
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 13
+ga_view_center_set( -0.618217, -0.618218 )
+ga_view_center_set( -1.854653, -3.245642 )
+ga_view_center_set( -1.854653, 0.309109 )
+ga_view_center_set( -1.854653, -2.781979 )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 12", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 12
+ga_view_center_set( 1.081881, -1.700097 )
+$# UNDO: Transform Curve Translate for Curve 2
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "15", "curve", "<1 0 0>", 1., FALSE, "Coord 0", 1, @
+ TRUE, "Curve 2", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 15
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 2
+STRING sgm_curve_loft_created_ids[VIRTUAL]
+sgm_const_curve_loft( "16", TRUE, "Point 8 7 1", "<-1 0 0>", "<0 -1 0>",  @
+sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 16
+$# UNDO: Transform Curve Translate for Curve 14 16
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "17", "curve", "<-1 0 0>", 5., FALSE, "Coord 0",  @
+1, FALSE, "Curve 14", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 17
+$# UNDO: Transform Curve Scale for Curve 17
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_scale( "18", "curve", [1., 0.60000002, 0.60000002], "[0 0 0]",  @
+"Coord 0", 1, TRUE, "Curve 17", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 18
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 17
+STRING sgm_curve_loft_created_ids[VIRTUAL]
+sgm_const_curve_loft( "19", TRUE, "Point 8 7 10 1", "<-1 0 0>", "<0 -1 0>",  @
+sgm_curve_loft_created_ids )
+$# 1 Curve Created: Curve 19
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 16", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 16
+ga_view_center_set( -0.772772, -1.081881 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "20", "Point 8", "Point 3", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 20
+STRING sgm_sweep_surface_r_created_ids[VIRTUAL]
+sgm_const_surface_revolve( "1", "Coord 0.1", 360., 0., "Coord 0", "Curve 19",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 1
+ga_view_center_set( 0.470908, 1.057461 )
+sgm_const_surface_revolve( "2", "Coord 0.1", 360., 0., "Coord 0", "Curve 20",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 2
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( 4.131828, -2.065914 )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 13.664591, 16.580605, -3.167344 )
+ga_view_aa_set( 0., 0., 0. )
+STRING asm_grid_extract_cu_created_ids[VIRTUAL]
+asm_const_grid_extract_v1( "11", "Curve 1", 0.66600001, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 11
+asm_const_grid_extract_v1( "12", "Curve 1", 0.333, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 12
+asm_const_grid_extract_v1( "13", "Curve 15", 0.333, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 13
+asm_const_grid_extract_v1( "14", "Curve 15", 0.66600001, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 14
+ga_view_aa_set( 23.277605, 19.137051, 0.968132 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -4.185135, 0.975823 )
+ga_view_zoom_set( 12.520688 )
+ga_view_center_set( -1.367191, 0.082878 )
+ga_view_zoom_set( 9.105955 )
+ga_view_center_set( -4.176157, 0.975825 )
+ga_view_zoom_set( 12.520688 )
+ga_view_center_set( -8.038485, 2.203626 )
+ga_view_zoom_set( 17.215946 )
+ga_view_center_set( 0.053011, -4.166274 )
+ga_view_aa_set( 10.685619, 24.859329, -2.503876 )
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "15", "<-1 0 0>", 5.8899999, FALSE, "Coord 0", @
+ 1, FALSE, FALSE, "Point 11 12", sgm_transform_point_created_ids )
+$# 2 Points created: Grid 15,16
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( 6.669780, 30.119497, 0.438755 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 2", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 2
+ga_view_center_set( -0.246536, -0.234588 )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 20", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 20
+ga_view_center_set( 0.078670, -1.372810 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "20", "curve", "<-1 0 0>", 5.8899999, FALSE,  @
+"Coord 0", 1, FALSE, "Curve 1", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 20
+ga_view_center_set( -0.409140, -1.047604 )
+uil_toolbar.wireframe(  )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "21", "Point 8", "Point 17", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 21
+asm_const_line_2point( "22", "Point 17", "Point 3", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 22
+asm_const_line_2point( "23", "Point 16", "Point 12", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 23
+asm_const_line_2point( "24", "Point 15", "Point 11", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 24
+STRING sgm_curve_break_poi_created_ids[VIRTUAL]
+sgm_edit_curve_break_point( "25", "[ 53.115200 -4.483738 7.803595 ]",  @
+"Curve 1", TRUE, sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 25,26
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 1
+ga_view_aa_set( 17.733253, 17.590874, -0.340638 )
+ga_view_center_set( 0.436397, -1.047604 )
+ga_view_zoom_set( 17.073336 )
+sgm_edit_curve_break_point( "27", "[ 52.349499 -4.532462 -7.775396 ]",  @
+"Curve 26", TRUE, sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 27,28
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 26
+sgm_edit_curve_break_point( "29", "[ 50.229099 -4.483738 7.803595 ]",  @
+"Curve 20", TRUE, sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 29,30
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 20
+sgm_edit_curve_break_point( "31", "[ 50.641399 -4.532462 -7.775396 ]",  @
+"Curve 30", TRUE, sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 31,32
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 30
+STRING sgm_sweep_surface_r_created_ids[VIRTUAL]
+sgm_const_surface_revolve( "2", "Coord 0.1", 360., 0., "Coord 0", "Curve 21",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 2
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( 14.778001, -2.413471 )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "3", "Curve 28", "Curve 32",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 3
+ga_view_center_set( 4.884618, -3.582371 )
+sgm_const_surface_2curve( "4", "Curve 27", "Curve 31",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 4
+ga_view_center_set( 4.884618, -4.376884 )
+sgm_const_surface_2curve( "5", "Curve 25", "Curve 29",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 5
+ga_view_center_set( 2.302454, -4.376883 )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( 1.905198, -4.376884 )
+ga_view_aa_set( 22.544104, 15.661618, -2.435234 )
+ga_view_center_set( 8.261292, 0.588817 )
+ga_view_center_set( 3.692848, 0.191561 )
+sys_poll_option( 2 )
+ga_group_create( "geom" )
+ga_group_entity_add( "geom", "Point 1 3 7 8 10:17 Curve 14 15 18 19 21:25 " // @
+"27:29 31 32 Surface 1:5 Plane 1" )
+ga_group_current_set( "geom" )
+$# Group "geom" created.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "fem_ALL" )
+$# Group "fem_ALL" created.
+sys_poll_option( 0 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+$# UNDO: FEM Create Mesh Seed for Surface 5.4
+mesh_seed_display_mgr.refresh(  )
+ga_view_center_set( 6.275012, 0.191561 )
+ga_view_center_set( 1.309312, -1.198835 )
+mesh_seed_create( "Curve 25", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 27", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 28", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 29", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 32", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 31", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 15", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 14", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 18", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 23", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 24", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 22", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 21", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 19", 2, 0, 0., 0.5, 0. )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+$# Using non-existent or empty Material "m_temp". If non-existent, the 
+$# material will be created with no properties.
+elementprops_create( "p_temp", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111,  @
+4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m_temp", "Coord 0", "0.01", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "" )
+$# Material "m_temp" created with no properties.
+$# Property Set "p_temp" created.
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:5", 1, ["0.5"], "Quad4",  @
+"#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# Warning reported from application FEM
+$#     Triangle elements were produced on 1 surface(s).  This can be avoided 
+$# by making the total number of elements around each surface perimeter an 
+$# even number.
+$# 4561 nodes and 4520 elements created for Surface 1.
+$# 7524 nodes and 7345 elements created for Surface 2.
+$# 507 nodes and 456 elements created for Surface 3.
+$# 507 nodes and 456 elements created for Surface 4.
+$# 507 nodes and 456 elements created for Surface 5.
+$# === 13606 nodes created.  IDs  = 1:13606.
+$# === 13233 elements created.  IDs  = 1:13233.
+fem_associate_elems_to_ep( "p_temp", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 13233 Element(s) associated to the Element Property p_temp.
+ga_group_entity_add( "geom", "Node 1:13606 Elm 1:13233" )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
+"default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_group_entity_remove( "geom", "Node 1:13606 Elm 1:13233" )
+$# Entities removed from Group "geom": Node 1:13606 Elm 1:13233
+ga_group_entity_add( "fem_ALL", "Node 1:13606 Elm 1:13233" )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_center_set( -7.885970, -2.692191 )
+ga_view_zoom_set( 3.001472 )
+ga_view_center_set( -17.580727, -4.042854 )
+ga_view_aa_set( 23.653297, 35.493816, -4.563313 )
+ga_view_center_set( -17.436588, -4.069744 )
+ga_view_zoom_set( 2.182888 )
+ga_view_zoom_set( 2.182888 )
+uil_toolbar.hidden_line(  )
+ga_view_center_set( -19.684961, -4.397176 )
+ga_view_center_set( -20.130875, -4.357277 )
+ga_view_zoom_set( 1.587555 )
+ga_view_center_set( -22.829716, -4.881170 )
+ga_view_zoom_set( 0.524812 )
+ga_view_center_set( -22.436104, -4.529548 )
+ga_view_center_set( -22.284510, -4.489861 )
+ga_view_zoom_set( 0.381681 )
+ga_view_zoom_set( 0.065525 )
+ga_view_center_set( -22.312691, -4.392230 )
+ga_view_zoom_set( 0.553683 )
+ga_view_zoom_set( 4.803203 )
+ga_view_zoom_set( 37.464981 )
+ga_view_center_set( -14.445045, -7.764079 )
+ga_view_center_set( 13.086267, 6.484582 )
+ga_view_center_set( 5.599681, -0.760499 )
+ga_view_zoom_set( 8.227118 )
+ga_view_center_set( 24.028429, 2.365806 )
+ga_view_zoom_set( 1.653692 )
+ga_view_center_set( 23.515789, 3.407632 )
+ga_view_aa_set( 16.066278, 21.787586, -0.899112 )
+ga_view_center_set( 23.724403, 3.293251 )
+ga_view_zoom_set( 1.202685 )
+ga_view_zoom_set( 1.202685 )
+ga_view_center_set( 23.870085, 3.210926 )
+ga_view_zoom_set( 0.874680 )
+ga_view_center_set( 23.970392, 3.151052 )
+ga_view_zoom_set( 0.636131 )
+ga_view_center_set( 24.042431, 3.107509 )
+ga_view_zoom_set( 0.462641 )
+ga_view_center_set( 24.093830, 3.075841 )
+ga_view_zoom_set( 0.336466 )
+ga_view_center_set( 24.131210, 3.052809 )
+ga_view_zoom_set( 0.244703 )
+ga_view_center_set( 24.093830, 3.075841 )
+ga_view_zoom_set( 0.336466 )
+ga_view_center_set( 24.042431, 3.107509 )
+ga_view_zoom_set( 0.462641 )
+ga_view_center_set( 23.971760, 3.151052 )
+ga_view_zoom_set( 0.636131 )
+ga_view_center_set( 23.874584, 3.210925 )
+ga_view_zoom_set( 0.874680 )
+ga_view_center_set( 23.740969, 3.293249 )
+ga_view_zoom_set( 1.202685 )
+ga_view_center_set( 23.557245, 3.406446 )
+ga_view_zoom_set( 1.653692 )
+ga_view_center_set( 23.304630, 3.562090 )
+ga_view_zoom_set( 2.273827 )
+ga_view_center_set( 22.957281, 3.776102 )
+ga_view_zoom_set( 3.126512 )
+ga_view_center_set( 22.479675, 4.070368 )
+ga_view_zoom_set( 4.298954 )
+ga_view_center_set( 21.822969, 4.474984 )
+ga_view_zoom_set( 5.911061 )
+ga_view_center_set( 20.919998, 5.031330 )
+ga_view_zoom_set( 8.127709 )
+ga_view_center_set( 19.398056, 6.725492 )
+ga_view_zoom_set( 11.175600 )
+ga_view_center_set( 0.064265, -1.320940 )
+ga_view_center_set( 22.862490, 1.696473 )
+ga_view_center_set( 1.740603, -0.315135 )
+ga_view_center_set( 2.517593, 0.233563 )
+ga_view_zoom_set( 8.127709 )
+ga_view_center_set( 3.082679, 0.632618 )
+ga_view_zoom_set( 5.911061 )
+ga_view_center_set( 3.493649, 0.922840 )
+ga_view_zoom_set( 4.298954 )
+ga_view_center_set( 3.082680, 0.632618 )
+ga_view_zoom_set( 5.911061 )
+ga_view_center_set( 2.517593, 0.233563 )
+ga_view_zoom_set( 8.127709 )
+ga_view_center_set( 1.740602, -0.315136 )
+ga_view_zoom_set( 11.175600 )
+ga_view_center_set( 0.672237, -1.069600 )
+ga_view_zoom_set( 15.366450 )
+ga_view_center_set( 4.052856, -1.223264 )
+ga_view_zoom_set( 4.764791 )
+ga_view_center_set( 19.300182, 0.825596 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_zoom_set( 11.411222 )
+ga_view_center_set( 24.905418, -0.371842 )
+ga_view_center_set( 21.025602, 1.453954 )
+ga_view_center_set( 18.857470, 0.541056 )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 11.896624, -1.627076 )
+ga_view_center_set( 20.455044, 1.796291 )
+ga_view_center_set( 18.516598, 1.710411 )
+ga_view_zoom_set( 8.299071 )
+mesh_seed_display_mgr.erase(  )
+verify_boundaries_display_mgr.initialize(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_center_set( 4.801726, 0.445902 )
+verify_boundaries_display_mgr.plot( "Free_Edges" )
+verify_boundaries_display_mgr.erase(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 3.743304, 0.492559 )
+mesh_seed_display_mgr.erase(  )
+display_cleanup(  )
+display_cleanup(  )
+display_cleanup(  )
+display_cleanup(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, [ @
+"default_group"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+ga_view_zoom_set( 6.160040 )
+ga_view_center_set( 18.271759, 1.264104 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_zoom_set( 6.381219 )
+ga_view_center_set( 20.413383, 1.722146 )
+uil_toolbar.hidden_line(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_toolbar.wireframe(  )
+ga_view_center_set( 7.049707, -1.073632 )
+ga_view_zoom_set( 5.524481 )
+ga_view_center_set( 25.777700, 6.771133 )
+mesh_seed_display_mgr.plot(  )
+ga_view_center_set( 22.021061, 3.235463 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["fem_ALL",  @
+"geom"] )
+uil_toolbar.hidden_line(  )
+ga_view_zoom_set( 2.797205 )
+ga_view_center_set( 23.475607, 3.375323 )
+ga_view_zoom_set( 1.301026 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_zoom_set( 4.878847 )
+ga_view_zoom_set( 24.028326 )
+ga_view_center_set( 4.252944, 3.375323 )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_zoom_set( 10.921967 )
+ga_view_center_set( 7.201875, 0.098733 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_zoom_set( 9.812976 )
+ga_view_center_set( 9.027940, 0.294389 )
+ga_view_zoom_set( 35.572037 )
+ga_view_zoom_set( 20.040583 )
+ga_view_center_set( -5.200876, -0.306828 )
+mesh_seed_display_mgr.erase(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_aa_set( 20.900326, 23.911350, 1.178491 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 1:5", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Meshes deleted from 5 surfaces: Surface 1:5
+mesh_seed_display_mgr.plot(  )
+mesh_seed_display_mgr.erase(  )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_seeds_from_edge( "Curve 21", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Curve 21
+ga_view_center_set( 0.728104, 0.359069 )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 21", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 21
+uil_toolbar.shaded_smooth(  )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 2", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 2
+ga_view_center_set( 1.365307, 4.394691 )
+$# UNDO: Create Surface 2Curve for Curve 29Curve 29 32
+$# UNDO: Create Surface 2Curve for Curve 29 32 31Curve 15
+$# UNDO: Create Surface 2Curve for Curve 15Curve 29 31 32
+$# UNDO: Create Surface 2Curve for Curve 15Curve 32 31 29
+STRING asm_grid_extract_cu_created_ids[VIRTUAL]
+asm_const_grid_extract_v1( "18", "Curve 15", 0.66600001, 1,  @
+asm_grid_extract_cu_created_ids )
+$# Question in application SGM by application Geometry
+$#     Point 14 already exists at the specified location to create the next 
+$# Point. Do you wish to create a duplicate Point?
+$? NO 1000034 
+$# Duplicate Point was not created at users request.
+$# 0 Points created.
+ga_view_aa_set( 16.830917, 33.157436, 0.660080 )
+ga_view_zoom_set( 19.265413 )
+ga_view_center_set( 3.839949, 2.314991 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 1", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 1
+ga_view_center_set( 2.498006, 1.435650 )
+uil_toolbar.wireframe(  )
+STRING sgm_curve_break_poi_created_ids[VIRTUAL]
+sgm_edit_curve_break_point( "33", "Point 13", "Curve 15", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 33,34
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 15
+sgm_edit_curve_break_point( "35", "Point 14", "Curve 34", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 35,36
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 34
+ga_view_center_set( 2.672804, -1.186318 )
+asm_const_grid_extract_v1( "18", "Curve 14", 0.66600001, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 18
+asm_const_grid_extract_v1( "19", "Curve 18", 0.66600001, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 19
+asm_const_grid_extract_v1( "20", "Curve 14", 0.333, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 20
+asm_const_grid_extract_v1( "21", "Curve 18", 0.333, 1,  @
+asm_grid_extract_cu_created_ids )
+$# 1 Point created: Point 21
+sgm_edit_curve_break_point( "37", "Point 20", "Curve 14", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 37,38
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 14
+sgm_edit_curve_break_point( "39", "Point 18", "Curve 38", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 39,40
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 38
+sgm_edit_curve_break_point( "41", "Point 21", "Curve 18", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 41,42
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 18
+sgm_edit_curve_break_point( "43", "Point 19", "Curve 42", TRUE,  @
+sgm_curve_break_poi_created_ids )
+$# 2 Curves Created: Curves 43,44
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 42
+$# UNDO: Create Surface N-Curves for Curve 29:41:4
+ga_view_aa_set( -13.761796, 29.774937, 21.776955 )
+ga_view_center_set( 1.846875, 0.097059 )
+ga_view_aa_set( 22.202986, 32.472630, 1.669563 )
+ga_view_center_set( 2.350009, -2.842648 )
+ga_view_zoom_set( 14.585946 )
+ga_view_zoom_set( 14.585946 )
+ga_view_center_set( 2.787587, -0.217177 )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "6", "Curve 29", "Curve 33",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 6
+sgm_const_surface_2curve( "7", "Curve 31", "Curve 35",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 7
+sgm_const_surface_2curve( "8", "Curve 32", "Curve 36",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 8
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( -0.713040, 0.949699 )
+STRING sgm_sweep_surface_r_created_ids[VIRTUAL]
+sgm_const_surface_revolve( "9", "Coord 0.1", 360., 0., "Coord 0", "Curve 19",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 9
+ga_view_aa_set( 23.163982, 32.339054, 1.138299 )
+ga_view_center_set( 0.530941, 0.369761 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_seeds_from_edge( "Curve 19", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Curve 19
+ga_view_center_set( -0.139751, -2.760139 )
+mesh_seed_create( "Curve 33", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 35", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 36", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 37", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 40", 2, 0, 0., 0.5, 0. )
+mesh_seed_create( "Curve 39", 2, 0, 0., 0.5, 0. )
+mesh_seed_display_mgr.plot(  )
+ga_view_aa_set( 22.922720, 18.966459, 0.243742 )
+ga_view_center_set( -0.139751, -2.313010 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 3:9", 1, ["0.5"], "Quad4",  @
+"#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 507 nodes and 456 elements created for Surface 3.
+$# 507 nodes and 456 elements created for Surface 4.
+$# 507 nodes and 456 elements created for Surface 5.
+$# 2574 nodes and 2470 elements created for Surface 6.
+$# 2574 nodes and 2470 elements created for Surface 7.
+$# 2574 nodes and 2470 elements created for Surface 8.
+$# 4561 nodes and 4520 elements created for Surface 9.
+$# === 13804 nodes created.  IDs  = 1:13804.
+$# === 13298 elements created.  IDs  = 1:13298.
+fem_associate_elems_to_ep( "p_temp", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 13298 Element(s) associated to the Element Property p_temp.
+ga_group_entity_add( "fem_ALL", "Node 1:13804 Elm 1:13298" )
+ga_group_entity_remove( "geom", "Node 1:13804 Elm 1:13298" )
+$# Entities removed from Group "geom": Node 1:13804 Elm 1:13298
+ga_view_center_set( 1.648763, -0.077367 )
+uil_toolbar.wireframe(  )
+ga_view_center_set( -5.058166, -4.772217 )
+ga_view_center_set( 1.872327, 0.593325 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+uil_toolbar.hidden_line(  )
+ga_view_center_set( -4.555863, -0.894638 )
+ga_view_aa_set( 30.893728, 11.808536, -1.278190 )
+ga_view_center_set( -4.634074, -2.564897 )
+ga_view_zoom_set( 11.336170 )
+ga_view_center_set( -4.739705, -3.722754 )
+ga_view_zoom_set( 8.244488 )
+ga_view_center_set( -4.911079, -4.464373 )
+ga_view_zoom_set( 5.995991 )
+ga_view_center_set( -5.113070, -4.917778 )
+ga_view_zoom_set( 4.360721 )
+ga_view_center_set( -5.297480, -5.203770 )
+ga_view_zoom_set( 3.171433 )
+ga_view_center_set( -8.500628, -4.632911 )
+ga_view_center_set( -8.794435, -4.621972 )
+ga_view_zoom_set( 4.360721 )
+ga_view_center_set( -9.198421, -4.606929 )
+ga_view_zoom_set( 5.995992 )
+ga_view_center_set( -9.753901, -4.586246 )
+ga_view_zoom_set( 8.244489 )
+ga_view_center_set( -10.517686, -4.557807 )
+ga_view_zoom_set( 11.336172 )
+ga_view_center_set( -11.567885, -4.518704 )
+ga_view_zoom_set( 15.587236 )
+ga_view_center_set( -13.011907, -4.464938 )
+ga_view_zoom_set( 21.432449 )
+ga_view_center_set( -17.848995, -6.207556 )
+ga_view_zoom_set( 29.469618 )
+ga_view_center_set( 1.600955, -3.849986 )
+uil_toolbar.wireframe(  )
+mesh_seed_display_mgr.erase(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 9", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 9
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_zoom_set( 31.090742 )
+ga_view_center_set( -17.721720, -4.974647 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( 35.472267, 20.723209, -2.267736 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 9", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 9
+ga_view_center_set( 1.754703, 1.530392 )
+ga_view_center_set( -2.314676, -1.763867 )
+uil_toolbar.wireframe(  )
+uil_toolbar.hidden_line(  )
+uil_toolbar.shaded_smooth(  )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "9", "Curve 33", "Curve 37",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 9
+ga_view_center_set( -3.089796, -2.538987 )
+sgm_const_surface_2curve( "10", "Curve 35", "Curve 39",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 10
+sgm_const_surface_2curve( "11", "Curve 37", "Curve 41",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 11
+ga_view_center_set( -0.668994, -1.669586 )
+ga_view_center_set( -8.511369, -6.495662 )
+ga_view_aa_set( -44.267841, 0.028286, 30.888477 )
+ga_view_center_set( -4.329772, -4.087778 )
+ga_view_zoom_set( 27.649397 )
+ga_view_center_set( 1.419927, -0.776936 )
+ga_view_zoom_set( 38.017921 )
+ga_view_center_set( 9.325749, 3.775472 )
+ga_view_zoom_set( 52.274643 )
+ga_view_center_set( 1.419927, -0.776936 )
+ga_view_zoom_set( 38.017921 )
+ga_view_center_set( -4.329768, -4.087779 )
+ga_view_zoom_set( 27.649397 )
+ga_view_center_set( -8.511365, -6.495665 )
+ga_view_zoom_set( 20.108652 )
+ga_view_center_set( -11.552524, -8.246853 )
+ga_view_zoom_set( 14.624475 )
+ga_view_center_set( -13.764279, -9.520444 )
+ga_view_zoom_set( 10.635982 )
+ga_view_center_set( -14.189718, -6.542369 )
+ga_view_zoom_set( 12.928100 )
+asm_delete_surface( "Surface 9:11", asm_delete_surface_deleted_ids )
+$# 3 Surfaces Deleted: Surface 9:11
+ga_view_center_set( 2.168698, 3.024729 )
+ga_view_center_set( -9.399921, 1.547884 )
+mesh_seed_display_mgr.plot(  )
+ga_view_aa_set( 33.717232, 23.912704, -3.552527 )
+ga_view_center_set( -12.634367, 5.417656 )
+ga_view_zoom_set( 32.232727 )
+ga_view_zoom_set( 32.232727 )
+ga_view_center_set( -17.081728, 10.738596 )
+ga_view_zoom_set( 44.320000 )
+ga_view_center_set( -23.196850, 18.054884 )
+ga_view_zoom_set( 60.939999 )
+ga_view_center_set( -17.081732, 10.738586 )
+ga_view_zoom_set( 44.320000 )
+ga_view_center_set( -12.634377, 5.417642 )
+ga_view_zoom_set( 32.232727 )
+ga_view_center_set( -9.399942, 1.547862 )
+ga_view_zoom_set( 23.441984 )
+ga_view_center_set( -7.047628, -1.266523 )
+ga_view_zoom_set( 17.048716 )
+ga_view_center_set( -5.336851, -3.313349 )
+ga_view_zoom_set( 12.399066 )
+ga_view_center_set( -6.998751, -2.011940 )
+ga_view_zoom_set( 17.048716 )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( -8.362649, -2.693888 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_seeds_from_edge( "Curve 33", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Curve 33
+ga_view_center_set( -9.215085, -1.841452 )
+fem_delete_seeds_from_edge( "Curve 19 35:37 39 40 Surface 7.3",  @
+fem_delete_mesh__deleted_labels, fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 5 edges: Curve 35:37 39 40
+$# Mesh seeds do not exist on 2 edges: Curve 19 Surface 7.3
+ga_view_center_set( -4.782418, -1.841452 )
+ga_view_zoom_set( 27.704163 )
+ga_view_center_set( -1.734961, -3.780744 )
+ga_view_zoom_set( 19.441519 )
+ga_view_center_set( -5.428848, -1.253346 )
+ga_view_center_set( -5.623264, 0.690806 )
+mesh_seed_display_mgr.plot(  )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_center_set( -2.305919, 0.153599 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_center_set( 0.532551, 2.478117 )
+mesh_seed_display_mgr.erase(  )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 6:8", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Meshes deleted from 3 surfaces: Surface 6:8
+ga_view_center_set( 1.302549, 4.018115 )
+ga_view_center_set( -0.429947, -0.409377 )
+ga_view_center_set( -1.584945, -0.024378 )
+mesh_seed_display_mgr.plot(  )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( 11.505033, -3.104372 )
+ga_view_center_set( 1.495049, -0.986876 )
+ga_view_center_set( -1.199947, 2.285618 )
+STRING sgm_sweep_surface_r_created_ids[VIRTUAL]
+sgm_const_surface_revolve( "9", "Coord 0.1", 360., 0., "Coord 0", "Curve 19",  @
+sgm_sweep_surface_r_created_ids )
+$# 1 Surface Created: Surface 9
+ga_view_center_set( -0.752008, 3.868191 )
+ga_view_center_set( -2.847120, 2.828450 )
+ga_view_zoom_set( 15.864452 )
+ga_view_center_set( -4.370835, 2.072276 )
+ga_view_zoom_set( 11.537784 )
+ga_view_center_set( -1.947900, -1.735193 )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.plot(  )
+ga_view_center_set( 0.590412, -1.850571 )
+ga_view_center_set( -5.697754, -2.311100 )
+ga_view_zoom_set( 15.864452 )
+ga_view_center_set( -1.255707, 0.703147 )
+mesh_seed_create( "Surface 9.1", 2, 0, 0., 0.5, 0. )
+sys_poll_option( 2 )
+uil_group_delete_group.delete_groups( FALSE, 1, ["fem_ALL"] )
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create( "fem_ALL" )
+$# Group "fem_ALL" created.
+sys_poll_option( 0 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 3:9", 1, ["0.5"], "Quad4",  @
+"#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# Question from application FEM
+$#     Do you wish to delete the existing mesh on Surface 3?
+$? YES 2001103 
+$# Question from application FEM
+$#     Do you wish to delete the existing mesh on Surface 4?
+$? YES 2001103 
+$# Question from application FEM
+$#     Do you wish to delete the existing mesh on Surface 5?
+$? YES 2001103 
+$# 507 nodes and 456 elements created for Surface 3.
+$# 507 nodes and 456 elements created for Surface 4.
+$# 507 nodes and 456 elements created for Surface 5.
+$# 2574 nodes and 2470 elements created for Surface 6.
+$# 2574 nodes and 2470 elements created for Surface 7.
+$# 2574 nodes and 2470 elements created for Surface 8.
+$# 4447 nodes and 4407 elements created for Surface 9.
+$# === 13690 nodes created.  IDs  = 1:13690.
+$# === 13185 elements created.  IDs  = 1:13185.
+fem_associate_elems_to_ep( "p_temp", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 13185 Element(s) associated to the Element Property p_temp.
+ga_group_entity_remove( "geom", "Node 1:13690 Elm 1:13185" )
+$# Entities removed from Group "geom": Node 1:13690 Elm 1:13185
+ga_view_center_set( 2.393117, -0.883299 )
+ga_group_entity_add( "fem_ALL", "Node 1:13690 Elm 1:13185" )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_zoom_set( 8.789389 )
+ga_view_center_set( 25.400387, -1.581241 )
+ga_view_zoom_set( 1.417643 )
+ga_view_zoom_set( 16.728191 )
+ga_view_center_set( -8.056000, -0.242986 )
+uil_toolbar.hidden_line(  )
+ga_view_zoom_set( 15.813175 )
+ga_view_zoom_set( 6.389161 )
+ga_view_zoom_set( 11.021302 )
+ga_view_zoom_set( 6.483119 )
+ga_view_zoom_set( 0.906730 )
+ga_view_zoom_set( 0.381781 )
+ga_view_zoom_set( 4.400027 )
+ga_view_zoom_set( 1.353855 )
+mesh_seed_display_mgr.erase(  )
+ga_view_zoom_set( 6.735427 )
+ga_view_zoom_set( 29.467495 )
+ga_view_aa_set( 35.136345, 18.122953, -4.902283 )
+ga_view_zoom_set( 29.467495 )
+ga_view_center_set( -0.099776, -4.368435 )
+ga_view_zoom_set( 13.243816 )
+ga_view_center_set( -0.894405, -1.984548 )
+ga_view_center_set( -1.291719, -2.514300 )
+ga_view_zoom_set( 17.548056 )
+ga_view_center_set( 0.814047, -2.514300 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_toolbar.hidden_line(  )
+uil_toolbar.wireframe(  )
+ga_view_center_set( -0.478533, 0.961912 )
+ga_view_aa_set( 35.182079, 22.236715, -7.931108 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 3:9", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Meshes deleted from 7 surfaces: Surface 3:9
+fem_delete_mesh_from_surface( "Surface 3:9", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# No meshes deleted from surfaces.
+$# Mesh does not exist on 7 entities: Surface 3:9
+mesh_seed_display_mgr.plot(  )
+ga_view_center_set( -7.068224, -3.431216 )
+ga_view_center_set( 4.353392, -0.458466 )
+ga_view_center_set( -1.458964, 8.772438 )
+ga_view_center_set( -1.624913, 7.942694 )
+ga_view_zoom_set( 3.352501 )
+ga_view_center_set( -1.591388, 5.629469 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+mesh_seed_display_mgr.refresh(  )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_zoom_set( 2.523429 )
+ga_view_center_set( 0.100938, 4.617875 )
+ga_view_center_set( -0.302811, 7.570287 )
+ga_view_center_set( -0.201873, 8.100207 )
+ga_view_zoom_set( 0.615470 )
+ga_view_center_set( 0.068934, 9.035721 )
+ga_view_zoom_set( 0.251212 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( 0.000001, 0.000000 )
+ga_view_zoom_set( 15.771433 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_seeds_from_edge( "Curve 19 33 35 36 Surface 6.3 6.1 7.3 9.1",  @
+fem_delete_mesh__deleted_labels, fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Surface 9.1
+$# Mesh seeds do not exist on 7 edges: Curve 19 33 35 36 Surface 6.1 6:7.3
+ga_view_center_set( 0.157715, -1.419429 )
+mesh_seed_display_mgr.plot(  )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 3:8", 1, ["0.5"], "Quad4",  @
+"#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 507 nodes and 456 elements created for Surface 3.
+$# 507 nodes and 456 elements created for Surface 4.
+$# 507 nodes and 456 elements created for Surface 5.
+$# 2574 nodes and 2470 elements created for Surface 6.
+$# 2574 nodes and 2470 elements created for Surface 7.
+$# 2574 nodes and 2470 elements created for Surface 8.
+$# === 9243 nodes created.  IDs  = 1:9243.
+$# === 8778 elements created.  IDs  = 1:8778.
+fem_associate_elems_to_ep( "p_temp", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 8778 Element(s) associated to the Element Property p_temp.
+ga_group_entity_add( "fem_ALL", "Node 1:9243 Elm 1:8778" )
+mesh_seed_display_mgr.refresh(  )
+mesh_seed_display_mgr.refresh(  )
+ga_group_entity_remove( "geom", "Node 1:9243 Elm 1:8778" )
+$# Entities removed from Group "geom": Node 1:9243 Elm 1:8778
+mesh_seed_display_mgr.refresh(  )
+ga_view_center_set( 2.208002, -0.630857 )
+ga_view_center_set( -4.100572, -0.630858 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ga_view_center_set( -13.391972, 0.215999 )
+ga_view_center_set( -13.607971, 0.215999 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_center_set( -1.261714, -2.681144 )
+uil_toolbar.shaded_smooth(  )
+mesh_seed_create_tabular_points( "Surface 9.1",  @
+"Node 4057:4095 6631:6669 9205:9243", 0.0049999999 )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_zoom_set( 2.564460 )
+ga_view_center_set( -0.107706, 3.370983 )
+ga_view_center_set( -0.056417, 6.807359 )
+ga_view_zoom_set( 0.649230 )
+ga_view_center_set( 0.475952, 8.209698 )
+ga_view_center_set( 0.579829, 9.196528 )
+ga_view_zoom_set( 0.171982 )
+ga_view_center_set( 0.581549, 8.972954 )
+ga_view_center_set( 1.020102, 8.921359 )
+ga_view_zoom_set( 0.034225 )
+ga_view_center_set( 1.004016, 8.944633 )
+ga_view_zoom_set( 0.261823 )
+ga_view_zoom_set( 1.786940 )
+ga_view_zoom_set( 14.518891 )
+ga_view_center_set( -6.255430, -0.057082 )
+ga_view_center_set( -4.513163, -4.703127 )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( 17.318563, 39.092487, 3.498571 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 9", 1, ["0.5"], "Quad4",  @
+"#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 4601 nodes and 4560 elements created for Surface 9.
+$# === 4601 nodes created.  IDs  = 9244:13844.
+$# === 4560 elements created.  IDs  = 8779:13338.
+fem_associate_elems_to_ep( "p_temp", fem_create_mesh_s_elems_created,  @
+fem_create_mesh_surfa_num_elems )
+$# 4560 Element(s) associated to the Element Property p_temp.
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( 1.439582, -0.637838 )
+ga_group_entity_remove( "geom", "Node 9244:13844 Elm 8779:13338" )
+$# Entities removed from Group "geom": Node 9244:13844 Elm 8779:13338
+ga_group_entity_add( "fem_ALL", "Node 9244:13844 Elm 8779:13338" )
+ga_view_center_set( -0.157496, -0.783027 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+uil_toolbar.wireframe(  )
+ga_view_zoom_set( 4.384521 )
+ga_view_center_set( -9.163650, 1.885344 )
+ga_view_center_set( -9.251340, 6.620628 )
+ga_view_center_set( -7.059081, -0.394607 )
+ga_view_center_set( -13.186850, -4.794031 )
+ga_view_center_set( -7.123681, -3.507904 )
+ga_view_zoom_set( 0.663294 )
+ga_view_center_set( -8.775281, -4.370186 )
+ga_view_zoom_set( 0.149897 )
+ga_view_zoom_set( 1.184185 )
+ga_view_zoom_set( 11.308968 )
+ga_view_center_set( 6.378735, -1.769123 )
+ga_view_zoom_set( 26.010628 )
+ga_view_center_set( -6.626578, -5.930824 )
+ga_view_zoom_set( 14.252398 )
+ga_view_center_set( 2.352432, -1.227533 )
+ga_view_center_set( 11.188918, -0.372389 )
+ga_view_center_set( 6.343103, 1.480423 )
+ga_view_center_set( 3.492624, 0.197707 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+uil_primary_file.db_save(  )
+$# Reclaimed 2.30 MB of 8.38 MB.
+ga_view_center_set( -5.149599, -0.436097 )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+ga_view_aa_set( 14.924488, 32.670311, 1.568471 )
+ga_view_zoom_set( 17.279720 )
+$# Journal file stopped recording at 05-Feb-19 13:41:06
