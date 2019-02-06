@@ -1506,3 +1506,1117 @@ $# Flushing the User Data Manager
 ga_view_aa_set( 14.924488, 32.670311, 1.568471 )
 ga_view_zoom_set( 17.279720 )
 $# Journal file stopped recording at 05-Feb-19 13:41:06
+$# Appending to existing journal file 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\CSLM_0.0.db.jou at 05-Feb-19 
+$# 14:49:19
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+ga_view_center_set( 4.244868, -0.056791 )
+ga_view_zoom_set( 18.221279 )
+ga_view_center_set( 7.706912, -2.607770 )
+ga_view_center_set( -0.492664, -3.883260 )
+ga_view_center_set( 12.262232, -8.620793 )
+ga_view_center_set( 13.214023, -9.028704 )
+ga_view_center_set( 5.191786, 1.848900 )
+ga_view_center_set( 8.591038, 1.712930 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+ga_view_center_set( 6.959396, 0.081289 )
+ga_view_center_set( 11.421750, -1.571435 )
+ga_view_center_set( 15.505569, -0.405977 )
+ga_view_center_set( 19.381620, 1.590775 )
+ga_view_center_set( 21.526930, 0.698011 )
+ga_view_center_set( 17.109489, 5.299506 )
+ga_view_center_set( 14.900772, 0.974100 )
+ga_view_zoom_set( 21.307220 )
+ga_view_zoom_set( 18.528019 )
+ga_view_center_set( 20.701817, 4.158988 )
+ga_view_aa_set( 16.814617, 38.971336, 7.734432 )
+ga_view_center_set( 20.701817, 4.158988 )
+ga_view_zoom_set( 11.374601 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "45", "curve", "<0 0 1>", 6.8000002, FALSE,  @
+"Coord 0", 1, FALSE, "Curve 23", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 45
+ga_view_zoom_set( 7.985502 )
+ga_view_center_set( 23.021557, 1.961036 )
+$# UNDO: Edit Curve Trim for Construct PointCurveUOnCurve(Evaluate Geometry(...
+ga_view_center_set( 24.778366, 3.158862 )
+ga_view_center_set( 24.379091, 2.440166 )
+STRING sgm_curve_trim_para_trimmed_ids[VIRTUAL]
+sgm_edit_curve_trim_parametric( 0.47999999,  @
+"Construct PointCurveUOnCurve(Evaluate Geometry(Point 22))(Evaluate Geomet" // @
+"ry(Curve 45))", sgm_curve_trim_para_trimmed_ids )
+$# 1 Curve Deleted: Curve 45
+$# 1 Line Trimmed: Line 45
+ga_view_center_set( 25.656771, 4.596252 )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_zoom_set( 38.929321 )
+ga_view_center_set( -4.708107, -10.196889 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_zoom_set( 17.111790 )
+ga_view_center_set( 19.077282, -8.999063 )
+ga_view_center_set( 16.510515, -1.127640 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "46", "curve", "<1 0 0>", 3.9000001, FALSE,  @
+"Coord 0", 1, TRUE, "Curve 45", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 46
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 45
+ga_view_center_set( 5.035385, 0.000000 )
+sgm_transform_translate_v1( "47", "curve", "<-1 0 0>", 0.89999998, FALSE,  @
+"Coord 0", 1, TRUE, "Curve 46", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 47
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 46
+ga_view_center_set( 11.737508, 0.661268 )
+sgm_transform_translate_v1( "48", "curve", "<-1 0 0>", 1., FALSE, "Coord 0",  @
+1, TRUE, "Curve 47", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 48
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 47
+ga_view_center_set( 10.400448, 0.812535 )
+ga_view_center_set( 9.587913, -3.412647 )
+ga_view_center_set( 9.587913, -1.787577 )
+sgm_transform_translate_v1( "49", "curve", "<0 0 -1>", 15.8, FALSE, "Coord 0", @
+ 1, FALSE, "Curve 48", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 49
+ga_view_center_set( 3.900168, -2.925125 )
+ga_view_zoom_set( 21.938438 )
+ga_view_aa_set( 44.341793, -38.435791, 18.548183 )
+ga_view_center_set( 3.900168, -0.511896 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "50", "curve", "<0 0 -1>", 15.8, FALSE, "Coord 0", @
+ 1, FALSE, "Curve 49", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 50
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 49", asm_delete_curve_deleted_ids )
+$# 1 Curve Deleted: Curve 49
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 180., 90., 180. )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "51", "Point 16", "Point 28", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 51
+asm_const_line_2point( "52", "Point 29", "Point 12", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 52
+ga_view_center_set( 16.388899, 8.315078 )
+asm_const_line_2point( "53", "Point 15", "Point 32", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 53
+asm_const_line_2point( "54", "Point 33", "Point 11", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 54
+ga_view_center_set( 7.741237, -5.654226 )
+ga_view_aa_set( 26.476469, 30.246288, 3.386356 )
+ga_view_center_set( 7.741237, 1.883196 )
+ga_view_zoom_set( 21.224714 )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.23 MB of 7.44 MB.
+ga_view_aa_set( 28.313002, 29.989195, 4.787985 )
+ga_view_zoom_set( 28.443142 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_scale( "55", "curve", [1., 1., 1.], "[0 0 0]", "Coord 0", 1,  @
+FALSE, "Curve 19 22:25 27:29 31:33 35:37 39:41 43 44 48 50:54 Surface 6.3 " // @
+"6.1 7.3 9.1", sgm_transform_curve_created_ids )
+$# Question in application SGM by application Geometry
+$#     Curve 19 already exists at the specified location to create the next 
+$# Curve. Do you wish to create a duplicate Curve?
+$? NOFORALL 1000034 
+$# 4 Curves Created: Curves 55:58
+sgm_transform_scale( "59", "curve", [1., 0.5, 0.5], "[0 0 0]", "Coord 0", 1,  @
+TRUE, "Curve 19 22:25 27:29 31:33 35:37 39:41 43 44 48 50:54 Surface 6.3 6" // @
+".1 7.3 9.1", sgm_transform_curve_created_ids )
+$# 29 Curves Created: Curves 59:87
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 29 Curves Deleted: Curve 19 22:25 27:29 31:33 35:37 39:41 43 44 48 50:58
+ga_view_center_set( 1.151324, -0.114680 )
+ga_view_aa_set( 34.450661, 40.946831, -6.229870 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 5", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 5
+asm_delete_surface( "Surface 3", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 3
+asm_delete_surface( "Surface 4", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 4
+asm_delete_surface( "Surface 6", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 6
+asm_delete_surface( "Surface 7", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 7
+asm_delete_surface( "Surface 8", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 8
+ga_view_center_set( -4.430535, -4.174213 )
+asm_delete_surface( "Surface 9", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 9
+ga_view_center_set( -4.176814, -6.203980 )
+ga_view_center_set( 12.061320, 4.959736 )
+ga_view_center_set( 7.494344, -2.651889 )
+ga_view_center_set( -1.787678, -17.420523 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( 2.333802, -0.419420 )
+ga_view_aa_set( -90.000000, 0.000000, 0.000000 )
+ga_view_center_set( 2.333802, -0.419420 )
+ga_view_zoom_set( 17.172831 )
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 13", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 13
+asm_delete_point( "Point 20", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 20
+asm_delete_point( "Point 21", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 21
+asm_delete_point( "Point 19", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 19
+asm_delete_point( "Point 18", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 18
+asm_delete_point( "Point 14", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 14
+asm_delete_point( "Point 15", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 15
+asm_delete_point( "Point 16", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 16
+asm_delete_point( "Point 12", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 12
+asm_delete_point( "Point 11", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 11
+ga_view_center_set( 0.273062, -2.651888 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( 19.334904, -0.419420 )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_center_set( 4.394542, -2.308432 )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.15 MB of 7.08 MB.
+$# Flushing the User Data Manager
+ga_view_aa_set( -90.000000, 0.000000, 0.000000 )
+$# Journal file stopped recording at 05-Feb-19 17:04:22
+$# Appending to existing journal file 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\CSLM_0.0.db.jou at 06-Feb-19 
+$# 08:43:01
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+ga_view_aa_set( 23., -34., 0. )
+ga_view_aa_set( 90., 0., 0. )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 79 82 83 78 80 81", asm_delete_curve_deleted_ids )
+$# 6 Curves Deleted: Curve 78:83
+ga_view_center_set( 5.081456, -1.964975 )
+ga_view_center_set( 6.455282, 0.095764 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "88", "curve", "<0 0 1>", 6.8000002, FALSE,  @
+"Coord 0", 1, FALSE, "Curve 61", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 88
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 90., 0., 0. )
+$# UNDO: Transform Curve Translate for Curve 62
+sgm_transform_translate_v1( "89", "curve", "<0 0 -1>", 6.8000002, FALSE,  @
+"Coord 0", 1, FALSE, "Curve 62", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 89
+ga_view_aa_set( 90.000000, 0.000000, 0.000000 )
+ga_view_zoom_set( 15.455440 )
+sgm_transform_translate_v1( "90", "curve", "<1 0 0>", 3.9000001, FALSE,  @
+"Coord 0", 1, TRUE, "Curve 89 88", sgm_transform_curve_created_ids )
+$# 2 Curves Created: Curves 90,91
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 88 89
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+ga_view_center_set( 3.144761, 4.137844 )
+ga_view_center_set( 1.158596, -0.000000 )
+STRING sgm_curve_trim_para_trimmed_ids[VIRTUAL]
+sgm_edit_curve_trim_parametric( 0.47999999,  @
+"Construct PointCurveUOnCurve(Evaluate Geometry([ 54.953701 -2.266231 -10." // @
+"687698 ]))(Evaluate Geometry(Curve 90))", sgm_curve_trim_para_trimmed_ids )
+$# 1 Curve Deleted: Curve 90
+$# 1 Line Trimmed: Line 90
+ga_view_center_set( 3.972330, 2.317192 )
+ga_view_center_set( 5.296439, -6.289521 )
+sgm_edit_curve_trim_parametric( 0.47999999,  @
+"Construct PointCurveUOnCurve(Evaluate Geometry(Point 55))(Evaluate Geomet" // @
+"ry(Curve 91))", sgm_curve_trim_para_trimmed_ids )
+$# 1 Curve Deleted: Curve 91
+$# 1 Line Trimmed: Line 91
+ga_view_center_set( 4.965412, -6.455035 )
+ga_view_center_set( 5.958493, -0.165513 )
+ga_view_aa_set( -90., 0., 0. )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "92", "Point 37", "Point 59", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 92
+asm_const_line_2point( "93", "Point 38", "Point 60", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 93
+asm_const_line_2point( "94", "Point 39", "Point 57", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 94
+asm_const_line_2point( "95", "Point 40", "Point 58", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 95
+ga_view_center_set( 1.986164, 0.496542 )
+ga_view_center_set( 13.406612, 4.468872 )
+ga_view_aa_set( 21.466450, 33.515511, -3.951618 )
+ga_view_zoom_set( 8.777551 )
+STRING sgm_transform_curve_created_ids[VIRTUAL]
+sgm_transform_translate_v1( "96", "curve", "<0 1 0>", 6.8000002, FALSE,  @
+"Coord 0", 1, FALSE, "Curve 60", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 96
+ga_view_center_set( 10.537465, 2.566914 )
+$# UNDO: Transform Curve Translate for Curve 60
+sgm_transform_translate_v1( "97", "curve", "<1 0 0>", 3.9000001, FALSE,  @
+"Coord 0", 1, TRUE, "Curve 96", sgm_transform_curve_created_ids )
+$# 1 Curve Created: Curve 97
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 96
+ga_view_aa_set( 0., 0., 0. )
+ga_view_zoom_set( 9.229344 )
+ga_view_center_set( 16.760603, 0.388066 )
+STRING sgm_curve_trim_para_trimmed_ids[VIRTUAL]
+sgm_edit_curve_trim_parametric( 0.47999999,  @
+"Construct PointCurveUOnCurve(Evaluate Geometry(Point 63))(Evaluate Geomet" // @
+"ry(Curve 97))", sgm_curve_trim_para_trimmed_ids )
+$# 1 Curve Deleted: Curve 97
+$# 1 Line Trimmed: Line 97
+ga_view_center_set( 17.314362, 0.849533 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "98", "Point 35", "Point 61", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 98
+asm_const_line_2point( "99", "Point 36", "Point 62", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 99
+gu_fit_view(  )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 180.000000, 90.000000, 180.000000 )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0., 180., 0. )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 90., 0., 0. )
+uil_toolbar.labels_on(  )
+STRING sgm_renum_curve_new_ids[VIRTUAL]
+sgm_renumber( 1, "curve", "#", "Curve 59:77 84:87 90:95 97:99",  @
+sgm_renum_curve_new_ids )
+$# 32 Curves Renumbered: Curves 100:131
+repaint_graphics(  )
+ga_view_center_set( 13.075585, -0.827569 )
+ga_view_zoom_set( 6.825490 )
+ga_view_center_set( 14.986721, -0.759314 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_zoom_set( 16.551373 )
+STRING sgm_renum_point_new_ids[VIRTUAL]
+sgm_renumber( 1, "point", "#", "Point 1 34:48 57:62", sgm_renum_point_new_ids )
+$# 22 Points Renumbered: Points 63:84
+repaint_graphics(  )
+ga_view_center_set( -1.158596, -2.151678 )
+ga_view_aa_set( 90., 0., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 0., 0., 0. )
+uil_toolbar.labels_off(  )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.16 MB of 7.09 MB.
+ga_view_center_set( 1.158596, -0.993083 )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+ga_view_aa_set( 0., 0., 0. )
+point_size( 1 )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( -90., 0., 0. )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_aa_set( 180., 90., 180. )
+gu_fit_view(  )
+ga_view_aa_set( 180., -90., 180. )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 90., 0., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 180., 90., 180. )
+gu_fit_view(  )
+ga_view_aa_set( 23., -34., 0. )
+ga_view_aa_set( 23., 56., 0. )
+gu_fit_view(  )
+ga_view_aa_set( 22.999998, 55.999996, 0.000002 )
+ga_view_aa_set( 0., 0., 0. )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["fem_ALL"] )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+STRING fem_delete_any_deleted_ids[VIRTUAL]
+fem_delete_element( "Node 1:13844 Elm 1:13338", fem_delete_any_deleted_ids )
+$# 13338 Elements deleted: Element 1:13338
+STRING fem_delete_any_not_found_ids[VIRTUAL]
+fem_delete_free_node( "Node 1:13844 Elm 1:13338", fem_delete_any_deleted_ids,  @
+fem_delete_any_not_found_ids )
+$# 13844 Nodes deleted: Node 1:13844
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["geom"] )
+point_size( 9 )
+ga_view_center_set( -6.124008, -8.606714 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -8.937739, -6.620550 )
+ga_view_zoom_set( 5.172304 )
+ga_view_center_set( -15.092785, -3.258554 )
+ga_view_zoom_set( 8.017071 )
+ga_view_center_set( -16.616032, -4.461115 )
+ga_view_center_set( -16.936718, -5.663674 )
+ga_view_aa_set( 8.000001, 15.999998, 0.000000 )
+STRING sgm_edit_curve_merg_created_ids[VIRTUAL]
+sgm_edit_curve_merge( "132", "Curve 113:115", 1, 0.0049999999, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 132
+$# 3 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 3 Curves Deleted: Curve 113:115
+ga_view_center_set( -14.451427, -5.262821 )
+$# UNDO: Create Point Project for Point 77 78Curve 132
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -19.822866, -4.701627 )
+ga_view_center_set( -19.822866, -4.701627 )
+ga_view_center_set( -20.420481, -5.675627 )
+ga_view_zoom_set( 5.830597 )
+ga_view_center_set( -20.855112, -6.367274 )
+ga_view_zoom_set( 4.240434 )
+ga_view_center_set( -23.102541, -3.823014 )
+ga_view_center_set( -22.169649, -3.907824 )
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "85", "<1 0 0>", 5., FALSE, "Coord 0", 1,  @
+FALSE, FALSE, "Point 77 78", sgm_transform_point_created_ids )
+$# 2 Points created: Grid 85,86
+ga_view_center_set( -24.713911, -3.823015 )
+ga_view_center_set( -22.127253, -7.978641 )
+ga_view_center_set( -19.370975, -2.296459 )
+ga_view_center_set( -17.886829, -7.003341 )
+ga_view_center_set( -17.123554, -7.342575 )
+$# UNDO: Edit Curve Break for Point 85Curve 132
+ga_view_center_set( -15.257770, -6.070445 )
+STRING sgm_transform_point_created_ids[VIRTUAL]
+asm_transform_grid_translate_1( "87", "<0 0 -1>", 1.17, FALSE, "Coord 0", 1,  @
+FALSE, FALSE, "Point 85", sgm_transform_point_created_ids )
+$# 1 Point created: Grid 87
+ga_view_center_set( -14.579303, -5.773616 )
+$# UNDO: Transform Point Translate Command [ 8.600000 1.267019 3.128928 ]
+ga_view_aa_set( 11.142831, 43.189339, -1.392553 )
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 87", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 87
+asm_delete_point( "Point 87", asm_delete_point_deleted_ids )
+$# No Geometry Deleted.
+ga_view_center_set( -15.427389, -6.536894 )
+ga_view_center_set( -14.536900, -5.985639 )
+asm_delete_point( "Point 85 86", asm_delete_point_deleted_ids )
+$# 2 Points Deleted: Point 85 86
+ga_view_center_set( -14.112857, -5.731213 )
+ga_view_center_set( -16.487497, -6.960938 )
+ga_view_aa_set( 9.825091, 34.338406, 0.705665 )
+STRING sgm_edit_curve_merg_created_ids[VIRTUAL]
+sgm_edit_curve_merge( "133", "Curve 116:118", 1, 0.0049999999, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 133
+$# 3 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 3 Curves Deleted: Curve 116:118
+ga_view_center_set( -17.038752, -5.816021 )
+STRING sgm_curve_break_par_created_ids[VIRTUAL]
+sgm_edit_curve_break_parametric( "134", 0.5, "Curve 132", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 134,135
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 132
+sgm_edit_curve_break_parametric( "136", 0.5, "Curve 134", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 136,137
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 134
+sgm_edit_curve_break_parametric( "138", 0.5, "Curve 135", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 138,139
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 135
+sgm_edit_curve_break_parametric( "140", 0.5, "Curve 133", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 140,141
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 133
+sgm_edit_curve_break_parametric( "142", 0.5, "Curve 140", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 142,143
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 140
+sgm_edit_curve_break_parametric( "144", 0.5, "Curve 141", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 144,145
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 141
+sgm_edit_curve_merge( "146", "Curve 137 138", 1, 0.0049999999, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 146
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 137 138
+sgm_edit_curve_merge( "147", "Curve 143 144", 1, 0.0049999999, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 147
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 143 144
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -20.727928, -4.459083 )
+ga_view_zoom_set( 7.526771 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_zoom_set( 7.714940 )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( -19.616446, -4.694097 )
+ga_view_zoom_set( 5.610866 )
+ga_view_zoom_set( 11.362003 )
+ga_view_center_set( -11.094942, -4.125998 )
+ga_view_zoom_set( 19.883509 )
+ga_view_center_set( -0.357847, -7.108523 )
+ga_view_aa_set( 180., 90., 180. )
+ga_view_zoom_set( 2.624886 )
+ga_view_center_set( -0.384095, -3.617425 )
+ga_view_zoom_set( 4.134195 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -20.807020, -4.940369 )
+ga_view_center_set( -22.502041, -3.410717 )
+ga_view_center_set( -22.564270, -3.578138 )
+ga_view_zoom_set( 3.006687 )
+ga_view_center_set( -22.609526, -3.699900 )
+ga_view_zoom_set( 2.186682 )
+ga_view_center_set( -22.564268, -3.584603 )
+ga_view_zoom_set( 3.006687 )
+ga_view_center_set( -22.502041, -3.426071 )
+ga_view_zoom_set( 4.134195 )
+ga_view_center_set( -22.416481, -3.208089 )
+ga_view_zoom_set( 5.684518 )
+ga_view_center_set( -22.416483, -3.532007 )
+ga_view_zoom_set( 4.134195 )
+ga_view_center_set( -22.428337, -3.749804 )
+ga_view_zoom_set( 3.006687 )
+ga_view_zoom_set( 6.163709 )
+ga_view_center_set( -9.977645, -5.660554 )
+ga_view_zoom_set( 3.006687 )
+ga_view_zoom_set( 6.163709 )
+ga_view_center_set( 5.493265, -3.996353 )
+ga_view_zoom_set( 17.566572 )
+ga_view_center_set( 39.221081, -6.455673 )
+ga_view_zoom_set( 4.780020 )
+ga_view_center_set( 15.607787, -5.021667 )
+ga_view_center_set( 23.399221, -5.690870 )
+ga_view_zoom_set( 2.692968 )
+ga_view_zoom_set( 8.213554 )
+ga_view_center_set( 21.345833, -3.144668 )
+ga_view_center_set( 19.128174, -9.551241 )
+ga_view_center_set( 12.146652, -9.386971 )
+ga_view_zoom_set( 20.739225 )
+ga_view_center_set( 1.154862, -0.883888 )
+ga_view_zoom_set( 5.493834 )
+ga_view_center_set( 13.021542, -10.058591 )
+ga_view_zoom_set( 10.026248 )
+ga_view_center_set( 16.029415, -9.557278 )
+ga_view_aa_set( 27.405342, -28.479998, -5.599519 )
+ga_view_center_set( 16.330200, -12.565154 )
+ga_view_center_set( 13.522853, -18.480640 )
+ga_view_aa_set( 28.364449, -37.838512, -3.740373 )
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "148", 1, 2., "Coord 0.1", "", "Point 82",  @
+FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 148
+ga_view_center_set( 6.621125, -11.648703 )
+ga_view_zoom_set( 6.551206 )
+ga_view_center_set( 12.844771, -18.527468 )
+ga_view_zoom_set( 2.319011 )
+ga_view_center_set( 15.673965, -18.110046 )
+ga_view_center_set( 20.914928, -17.599859 )
+ga_view_center_set( 22.074434, -16.973724 )
+ga_view_zoom_set( 8.464389 )
+ga_view_center_set( 19.873692, -12.402951 )
+ga_view_center_set( 18.604031, -15.196199 )
+STRING sgm_curve_break_par_created_ids[VIRTUAL]
+sgm_edit_curve_break_parametric( "149", 0.5, "Curve 148", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 149,150
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 148
+sgm_edit_curve_break_parametric( "151", 0.5, "Curve 149", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 151,152
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 149
+sgm_edit_curve_break_parametric( "153", 0.5, "Curve 150", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 153,154
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 150
+ga_view_zoom_set( 3.287141 )
+ga_view_center_set( 23.436123, -17.760170 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( 33.433773, -3.641302 )
+ga_view_zoom_set( 4.832518 )
+ga_view_zoom_set( 0.782594 )
+ga_view_center_set( 28.957325, -5.433440 )
+ga_view_center_set( 28.612988, -5.629089 )
+ga_view_zoom_set( 2.367347 )
+ga_view_zoom_set( 10.712243 )
+ga_view_center_set( 20.257439, -16.555576 )
+ga_view_center_set( 21.542908, -19.233637 )
+ga_view_center_set( 20.886759, -16.430096 )
+ga_view_center_set( 20.629120, -13.544541 )
+ga_view_aa_set( 32.428185, -28.802679, 3.004434 )
+ga_view_zoom_set( 5.152775 )
+gm_visibility_widget( "Point 82 Curve 124 126", FALSE )
+ga_view_center_set( 20.113842, -14.781208 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( 24.827059, -11.751475 )
+ga_view_zoom_set( 2.637669 )
+ga_view_center_set( 31.157473, -7.135554 )
+ga_view_center_set( 29.442986, -5.368316 )
+ga_view_zoom_set( 0.609866 )
+ga_view_center_set( 29.357607, -5.801321 )
+ga_view_zoom_set( 4.238566 )
+ga_view_center_set( 26.390610, -13.981756 )
+ga_view_center_set( 25.119041, -12.455871 )
+ga_view_center_set( 30.247705, -11.862473 )
+ga_view_aa_set( 19.635801, -6.852126, -5.019951 )
+STRING asm_delete_any_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 91:94 Curve 151:154", asm_delete_any_deleted_ids )
+$# 4 Points Deleted: Point 91:94
+asm_delete_curve( "Point 91:94 Curve 151:154", asm_delete_any_deleted_ids )
+$# 4 Curves Deleted: Curve 151:154
+ga_view_center_set( 29.739077, -11.735316 )
+STRING sgm_create_curve_2d_created_ids[VIRTUAL]
+sgm_const_curve_2d_circle_v2( "148", 1, 2., "Coord 0.1", "", "Point 82",  @
+FALSE, sgm_create_curve_2d_created_ids )
+$# 1 Curve Created: Curve 148
+ga_view_center_set( 42.347778, -10.234961 )
+ga_view_zoom_set( 3.251251 )
+ga_view_center_set( 27.782169, -11.242851 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( 30.454531, -11.420446 )
+ga_view_zoom_set( 2.298802 )
+ga_view_center_set( 29.833855, -6.225154 )
+ga_view_zoom_set( 0.884155 )
+ga_view_center_set( 29.144213, -4.005925 )
+ga_view_center_set( 29.312208, -3.687629 )
+ga_view_center_set( 29.241476, -4.041291 )
+ga_view_center_set( 26.872757, -5.279263 )
+gu_fit_view(  )
+ga_view_center_set( 5.762657, -10.183769 )
+ga_view_center_set( 13.931889, -29.296692 )
+ga_view_center_set( 7.458158, -8.334135 )
+ga_view_center_set( 9.461933, -12.187547 )
+ga_view_center_set( -4.410347, -1.243859 )
+ga_view_center_set( 4.991975, -9.721367 )
+ga_view_center_set( 7.612296, -19.123693 )
+ga_view_center_set( 18.744772, -19.500355 )
+ga_view_aa_set( 46.343925, -38.570202, 5.997590 )
+ga_view_zoom_set( 4.185140 )
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 91", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 91
+ga_view_center_set( 18.368109, -20.211830 )
+STRING sgm_curve_break_par_created_ids[VIRTUAL]
+sgm_edit_curve_break_parametric( "149", 0.25, "Curve 148", FALSE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 149,150
+sgm_edit_curve_break_parametric( "151", 0.5, "Curve 148", FALSE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 151,152
+sgm_edit_curve_break_parametric( "153", 0.75, "Curve 148", FALSE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 153,154
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( 13.903152, -3.806816 )
+ga_view_center_set( 18.868565, -28.137333 )
+ga_view_center_set( 16.882401, -5.130925 )
+ga_view_zoom_set( 3.871666 )
+ga_view_center_set( 29.349165, -5.518091 )
+ga_view_center_set( 31.207563, -5.943974 )
+ga_view_center_set( 31.748697, -6.045264 )
+ga_view_zoom_set( 2.815757 )
+ga_view_zoom_set( 0.736146 )
+ga_view_center_set( 29.393030, -5.706638 )
+ga_view_center_set( 28.782026, -5.883313 )
+ga_view_center_set( 25.584127, -10.193527 )
+ga_view_center_set( 20.404921, -15.407495 )
+ga_view_center_set( 19.841576, -16.775614 )
+ga_view_center_set( 15.254358, -20.839725 )
+ga_view_center_set( 14.127674, -21.523787 )
+ga_view_aa_set( 24.048740, -42.506840, -14.837518 )
+ga_view_zoom_set( 4.023879 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( 61.902138, -3.806816 )
+ga_view_center_set( 62.729702, -4.965413 )
+ga_view_zoom_set( 3.182956 )
+ga_view_center_set( 48.565544, -6.684209 )
+ga_view_center_set( 34.592369, -8.371176 )
+ga_view_center_set( 25.616434, -4.806265 )
+ga_view_center_set( 29.308664, -5.824811 )
+ga_view_zoom_set( 0.327296 )
+ga_view_center_set( 29.495226, -5.634978 )
+ga_view_center_set( 29.285753, -5.602248 )
+ga_view_center_set( 29.122103, -5.638251 )
+ga_view_aa_set( -2.985264, -0.296087, 5.992589 )
+ga_view_center_set( 29.218519, -5.647517 )
+ga_view_zoom_set( 0.238034 )
+gu_fit_view(  )
+ga_view_center_set( 6.305904, -3.127382 )
+ga_view_center_set( 12.068231, -22.663061 )
+ga_view_zoom_set( 4.186470 )
+ga_view_center_set( 13.407902, -17.848623 )
+ga_view_center_set( 13.072986, -17.890488 )
+ga_view_aa_set( 33.984406, -46.651516, 2.748964 )
+ga_view_zoom_set( 4.186470 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( -27.475279, -5.958494 )
+ga_view_zoom_set( 3.521569 )
+ga_view_center_set( -19.340456, -4.972454 )
+ga_view_center_set( -20.995590, -4.514649 )
+ga_view_zoom_set( 11.885295 )
+ga_view_center_set( -15.290646, -4.752355 )
+ga_view_zoom_set( 19.610737 )
+ga_view_center_set( -2.935881, -6.713429 )
+ga_view_center_set( -0.778699, -5.928999 )
+pref_geo_set_v1( 0, 0.0099999998, 3 )
+pref_global_set_v3( TRUE, 3, "0.00005", "SAVE" )
+pref_env_set_logical( "revert_enabled", FALSE )
+ga_view_center_set( -26.076551, -10.243362 )
+ga_view_zoom_set( 5.372805 )
+ga_view_center_set( -24.034883, -7.556960 )
+ga_view_center_set( -20.703741, -6.751039 )
+ga_view_aa_set( 17.447554, 31.564175, -2.846361 )
+STRING sgm_edit_curve_merg_created_ids[VIRTUAL]
+sgm_edit_curve_merge( "155", "Curve 136 146", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 155
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 136 146
+sgm_edit_curve_merge( "156", "Curve 142 147", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 156
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 142 147
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 87 90", asm_delete_point_deleted_ids )
+$# 2 Points Deleted: Point 87 90
+ga_view_center_set( -19.951548, -5.837662 )
+STRING sgm_edit_curve_merg_created_ids[VIRTUAL]
+sgm_edit_curve_merge( "157", "Curve 145 156", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 157
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 145 156
+sgm_edit_curve_merge( "158", "Curve 139 155", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 158
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 139 155
+asm_delete_point( "Point 96", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 96
+asm_delete_point( "Point 95", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 95
+$# UNDO: Edit Curve Break for Curve 158
+STRING sgm_curve_break_par_created_ids[VIRTUAL]
+sgm_edit_curve_break_parametric( "159", 0.5, "Curve 158", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 159,160
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 158
+sgm_edit_curve_break_parametric( "161", 0.5, "Curve 159", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 161,162
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 159
+sgm_edit_curve_break_parametric( "163", 0.5, "Curve 160", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 163,164
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 160
+sgm_edit_curve_break_parametric( "165", 0.5, "Curve 157", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 165,166
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 157
+sgm_edit_curve_break_parametric( "167", 0.5, "Curve 165", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 167,168
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 165
+sgm_edit_curve_break_parametric( "169", 0.5, "Curve 166", TRUE,  @
+sgm_curve_break_par_created_ids )
+$# 2 Curves Created: Curves 169,170
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 166
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -21.885759, -4.225820 )
+ga_view_zoom_set( 1.360204 )
+ga_view_center_set( -24.823801, -3.572923 )
+ga_view_center_set( -24.334129, -4.443453 )
+ga_view_center_set( -22.280630, -4.698807 )
+ga_view_center_set( -16.396797, -6.155200 )
+ga_view_aa_set( 15.825501, 26.720217, -1.316846 )
+ga_view_center_set( -16.396797, -6.155200 )
+ga_view_zoom_set( 7.081021 )
+sgm_edit_curve_merge( "171", "Curve 161:164", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 171
+$# 4 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 4 Curves Deleted: Curve 161:164
+sgm_edit_curve_merge( "172", "Curve 167:170", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 172
+$# 4 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 4 Curves Deleted: Curve 167:170
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 95 99", asm_delete_point_deleted_ids )
+$# 2 Points Deleted: Point 95 99
+ga_view_center_set( -16.963280, -3.181171 )
+ga_view_center_set( -16.255177, -4.243325 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -20.362171, -2.260638 )
+ga_view_zoom_set( 0.899177 )
+ga_view_center_set( -20.793777, -0.588168 )
+ga_view_zoom_set( 0.216669 )
+ga_view_center_set( -20.761276, 0.053173 )
+ga_view_center_set( -20.817612, -0.007494 )
+ga_view_zoom_set( 0.029579 )
+ga_view_center_set( -20.856068, -0.045356 )
+ga_view_zoom_set( 0.011268 )
+ga_view_center_set( -20.843676, -0.023045 )
+ga_view_center_set( -20.846491, -0.027439 )
+ga_view_zoom_set( 0.080005 )
+ga_view_zoom_set( 0.604040 )
+ga_view_zoom_set( 4.379289 )
+ga_view_zoom_set( 30.545538 )
+ga_view_center_set( 12.142694, -1.860172 )
+ga_view_zoom_set( 8.255551 )
+ga_view_center_set( 24.113241, -4.006616 )
+ga_view_center_set( 25.269022, -16.472500 )
+ga_view_center_set( 26.766632, -12.578725 )
+ga_view_aa_set( 28.999975, -11.083993, 0.175261 )
+ga_view_zoom_set( 7.488029 )
+STRING asm_delete_any_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 91:94 Curve 148:154", asm_delete_any_deleted_ids )
+$# 4 Points Deleted: Point 91:94
+asm_delete_curve( "Point 91:94 Curve 148:154", asm_delete_any_deleted_ids )
+$# 7 Curves Deleted: Curve 148:154
+ga_view_center_set( 25.568546, -10.631837 )
+gm_plot_erase_geometry( 1 )
+ga_view_center_set( 17.930756, -10.706717 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -2.286924, -7.636625 )
+ga_view_center_set( -24.376610, -4.940935 )
+ga_view_center_set( 17.481480, -9.508631 )
+ga_view_center_set( 24.744871, -7.561743 )
+ga_view_zoom_set( 1.701825 )
+ga_view_center_set( 27.365679, -5.723771 )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( 27.547430, -5.728040 )
+ga_view_zoom_set( 1.237691 )
+ga_view_zoom_set( 1.237691 )
+ga_view_zoom_set( 4.641341 )
+ga_view_zoom_set( 22.742573 )
+ga_view_center_set( -11.114946, -6.182891 )
+ga_view_zoom_set( 11.093937 )
+ga_view_center_set( -17.216612, -3.631286 )
+ga_view_zoom_set( 4.930639 )
+ga_view_center_set( -20.569448, -3.581979 )
+ga_view_center_set( -14.554070, -3.039609 )
+ga_view_center_set( -9.179671, -9.054988 )
+ga_view_center_set( -3.037220, -11.417470 )
+ga_view_center_set( 40.274956, -0.730050 )
+ga_view_center_set( 12.037666, -2.530037 )
+ga_view_center_set( 19.012615, 2.194927 )
+asm_delete_plane( "Plane 1", asm_delete_any_deleted_ids )
+$# 1 Plane Deleted: Plane 1
+ga_view_center_set( 8.854830, -1.163017 )
+ga_view_center_set( -7.752188, -4.805847 )
+ga_view_center_set( -21.573513, -7.484397 )
+ga_view_aa_set( 25.717720, 41.723255, -9.822366 )
+ga_view_zoom_set( 6.577595 )
+$# UNDO: Create Plane Point-Vector for [0 0 0]Coord 0.1
+STRING sgm_create_plane_po_created_ids[VIRTUAL]
+sgm_const_plane_point_vector( "1", "[0 0 0]", "Coord 0.2",  @
+sgm_create_plane_po_created_ids )
+$# 1 Plane Created: Plane 1
+STRING sgm_curve_break_pla_created_ids[VIRTUAL]
+sgm_edit_curve_break_plane( "173", "Plane 1", "Curve 171 172", TRUE,  @
+sgm_curve_break_pla_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YESFORALL 38000217 
+$# 1 Curve Deleted: Curve 171
+$# Curve 171 was broken into 3 curves : Curve 173 174 175
+$# 1 Curve Deleted: Curve 172
+$# Curve 172 was broken into 3 curves : Curve 176 177 178
+ga_view_center_set( -21.310406, -7.681725 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -24.928083, -3.603615 )
+ga_view_zoom_set( 1.644399 )
+ga_view_center_set( -21.474848, -3.833830 )
+ga_view_center_set( -24.138777, -3.159627 )
+ga_view_zoom_set( 3.864336 )
+ga_view_zoom_set( 2.415210 )
+ga_view_center_set( -25.177315, -3.594365 )
+ga_view_zoom_set( 6.219167 )
+ga_view_center_set( -17.776508, -4.589431 )
+ga_view_aa_set( 4.907990, 17.856976, 0.328398 )
+ga_view_center_set( -19.553993, -3.985698 )
+ga_view_zoom_set( 8.551355 )
+ga_view_center_set( -17.843719, -5.952511 )
+ga_view_center_set( -19.211935, -6.893160 )
+ga_view_zoom_set( 4.385310 )
+ga_view_center_set( -19.211935, -5.972246 )
+ga_view_center_set( -21.404593, -5.358301 )
+$# UNDO: Create Curve 2Point for Point 90Point 86
+ga_view_center_set( -24.048866, -5.332119 )
+ga_view_zoom_set( 3.010810 )
+ga_view_center_set( -23.145624, -5.031038 )
+ga_view_aa_set( 11.907990, 17.856972, 0.328399 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -25.162868, -3.134226 )
+ga_view_zoom_set( 0.425556 )
+ga_view_center_set( -26.209738, -3.751282 )
+ga_view_center_set( -24.545816, -3.457649 )
+ga_view_zoom_set( 0.893668 )
+ga_view_center_set( -24.009617, -3.520206 )
+ga_view_zoom_set( 1.854361 )
+ga_view_center_set( -26.809702, -3.520206 )
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 88", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 88
+ga_view_center_set( -26.494465, -3.816904 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -22.433407, -3.668556 )
+ga_view_zoom_set( 0.674313 )
+ga_view_center_set( -20.943176, -3.473005 )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+$# UNDO: Delete for entities Point 87
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+asm_delete_point( "Point 85", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 85
+ga_view_center_set( -20.983635, -3.311170 )
+ga_view_center_set( -20.983635, -3.574152 )
+ga_view_zoom_set( 2.461242 )
+ga_view_center_set( -23.641777, -4.091013 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_center_set( -24.306313, -3.574152 )
+ga_view_center_set( -24.503212, -5.395472 )
+ga_view_center_set( -21.623558, -3.598765 )
+ga_view_center_set( -22.558830, -4.534037 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "179", "Point 90", "Point 86", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 179
+asm_const_line_2point( "180", "Point 89", "Point 87", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 180
+ga_view_aa_set( 12.840952, 20.255253, -0.671314 )
+STRING sgm_edit_curve_merg_created_ids[VIRTUAL]
+sgm_edit_curve_merge( "181", "Curve 173 174", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 181
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 173 174
+ga_view_zoom_set( 1.093886 )
+ga_view_center_set( -21.486822, -3.527663 )
+ga_view_zoom_set( 0.336580 )
+ga_view_center_set( -21.352190, -3.823853 )
+ga_view_zoom_set( 0.129454 )
+ga_view_center_set( -21.189075, -3.810908 )
+STRING asm_delete_point_deleted_ids[VIRTUAL]
+asm_delete_point( "Point 91", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 91
+ga_view_zoom_set( 0.381889 )
+ga_view_center_set( -21.246363, -4.242443 )
+ga_view_zoom_set( 2.014465 )
+ga_view_center_set( -24.086761, -4.947505 )
+ga_view_center_set( -25.315586, -4.645336 )
+sgm_edit_curve_merge( "182", "Curve 177 178", 1, 4.9999999E-05, TRUE,  @
+sgm_edit_curve_merg_created_ids )
+$# 1 Curve Created: Curve 182
+$# 2 Curves merged into 1
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 2 Curves Deleted: Curve 177 178
+ga_view_center_set( -27.491209, -4.504323 )
+ga_view_zoom_set( 0.373049 )
+ga_view_center_set( -25.405859, -4.515515 )
+asm_delete_point( "Point 91", asm_delete_point_deleted_ids )
+$# 1 Point Deleted: Point 91
+ga_view_zoom_set( 1.492196 )
+ga_view_center_set( -22.451313, -4.336452 )
+ga_view_zoom_set( 2.835173 )
+ga_view_center_set( -22.281206, -4.619969 )
+ga_view_aa_set( 90., 0., 0. )
+gu_fit_view(  )
+ga_view_center_set( -25.158087, -6.282635 )
+gm_visibility_widget( "Plane 1", FALSE )
+ga_view_center_set( -20.689213, -2.806846 )
+ga_view_center_set( -16.385853, -1.317221 )
+ga_view_center_set( -29.626951, -4.130955 )
+ga_view_zoom_set( 6.073898 )
+ga_view_center_set( -22.034575, -2.126568 )
+ga_view_center_set( -22.156052, 1.031859 )
+ga_view_center_set( -22.095312, 0.302991 )
+ga_view_center_set( -21.305706, -1.579917 )
+ga_view_zoom_set( 27.484394 )
+ga_view_center_set( -21.855392, -4.328357 )
+ga_view_zoom_set( 6.543904 )
+ga_view_center_set( -21.001740, -4.260346 )
+ga_view_zoom_set( 4.759203 )
+ga_view_center_set( -23.048203, 1.641066 )
+ga_view_center_set( -23.476532, 1.783843 )
+ga_view_center_set( -9.294106, -9.590653 )
+ga_view_center_set( -9.294106, -6.830317 )
+ga_view_zoom_set( 13.087809 )
+ga_view_center_set( 1.176141, -9.055245 )
+ga_view_center_set( 11.515511, -4.867146 )
+ga_view_center_set( -14.398355, -8.793488 )
+ga_view_center_set( -16.885040, -12.327196 )
+ga_view_center_set( -3.142844, -5.914168 )
+ga_view_center_set( -8.770596, -7.092070 )
+ga_view_center_set( -8.639718, -12.458073 )
+ga_view_center_set( -13.874842, -2.249582 )
+ga_view_center_set( 8.112677, -14.159489 )
+ga_view_center_set( -7.521003, -3.301830 )
+ga_view_center_set( 7.665999, -13.352053 )
+ga_view_center_set( 2.752557, -1.291787 )
+ga_view_center_set( -4.617605, -6.428568 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( -4.617605, -6.428568 )
+ga_view_zoom_set( 22.333826 )
+ga_view_zoom_set( 7.976368 )
+ga_view_center_set( -20.410814, -4.115420 )
+gm_visibility_widget( "Plane 1", TRUE )
+ga_view_aa_set( 12.023470, 18.278017, -1.547146 )
+STRING sgm_curve_break_pla_created_ids[VIRTUAL]
+sgm_edit_curve_break_plane( "183", "Plane 1", "Curve 122", TRUE,  @
+sgm_curve_break_pla_created_ids )
+$# Question from application SGM
+$#     Do you wish to delete the original curves?
+$? YES 38000217 
+$# 1 Curve Deleted: Curve 122
+$# Curve 122 was broken into 3 curves : Curve 183 184 185
+ga_view_center_set( -12.514211, -5.232113 )
+STRING asm_line_2point_created_ids[VIRTUAL]
+asm_const_line_2point( "186", "Point 86", "Point 91", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 186
+asm_const_line_2point( "187", "Point 87", "Point 92", 0, "", 50., 1,  @
+asm_line_2point_created_ids )
+$# 1 Line created: Line 187
+ga_view_center_set( -16.103579, -10.257226 )
+ga_view_center_set( -10.998703, -8.023844 )
+ga_view_center_set( -19.214361, -2.440386 )
+ga_view_aa_set( 90., 0., 0. )
+ga_view_center_set( -15.465479, 0.670398 )
+ga_view_center_set( -3.181871, -4.753533 )
+ga_view_center_set( 2.953576, 0.542081 )
+ga_view_center_set( 0.963701, -1.281971 )
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( 0.000000, 0.000000, 0.000000 )
+ga_view_center_set( 0.963701, -1.281971 )
+ga_view_zoom_set( 16.582287 )
+uil_toolbar.shaded_smooth(  )
+uil_toolbar.wireframe(  )
+ga_view_center_set( -7.824912, -9.241471 )
+ga_view_center_set( -10.975549, -6.588304 )
+ga_view_zoom_set( 7.452713 )
+uil_primary_file.db_save(  )
+$# Reclaimed 3.43 MB of 6.90 MB.
