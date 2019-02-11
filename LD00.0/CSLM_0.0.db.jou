@@ -8639,3 +8639,35 @@ $# Reclaimed 2.10 MB of 7.28 MB.
 uil_primary_file.db_save(  )
 $# Flushing the User Data Manager
 $# Journal file stopped recording at 10-Feb-19 14:18:54
+$# Appending to existing journal file 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\CSLM_0.0.db.jou at 11-Feb-19 
+$# 15:50:10
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Checking for Patran 2017.0.3 module license...
+$# Question from application FILE
+$#     Parasolid File 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\lines.xmt_txt already exists.
+$# Do you wish to delete the existing Parasolid file and create a new one ?
+$? YES 36000005 
+INTEGER uil_file_export_paras_p_summary(3)
+INTEGER uil_file_export_paras_i_summary(3)
+ge_group_export_xmt( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\lines.x" // @
+"mt_txt", 0, 1.27E-06, 39.370079, [TRUE, FALSE, FALSE], FALSE, 1, [5],  @
+uil_file_export_paras_p_summary, uil_file_export_paras_i_summary )
+ga_view_center_set( -2.851844, -4.931795 )
+pref_geometry_set_v4( TRUE, TRUE, FALSE, TRUE, 1., FALSE, TRUE )
+pref_geometry_set_v4( TRUE, TRUE, FALSE, TRUE, 1., FALSE, TRUE )
+$# Question from application FILE
+$#     Parasolid File 
+$# C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\lines.xmt_txt already exists.
+$# Do you wish to delete the existing Parasolid file and create a new one ?
+$? YES 36000005 
+ge_group_export_xmt( "C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\lines.x" // @
+"mt_txt", 280, 4.9999999E-05, 1., [TRUE, FALSE, FALSE], FALSE, 1, [5],  @
+uil_file_export_paras_p_summary, uil_file_export_paras_i_summary )
+uil_primary_file.db_save(  )
