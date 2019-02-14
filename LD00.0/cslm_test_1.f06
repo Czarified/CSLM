@@ -1,0 +1,455 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2016 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2016.1.0-CL417024   * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          JUN 10, 2016           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *   MODEL P5-4/5567 (AH900507)    * *
+                                              * *     Windows 10 Pro 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1 News file -  (June 1, 2016):
+  
+               Welcome to MSC Nastran 2016.1
+  
+  
+   Details of the new capabilities can be found in the MSC Nastran 2016.1
+     Release Guide available online in the installation documentation
+     sub-directory.
+   Additional information can be found at the MSC Nastran Product Support page:
+  
+      http://simcompanion.mscsoftware.com
+  
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      http://www.mscsoftware.com/Contents/Services/Training/
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions.
+  
+  
+     HPC
+     -  The performance of extraction of eigenmodes using ACMS has been improved
+          using SMP. This is applicable for SOL 103, SOL 111, SOL 200 and
+          SOL 400.
+     -  The solution of linear equations encountered in SOL 101,107,108,111 and
+          SOL 200 has been improved when using the Intel MKL Pardiso solver for
+          SMP.
+     -  Element stiffness and stress recovery has been parallelized in SOL 400
+          using SMP.
+  
+     Acoustics
+     -  The Equivalent Radiated Power (ERP) capability now supports higher order
+          shell elements and solid elements. The Modal Participation Factor(MPF)
+          can be obtained and the output has been improved.
+     -  For acoustic analysis it is also possible to output the velocity normal
+          to the surface and the vibrational intensity.
+1    -  An interface to utilize Digimat frequency dependent material properties
+          has been added for SOL 108 and SOL 111. This is available for MAT1,
+          MAT2, MAT8 and MAT9 - NEW in 2016.1 release
+  
+     Optimization
+     -  Global Optimization capability has been introduced to find the true
+          optimal value as opposed to a potentially local optimum.
+     -  Multi-Model optimization technique has been added that allows you to
+          optimize the response across multiple simulation models.
+     -  Optimization based upon Weight response associated with property or
+          material id has been expanded to support topology optimization.
+  
+     Rotordynamics
+     -  The rotordynamic capability has been expanded to support 3D behavior.
+  
+     Connector Technology
+     -  Connector technology, CWELD, CFAST, and CSEAM connectors are improved:
+     -  The elements can be used consistently for linear analysis and large
+          displacement analysis (SOL 400).
+     -  The projection algorithm has been improved.
+     -  The connector elements may be used with finer meshes because the 3 by 3
+          search algorithm has been replaced with a general algorithm.
+     -   Force output is available in a SOL 400 simulation for ANALYSIS=NTRAN.
+     -   Additional output capability to summarize the connector behavior.
+  
+     Implicit Nonlinear Analysis - SOL 400
+     -  The segment-to-segment procedure has been made more robust.
+     -  Large interference conditions is supported
+     -  Gaps / clearance can be retained in contact simulations
+     -  Beam contact, using the cross-section geometry is supported.
+     -  Restart can now be performed with SOL 400 using advanced elements.
+     -  It is possible to use advanced elements when creating a superelement.
+  
+     Explicit Nonlinear Analysis - SOL 700
+     -  New material models have been added for creep and concrete behavior.
+     -  Severely distorted elements may be eliminated in SPH simulation.
+     -  Dynamic relaxation is available with body loads.
+     -  A body may be inserted within another body to model rebars in concrete.
+  
+     Results Database
+     -  Results may be output to an HDF5 results database
+  
+     F06 Reader - Provided Synopsis of Key Nastran Files (F06, F04 and LOG)
+     - Model data summary
+     - Links to MSC SimCompanion for Error and Warning Messages.
+     - Link to local Quick Reference Guide (QRG)
+     - XY-Plots of key global results like nonlinear convergence, design cycle,
+        etc.
+  
+     Delivery
+1    -   Win 7 32-bit is no longer available.
+     -   The I4 and I8 installers have been split.
+  
+  
+    Documentation
+  
+     The complete documentation set is provided in a separate installer and when
+     installed is available at:
+     MSC_DOC_DIR/doc/pdf_nastran directory.
+     Where MSC_DOC_DIR is the directory where documentation was installed
+     This help set has cross references between documents, links to how-to
+     videos, and example files.
+  
+    Individual MSC Nastran documents are available for download from the
+      Simcompanion Website at:
+      http://simcompanion.mscsoftware.com/
+  
+    These documents were updated for the MSC Nastran 2016 and 2016.1 Release
+  
+         1.  MSC Nastran 2016.1 Installation and Operations Guide
+         2.  MSC Nastran 2016.1 Quick Reference Guide
+         3.  MSC Nastran 2016.1 Release Guide
+         4.  MSC Nastran 2016   Getting Started User's Guide
+         4.  MSC Nastran 2016.1 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2016   Dynamic Analysis User's Guide
+         6.  MSC Nastran 2016   Superelements User's Guide
+         7.  MSC Nastran 2016   Rotordynamics User's Guide
+         8.  MSC Nastran 2016.1 Demonstration Problems Manual
+         9.  MSC Nastran 2016   Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2016.1 Design Sensitivity and Optimization
+        11.  MSC Nastran 2016   Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2016   Explicit Nonlinear (SOL 700) User Guide
+        13.  MSC Nastran 2016   Reference Manual
+        14.  MSC Nastran 2016.1 DMAP Programmer's Guide
+        15.  MSC Nastran 2016   Utilities Guide (New)
+        16.  MSC Nastran 2016   User Defined Services
+  
+  
+  
+    Please refer to:
+  
+    MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+  
+  
+1                                                                          FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NAS
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NA
+     NASTRAN BUFFSIZE=8193 $(D:/MSC.SOFTWARE/MSC_NASTRAN/20161/CONF/NAST20161.RCF[5])
+     $ MSC.NASTRAN INPUT FILE CREATED ON FEBRUARY  13, 2019 AT 17:47:42 BY           
+     $ PATRAN 2017.0.3                                                               
+     $ DIRECT TEXT INPUT FOR NASTRAN SYSTEM CELL SECTION                             
+     $ DIRECT TEXT INPUT FOR FILE MANAGEMENT SECTION                                 
+     $ DIRECT TEXT INPUT FOR EXECUTIVE CONTROL                                       
+     $ LINEAR STATIC ANALYSIS, DATABASE                                              
+1                                                                          FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL 101                                                                                 
+     CEND                                                                                    
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $ DIRECT TEXT INPUT FOR GLOBAL CASE CONTROL DATA                                        
+                  2      TITLE = MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                                
+                  3      ECHO = NONE                                                                             
+                  4      SPC = 1                                                                                 
+                  5      SUBCASE 1                                                                               
+                  6      $ SUBCASE NAME : TEST_1                                                                 
+                  7         SUBTITLE=TEST_1                                                                      
+                  8         LOAD = 2                                                                             
+                  9         DISPLACEMENT(PLOT)=ALL                                                               
+                 10         SPCFORCES(SORT1,REAL)=ALL                                                            
+                 11         STRESS(PLOT)=ALL                                                                     
+                 12      BEGIN BULK                                                                              
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+ *** USER INFORMATION MESSAGE 9991 (SDLWIF)
+     Messages are being generated at include level 0.
+     File: c:/users/bcrews/documents/github/cslm/ld00.0/cslm_test_1.bdf
+ *** USER WARNING MESSAGE 9994 (BULFUN)
+     MAT1 with MID=1 near line 6920
+     User information:  Material has unreasonable or inconsistent values of E, G or NU.
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                        CBUSH                        3
+                                       CQUAD4                     6824
+                                       CTRIA3                       59
+                                        FORCE                        3
+                                         GRID                     6959
+                                         LOAD                        1
+                                         MAT1                        1
+                                        PARAM                        3
+                                        PBUSH                        1
+                                       PLOAD4                       45
+                                       PSHELL                        1
+                                          SPC                        3
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER INFORMATION MESSAGE 7555 (GMTSTS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.  METRIC VALUES THAT EXCEED
+     TEST TOLERANCE LIMITS ARE IDENTIFIED BY ONE OF THE FOLLOWING FLAGS PLACED TO THE RIGHT OF THE METRIC VALUE.
+        "++++" FOR TEST RESULTS EXCEEDING TOLERANCES.  INFORMATIONAL ONLY.  PROBLEM SOLUTION CONTINUES.  (DEFAULT FLAG)
+        "IGNR" FOR TEST RESULTS EXCEEDING TOLERANCES.  INFORMATIONAL ONLY.  PROBLEM SOLUTION CONTINUES.
+        "WARN" FOR TEST RESULTS EXCEEDING TOLERANCES.  INFORMATIONAL ONLY.  PROBLEM SOLUTION CONTINUES.
+        "FAIL" FOR TEST RESULTS EXCEEDING TOLERANCES.  SEVERE ERROR.        PROBLEM SOLUTION TERMINATES.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     A MAXIMUM OF        100 SKEW ANGLE (SA)       TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED BY THE FLAG "++++"
+                             PLACED AFTER THE VALUE METRIC FOR THE TEST.
+     A MAXIMUM OF        100 MAX INT. ANGLE (IA)   TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED BY THE FLAG "++++"
+                             PLACED AFTER THE VALUE METRIC FOR THE TEST.
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:     SKEW  =  10.00, IA(MAX) = 160.00 (++++ = LIMIT VIOLATED)
+ ELEMENT TYPE    ID          SKEW ANGLE      MAX INT. ANGLE 
+    TRIA3        8152         8.11 ++++        85.95     
+    TRIA3        8171         8.11 ++++        85.94     
+    TRIA3        8190         8.11 ++++        85.94     
+    TRIA3        8209         8.11 ++++        85.94     
+    TRIA3        8228         8.11 ++++        85.94     
+    TRIA3        8247         8.11 ++++        85.94     
+    TRIA3        8266         8.11 ++++        85.94     
+    TRIA3        8285         8.11 ++++        85.94     
+    TRIA3        8304         8.11 ++++        85.94     
+    TRIA3        8323         8.11 ++++        85.94     
+    TRIA3        8342         8.11 ++++        85.94     
+    TRIA3        8361         8.11 ++++        85.94     
+    TRIA3        8380         8.11 ++++        85.94     
+    TRIA3        8399         8.11 ++++        85.94     
+    TRIA3        8418         8.11 ++++        85.94     
+    TRIA3        8437         8.11 ++++        85.94     
+    TRIA3        8456         8.11 ++++        85.94     
+    TRIA3        8475         8.11 ++++        85.94     
+    TRIA3        8494         8.11 ++++        85.94     
+    TRIA3        8513         8.11 ++++        85.94     
+    TRIA3        8532         8.11 ++++        85.94     
+    TRIA3        8551         8.11 ++++        85.94     
+    TRIA3        8570         8.11 ++++        85.94     
+    TRIA3        8589         8.11 ++++        85.94     
+    TRIA3        8608         8.11 ++++        85.94     
+    TRIA3        8627         8.11 ++++        85.94     
+    TRIA3        8646         8.11 ++++        85.94     
+    TRIA3        8665         8.11 ++++        85.94     
+    TRIA3        8684         8.11 ++++        85.94     
+    TRIA3        8703         8.11 ++++        85.94     
+    TRIA3        8722         8.11 ++++        85.94     
+    TRIA3        8741         8.11 ++++        85.94     
+    TRIA3        8760         8.11 ++++        85.94     
+    TRIA3        8779         8.11 ++++        85.94     
+    TRIA3        8798         8.11 ++++        85.94     
+    TRIA3        8817         8.11 ++++        85.94     
+    TRIA3        8836         8.11 ++++        85.94     
+    TRIA3        8855         8.11 ++++        85.94     
+    TRIA3        8874         8.11 ++++        85.94     
+    TRIA3        8893         8.11 ++++        85.94     
+    TRIA3        8912         8.11 ++++        85.94     
+    TRIA3        8931         8.11 ++++        85.94     
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+  ELEMENT        SKEW       ASPECT/     MINIMUM      MAXIMUM    SURFACE/FACE    OFFSET     EDGE POINT   EDGE POINT    JACOBIAN  
+    TYPE       ANGLE      TAPER RATIO INTER. ANGLE INTER. ANGLE  WARP FACTOR    RATIO     LENGTH RATIO ANGLE LIMIT  DETERMINANT 
+   QUAD4           0            0            0            0            0          N/A          N/A          N/A          N/A        
+   TRIA3          42          N/A          N/A            0          N/A          N/A          N/A          N/A          N/A        
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         TRIA3    ELEMENT ID     8152 PRODUCED SMALLEST SKEW ANGLE       OF       8.11 (TOLERANCE =       10.00).
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT OR MODULE BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT OR MODULE BASIC COORDINATE SYSTEM IN SUPERELEMENT OR MODULE
+     BASIC SYSTEM COORDINATES.
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX   -4.823091E-03     ----          ----          ----      -4.463391E+02  7.005087E+03                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----       0.000000E+00  0.000000E+00  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS -4.823091E-03  0.000000E+00  0.000000E+00  0.000000E+00 -4.463391E+02  7.005087E+03
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE     9
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
+0                             POINT    TYPE   FAILED      STIFFNESS       OLD USET           NEW USET
+                               ID            DIRECTION      RATIO     EXCLUSIVE  UNION   EXCLUSIVE  UNION
+                            10000        G      4         0.00E+00          B        F         B        F     
+                            10000        G      5         0.00E+00          B        F         B        F     
+                            10000        G      6         0.00E+00          B        F         B        F     
+                            10001        G      4         0.00E+00          B        F         B        F     
+                            10001        G      5         0.00E+00          B        F         B        F     
+                            10001        G      6         0.00E+00          B        F         B        F     
+                            10002        G      4         0.00E+00          B        F         B        F     
+                            10002        G      5         0.00E+00          B        F         B        F     
+                            10002        G      6         0.00E+00          B        F         B        F     
+  
+ *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
+     THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    1.311557E+03
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    10
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ *** USER INFORMATION MESSAGE 5293 (SSG3A)
+    FOR DATA BLOCK KLL     
+    LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
+                1          2.6750097E-11          9.1251932E+06
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT OR MODULE BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT OR MODULE BASIC COORDINATE SYSTEM IN SUPERELEMENT OR MODULE
+     BASIC SYSTEM COORDINATES.
+0                                                  SPCFORCE RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    4.823071E-03     ----          ----          ----       9.794373E+03 -8.883522E+03                             
+               FY       ----      -7.459647E-08     ----      -5.393631E+02     ----       1.878435E+03                             
+               FZ       ----          ----      -5.489817E-08  5.393631E+02 -9.348034E+03     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  4.823071E-03 -7.459647E-08 -5.489817E-08 -1.755380E-07  4.463391E+02 -7.005088E+03
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+0                                                  MAXIMUM  SPCFORCES       
+  SUBCASE/
+  DAREA ID        T1             T2             T3             R1             R2             R3
+0        1   1.5036914E+03  9.6114877E+01  2.9471574E+02  0.0000000E+00  0.0000000E+00  0.0000000E+00
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+0                                                  MAXIMUM  DISPLACEMENTS   
+  SUBCASE/
+  DAREA ID        T1             T2             T3             R1             R2             R3
+0        1   7.5016602E+03  1.2344528E+04  7.7180136E+03  6.2082708E+03  9.8169081E+02  1.3423647E+03
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+0                                                  MAXIMUM  APPLIED LOADS   
+  SUBCASE/
+  DAREA ID        T1             T2             T3             R1             R2             R3
+0        1   1.0000000E+03  0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    15
+     TEST_1                                                                                                                         
+0                                                                                                            SUBCASE 1              
+ 
+                               F O R C E S   O F   S I N G L E - P O I N T   C O N S T R A I N T
+ 
+      POINT ID.   TYPE          T1             T2             T3             R1             R2             R3
+         10000      G     -8.531621E+01  -2.924819E+01  -2.947157E+02   0.0            0.0            0.0
+         10001      G      1.503691E+03   9.611488E+01   4.824365E+01   0.0            0.0            0.0
+         10002      G     -1.418370E+03  -6.686668E+01   2.464721E+02   0.0            0.0            0.0
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  13, 2019  MSC Nastran  6/10/16   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     68
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     F      F      T      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+
