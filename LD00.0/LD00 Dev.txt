@@ -1,2 +1,0 @@
-Generating proper lines in patran from line drawing is proving difficult with the dimensions given.
-OpenVSP may be an easier approach.
