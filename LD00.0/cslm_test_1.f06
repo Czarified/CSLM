@@ -1,0 +1,1805 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2018 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2018.2.1-CL598405   * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          SEP 11, 2018           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *   MODEL Xeon/2780 (AH900507)    * *
+                                              * *     Windows 10 Pro 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1News file - (June 11, 2018)
+  
+               Welcome to MSC Nastran 2018.2
+  
+  
+   Details of the new capabilities can be found in the MSC Nastran 2018.2
+     Release Guide available online in the installation documentation
+     sub-directory.
+   Additional information can be found at the MSC Nastran Product Support page:
+  
+      http://simcompanion.mscsoftware.com
+  
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      http://www.mscsoftware.com/Contents/Services/Training/
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions.
+  
+     Dynamics
+     -  Structural and Fluid Material property specification can now be
+        frequency dependent.
+     -  Anisotropic structural damping can be defined for composite
+        materials. Restriction removed that damping is proportional to
+        stiffness.
+     -  Spatial definition of property and material now available.
+     -  Direct export of AVL EXCITE .exb input file eliminating
+        the need for creation and translation of intermediate OP2 and OP4
+        files.
+     -  The AVL interface provides Efficient External Superelement based
+        Frequency Response and Transient Response data recovery. Virtual
+        mass is supported.
+     -  Structural damping in modal transient analysis now available using
+        all the requested analysis modes using PARAM,WMODAL.
+  
+     Linear Buckling
+1    -  Linear Buckling with local exclusion of differential stiffness in SOL
+        105 with use of PARAM,EXCLUDE. Subcases with different exclude
+        values are allowed.
+  
+     Rotordynamics
+     -  Enhanced Mode-Tracking for Campbell Diagrams. Two new methods
+        introduced: Numerical Slope-Continuity and Eigenvector-Based.
+     -  Rotors can now be included in upstream Part Superelements for
+        both single and multi-level assemblies for 1D, 2D and 3D rotors.
+     -  Support for definition of CBUSH2D element cross-coupling terms
+        for 1D rotor defined using ROTORG for both SYNC and ASYNC analysis.
+     -  Improved output in complex eigenvalue for rotor whirl for 1D rotor
+        defined using ROTORG for both SYNC and ASYNC analysis.
+     -  Account for PARAM,WTMASS in unbalance loads for frequency response
+        analysis.
+     -  Account for PARAM,WTMASS in rotor mass summary for 2D and 3D rotors.
+  
+     Multiple-Mass Configuration
+     -  Easy definition and analysis of multiple mass cases in a single run.
+        Supported in SOL 101, 103, 107/110, 108/111, 109/112, 144, 145, 146,
+        200 and 400 solution sequences.
+  
+     Optimization
+     -  Shell stress constraints can now be defined for Topology Optimization.
+  
+     Assembly
+     -  New modules that can assemble multiple Bulk Data sections to form a
+        single MSC Nastran input file. Modules are analogous to part
+        superelements without reduction and are supported in SOL 101 - 112.
+  
+     Implicit Nonlinear Analysis - SOL 400
+     -  GPFORCE Output with Contact.
+     -  Automatic Contact Generation.
+     -  External Superelements Creation, Assembly and Data Recovery.
+     -  CFAST Fastener element enabled to FUSE based on load criteria.
+     -  Support contact model check for Node-to-Surface contact:
+        -  Show the GRIDs movement in initial stress free.
+        -  Show the Contact bodies distance (overlap/gap).
+        -  Output Analytical analysis data.
+        -  Also fully support SOL 101; SOL 103 - SOL 112 in the initial
+           Condition.
+  
+     Linear Statics
+     - Bar end load calculations are available for PANEL(Shell)/STRINGER(bar or
+       beam) construction and associated shear flows with use of the Case
+       Control BENDL command.
+  
+     Explicit Nonlinear Analysis - SOL 700
+     -  Automated Coupling Surfaces.
+     -  New SOL 700 Dytran, Dytran under Nastran.
+1    -  A new translator, DEMATD, can convert materials where possible,
+        from old SOL 700 to the new SOL 700.
+     -  A new document is also published on which this translator is based upon.
+  
+  
+     HPC
+     -  Improved performance and scalability for [K4] reduction using ACMS
+     -  New MPYAD with better parallel performance and better method
+        selection.
+     -  New command line option, solve=auto and cpumax=N, to automatically
+        choose optimal solver and parallel options based on hardware and
+        the model.
+     -  Increased efficiency and reduced I/O for SOL 103 with full data recovery
+     -  SOLVE=AUTO enhancements for SOL 108 and 3D models.
+     -  Enhanced MPYAD for sparse matrices.
+  
+     Results HDF5 Database
+     -  Additional data blocks have been added to the HDF5 file: OEFTGV,
+        OMONPNT, TOMVAR, TOPVAR, R1TABRD, HISADD, RESP12, WETFACES, META,
+        OFCRFM, EPTFSP, MPTFSP, TRNUORD, and UHT, as well as modal and
+        Rotordynamic matrices.
+     -  Output Contact bodies distance and status check information.
+     -  Output Analytical spline table of deformable contact body.
+  
+  
+     Documentation
+  
+     The complete documentation set is provided in a separate installer and
+     when installed is available at:
+     MSC_DOC_DIR/doc/pdf_nastran directory.
+     Where MSC_DOC_DIR is the directory where documentation was installed
+     This help set has cross references between documents, links to how-to
+     videos, and example files.
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.mscsoftware.com/
+  
+     These documents were updated for the MSC Nastran 2018 Release
+  
+         1.  MSC Nastran 2018.2 Installation and Operations Guide
+         2.  MSC Nastran 2018.2 Quick Reference Guide
+         3.  MSC Nastran 2018.2 Release Guide
+         4.  MSC Nastran 2018.0 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2018.2 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2018.0 Superelements User's Guide
+         7.  MSC Nastran 2018.0 Rotordynamics User's Guide
+         8.  MSC Nastran 2018.0 Demonstration Problems Manual
+         9.  MSC Nastran 2018.0 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2018.0 Design Sensitivity and Optimization
+1       11.  MSC Nastran 2018.0 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2018.2 DMAP Programmer's Guide
+        13.  MSC Nastran 2018.2 High Performance Computing User's Guide
+        14.  MSC Nastran 2018.2 DEMATD Guide (New Document)
+        15.  MSC Nastran 2018.2 Explicit Nonlinear (SOL 700) User's Guide
+  
+  
+  
+    Please refer to:
+  
+    MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+  
+1                                                                          FEBRUARY  26, 2019  MSC Nastran  9/11/18   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NAS
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NA
+     NASTRAN BUFFSIZE=32769 $(D:/MSC.SOFTWARE/MSC_NASTRAN/20182/CONF/NAST20182.RCF[6]
+     $ MSC.NASTRAN INPUT FILE CREATED ON FEBRUARY  26, 2019 AT 18:19:32 BY           
+     $ PATRAN 2017.0.3                                                               
+     $ DIRECT TEXT INPUT FOR NASTRAN SYSTEM CELL SECTION                             
+     $ DIRECT TEXT INPUT FOR FILE MANAGEMENT SECTION                                 
+     $ DIRECT TEXT INPUT FOR EXECUTIVE CONTROL                                       
+     $ LINEAR STATIC ANALYSIS, DATABASE                                              
+1                                                                          FEBRUARY  26, 2019  MSC Nastran  9/11/18   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL 101                                                                                 
+     CEND                                                                                    
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  26, 2019  MSC Nastran  9/11/18   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $ DIRECT TEXT INPUT FOR GLOBAL CASE CONTROL DATA                                        
+                  2      TITLE = MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                                
+                  3      ECHO = NONE                                                                             
+                  4      SUBCASE 1                                                                               
+                  5      $ SUBCASE NAME : TEST_1                                                                 
+                  6         SUBTITLE=TEST_1                                                                      
+                  7         LOAD = 2                                                                             
+                  8         DISPLACEMENT(SORT1,REAL)=ALL                                                         
+                  9         SPCFORCES(SORT1,REAL)=ALL                                                            
+                 10         STRESS(SORT1,REAL,VONMISES,BILIN)=ALL                                                
+                 11      BEGIN BULK                                                                              
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  26, 2019  MSC Nastran  9/11/18   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+ *** USER INFORMATION MESSAGE 9991 (SDLWIF)
+     Messages are being generated at include level 0.
+     File: c:/users/bcrews/documents/github/cslm/ld00.0/cslm_test_1.bdf
+ *** USER WARNING MESSAGE 9994 (BULFUN)
+     MAT1 with MID=1 near line 8513
+     User information:  Material has unreasonable or inconsistent values of E, G or NU.
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                      FEBRUARY  26, 2019  MSC Nastran  9/11/18   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                        CBUSH                        3
+                                       CQUAD4                     8319
+                                       CTRIA3                      158
+                                        FORCE                        3
+                                         GRID                     8466
+                                         LOAD                        1
+                                         MAT1                        1
+                                        PARAM                        3
+                                        PBUSH                        1
+                                       PLOAD4                        5
+                                       PSHELL                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8965
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8966
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8967
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8968
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8969
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8970
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8971
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8972
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8973
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8974
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8975
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8976
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8977
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8978
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8979
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8980
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8981
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8982
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8983
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8984
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8985
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8986
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8987
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8988
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8989
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8990
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8991
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8992
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8993
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8994
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8995
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8996
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8997
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8998
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 8999
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9000
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9001
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9002
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9003
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9004
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9005
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9006
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9007
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9008
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9009
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9010
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9011
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9012
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9013
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9014
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9015
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9016
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9017
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9018
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9019
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9020
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9021
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9022
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9023
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9024
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9025
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9026
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9027
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9028
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9029
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9030
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9031
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9032
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9033
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9034
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9035
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9036
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9037
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9038
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9039
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9040
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9041
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9042
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9043
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9044
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9045
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9046
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9047
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9048
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9049
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9050
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9051
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9052
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9053
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9054
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9055
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9056
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9057
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9058
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9059
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9060
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9061
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9062
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9063
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9064
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9065
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9066
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9067
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9068
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9069
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9070
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9071
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9072
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9073
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9074
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9075
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9076
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9077
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9078
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9079
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9080
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9081
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9082
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9083
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9084
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9085
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9086
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9087
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9088
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9089
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9090
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9091
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9092
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9093
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9094
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9095
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9096
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9097
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9098
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9099
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9100
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9101
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9102
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9103
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9104
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9105
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9106
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9107
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9108
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9109
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9110
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9111
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9112
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9113
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9114
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9115
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9116
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9117
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9118
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9119
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9120
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9121
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9122
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9123
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9124
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9125
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9126
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9127
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9128
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9129
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9130
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9131
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9132
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9133
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9134
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9135
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9136
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9137
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9138
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9139
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9140
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9141
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9142
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9143
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9144
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9146
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9147
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9148
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9149
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9150
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9151
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9152
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9153
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9154
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9155
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9156
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9157
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9158
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9159
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9160
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9161
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9162
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9163
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9164
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9165
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9166
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9167
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9168
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9169
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9170
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9171
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9172
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9173
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9174
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9175
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9176
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9177
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9178
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9179
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9180
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9181
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9182
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9183
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9184
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9185
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9186
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9187
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9188
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9189
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9190
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9191
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9192
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9193
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9194
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9195
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9196
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9197
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9198
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9199
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9200
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9201
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9202
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9203
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9204
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9205
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9206
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9207
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9208
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9209
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9210
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9211
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9212
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9213
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9214
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9215
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9216
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9217
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9218
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9219
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9220
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9221
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9222
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9223
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9224
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9225
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9226
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9227
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9228
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9229
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9230
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9231
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9232
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9233
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9234
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9235
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9236
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9237
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9238
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9239
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9240
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9241
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9242
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9243
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9244
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9245
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9246
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9247
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9248
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9249
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9250
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9251
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9252
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9253
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9254
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9255
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9256
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9257
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9258
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9259
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9260
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9261
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9262
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9263
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9264
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9265
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9266
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9267
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9268
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9269
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9270
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9271
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9272
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9273
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9274
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9275
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9276
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9277
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9278
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9279
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9280
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9281
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9282
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9283
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9284
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9285
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9286
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9287
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9288
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9289
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9290
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9291
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9292
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9293
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9294
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9295
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9296
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9297
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9298
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9299
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9300
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9301
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9302
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9303
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9304
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9305
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9306
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9307
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9308
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9309
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9310
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9311
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9312
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9313
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9314
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9315
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9316
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9317
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9318
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9319
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9320
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9321
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9322
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9323
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9324
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9325
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9326
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9327
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9328
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9329
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9330
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9331
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9332
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9333
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9334
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9335
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9336
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9337
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9338
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9339
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9340
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9341
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9342
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9343
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9344
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9345
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9346
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9347
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9348
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9349
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9350
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9351
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9352
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9353
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9354
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9355
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9356
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9357
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9358
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9359
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9360
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9361
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9362
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9363
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9364
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9365
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9366
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9367
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9368
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9369
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9370
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9371
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9372
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9373
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9374
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9375
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9376
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9377
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9378
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9379
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9380
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9381
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9382
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9383
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9384
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9385
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9386
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9387
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9388
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9389
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9390
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9391
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9392
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9393
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9394
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9395
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9396
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9397
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9398
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9399
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9400
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9401
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9402
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9403
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9404
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9405
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9406
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9407
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9408
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9409
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9410
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9411
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9412
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9413
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9414
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9415
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9417
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9418
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9419
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9420
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9421
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9422
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9423
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9424
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9425
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9426
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9427
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9428
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9429
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9430
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9431
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9432
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9433
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9434
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9435
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9436
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9437
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9438
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9439
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9440
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9441
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9442
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9443
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9444
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9445
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9446
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9447
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9448
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9449
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9450
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9451
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9452
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9453
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9454
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9455
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9456
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9457
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9458
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9459
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9460
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9461
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9462
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9463
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9464
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9465
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9466
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9467
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9468
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9469
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9470
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9471
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9472
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9473
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9474
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9475
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9476
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9477
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9478
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9479
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9480
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9481
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9482
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9483
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9484
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9485
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9486
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9487
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9488
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9489
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9490
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9491
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9492
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9493
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9494
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9495
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9496
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9497
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9498
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9499
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9500
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9501
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9502
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9503
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9504
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9505
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9506
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9507
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9508
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9509
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9510
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9511
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9512
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9513
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9514
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9515
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9516
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9517
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9518
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9519
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9520
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9522
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9523
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9524
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9525
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9526
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9527
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9528
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9529
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9530
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9531
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9532
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9533
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9534
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9535
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9536
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9537
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9538
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9539
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9540
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9541
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9542
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9543
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9544
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9545
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9546
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9547
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9548
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9549
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9550
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9551
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9552
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9553
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9554
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9555
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9556
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9557
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9558
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9559
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9560
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9561
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9562
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9563
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9564
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9565
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9566
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9567
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9568
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9569
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9570
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9571
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9572
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9573
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9574
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9575
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9576
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9577
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9578
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9579
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9580
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9581
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9582
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9583
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9584
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9585
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9586
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9587
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9588
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9589
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9590
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9591
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9592
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9593
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9594
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9595
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9596
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9597
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9598
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9599
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9600
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9601
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9602
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9603
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9604
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9605
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9606
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9607
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9608
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9609
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9610
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9611
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9612
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9613
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9614
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9615
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9616
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9617
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9618
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9619
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9620
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9621
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9622
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9623
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9624
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9625
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9626
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9627
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9628
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9629
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9630
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9631
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9632
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9633
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9634
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9635
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9636
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9637
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9638
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9639
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9640
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9641
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9642
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9643
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9644
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9645
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9646
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9647
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9648
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9649
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9650
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9651
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9652
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9653
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9654
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9655
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9656
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9657
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9658
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9659
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9660
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9661
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9662
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9663
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9664
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9665
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9666
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9667
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9668
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9669
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9670
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9671
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9672
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9673
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9674
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9675
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9676
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9677
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9678
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9679
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9680
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9681
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9682
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9683
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9684
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9685
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9686
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9687
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9688
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9689
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9690
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9691
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9692
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9693
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9694
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9695
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9696
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9697
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9698
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9699
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9700
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9701
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9702
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9703
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9704
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9705
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9706
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9707
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9708
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9709
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9710
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9711
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9712
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9713
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9714
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9715
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9716
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9718
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9719
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9720
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9721
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9722
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9723
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9724
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9725
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9726
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9727
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9728
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9729
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9730
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9145
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9416
+ *** USER FATAL MESSAGE 4521 (MC2THETA)
+     THE X-AXIS OF COORDINATE SYSTEM 0 IS PERPENDICULAR TO ELEMENT 9731
+0FATAL ERROR
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+

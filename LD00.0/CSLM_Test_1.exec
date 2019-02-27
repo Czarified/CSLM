@@ -1,0 +1,52 @@
+$ MSC.Nastran input file created on February  26, 2019 at 18:03:56 by
+$ Patran 2017.0.3
+$ Direct Text Input for Nastran System Cell Section
+$ Direct Text Input for File Management Section
+$ Direct Text Input for Executive Control
+$ Linear Static Analysis, Database
+SOL 101
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = MSC.Nastran job created on 13-Feb-19 at 17:37:31
+ECHO = NONE
+SUBCASE 1
+$ Subcase name : test_1
+   SUBTITLE=test_1
+   LOAD = 2
+   DISPLACEMENT(SORT1,REAL)=ALL
+   SPCFORCES(SORT1,REAL)=ALL
+   STRESS(SORT1,REAL,VONMISES,BILIN)=ALL
+   
+SPC = 1
+
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+PARAM    POST    0
+PARAM    AUTOSPC NO
+PARAM   PRTMAXIM YES
+
+$ Import the FEM
+INCLUDE 'fem.bdf'
+
+$ Import the Loads
+INCLUDE 'loads.dat'
+
+$   CBUSH Weak Springs for grounding
+$
+$ Elements and Element Properties for region : pbush.001
+PBUSH    1       K      1000.   1000.   1000.
+$ Pset: "pbush.001" will be imported as: "pbush.1"
+CBUSH    8962    1       8436    10000                           0
+CBUSH    8963    1       50      10001                           0
+CBUSH    8964    1       3882    10002                           0
+
+$
+$ MODEL GROUND POINTS:
+$
+$
+SPC1    1       123     10000
+SPC1    1       23      10001
+SPC1    1       3       10002
+
+$ Referenced Coordinate Frames
+ENDDATA
