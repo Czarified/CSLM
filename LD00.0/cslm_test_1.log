@@ -1,0 +1,162 @@
+MSC Nastran V2018.2 (Intel Windows 10 Pro 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+$ sysfield=SCR*(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(d:/msc.software/msc_nastran/20182/conf/nast20182.rcf[2])
+$ sysfield=DBALL(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(d:/msc.software/msc_nastran/20182/conf/nast20182.rcf[3])
+Nastran BUFFSIZE=32769 $(d:/msc.software/msc_nastran/20182/conf/nast20182.rcf[6])
+JID='c:/users/bcrews/documents/github/cslm/ld00.0/cslm_test_1.exec'
+OUT='./cslm_test_1'
+MEM=16298MB      $ 
+MACH='Intel'
+OPER='Windows 10 Pro'
+OSV='6.2 9200'
+MODEL='Xeon/2867 (AH900507)'
+NPROC='8'
+CONFIG=6
+NPROC=8
+symbol=DELDIR='d:/msc.software/msc_nastran/20182/msc20182/nast/del' $(program default)
+symbol=DEMODIR='d:/msc.software/msc_nastran/20182/msc20182/nast/demo' $(program default)
+symbol=LM_NO_SNMP=1 $(d:/msc.software/msc_nastran/20182/conf/nast20182.rcf[10])
+symbol=MKL_INTERFACE_LAYER=ILP64 $(d:/msc.software/msc_nastran/20182/conf/nast20182.rcf[1])
+symbol=SSSALTERDIR='d:/msc.software/msc_nastran/20182/msc20182/nast/sssalter' $(program default)
+symbol=TPLDIR='d:/msc.software/msc_nastran/20182/msc20182/nast/tpl' $(program default)
+SDIR='d:/scratch/cslm_test_1.T10624_46'
+DBS='d:/scratch/cslm_test_1.T10624_46'
+SCR='yes'
+SMEM=100
+BPOOL=15983.7MB
+DMPMEM=estimate
+NEWDEL='d:/msc.software/msc_nastran/20182/msc20182/win64i8/sss'
+DEL='MSCDEF'
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='1771@txblicftwp02.bh.textron.com;1771@txbmscftwp01.bh.textron.com'
+AUTHQUE=20
+MSGCAT='d:/msc.software/msc_nastran/20182/msc20182/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='d:/msc.software/msc_nastran/20182/msc20182/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=D:\MSC.Software\MSC_Nastran\20182\msc20182\actran\win64\Actran_18.0.b.107480\bin;D:\MSC.Software\MSC_Nastran\20182\msc20182\nast; 
+MSC_JIDPATH= 
+PATH=d:\msc.software\msc_nastran\20182\msc20182\win64i8;d:\msc.software\msc_nastran\20182\msc20182\win64i8\nCode\bin;d:\msc.software\msc_nastran\20182\msc20182\win64i8\nvidia;d:\msc.software\msc_nastran\20182\msc20182\win64i8\lib;d:\msc.software\msc_nastran\20182\msc20182\win64i8;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\1E\NomadBranch\;C:\Program Files\PuTTY\;D:\MSC.Software\Patran_x64\20170\bin;C:\Users\bcrews\AppData\Local\Microsoft\WindowsApps;D:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Users\bcrews\AppData\Local\GitHubDesktop\bin 
+SCA_SERVICE_CATALOG=d:\msc.software\msc_nastran\20182\msc20182\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=d:\msc.software\msc_nastran\20182\msc20182\res 
+Cmd Line:    D:\MSC.Software\MSC_Nastran\20182\msc20182\win64i8\nastran.exe JID=C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\CSLM_Test_1.exec 
+Current Dir: C:\Users\bcrews\Documents\GitHub\CSLM\LD00.0 
+Time Cmd:    d:\msc.software\msc_nastran\20182\msc20182\win64i8\msctime 
+Executable:  d:\msc.software\msc_nastran\20182\msc20182\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                    32597 MB
+ Physical memory available:          25848 MB
+ Paging file size:                   37461 MB
+ Paging file size available:         30087 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213510 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         AH900507.txt.textron.com
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Pro 6.2 9200 (Windows Compute Cluster)
+ Model:            Xeon/2867
+ Clock freq.:      2958 MHz
+ Number of CPUs:   8
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  32597 MB
+ Virtual memory:   37461 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "d:/msc.software/msc_nastran/20182/msc20182/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  d:\msc.software\msc_nastran\20182\msc20182\win64i8\mscdate 
+ 17:19:15  Beginning Analysis
+SCA Kernel 20.0.520419 successfully initialized
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran\20182\msc20182\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran\20182\msc20182\win64i8\mkl_core.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran\20182\msc20182\win64i8\mkl_intel_thread.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran\20182\msc20182\win64i8\mkl_rt.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran\20182\msc20182\win64i8\MSCblas.dll" has been loaded.
+
+ 17:19:16  MSC Authorization Information - System Attributes (1004, 0)
+ 17:19:16  -----------------------------------------------------------
+  Date:          Wed Feb 27 17:19:16 2019
+  MSC Id:        1065302d9ad0 (ethernet) (Intel)
+  Hostname:      AH900507 (user bcrews, display AH900507)
+  License files: 1771@txblicftwp02.bh.textron.com
+                 1771@txbmscftwp01.bh.textron.com
+  CEID:          56A727DA-2A2DFAG3
+  User:          bcrews
+  Display:       AH900507
+  LAPI Version:  LAPI 10.4.5 x64_n6 :: Build 3752 20180608181726Z (FLEXlm 11.13.1.0)
+
+  * * * * * * * * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * * * * * * *
+  * *                                 * *
+  * *   MSC Customer Entitlement ID   * *
+  * *        56A727DA-2A2DFAG3        * *
+  * *                                 * *
+  * * * * * * * * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * * * * * * *
+
+ 17:19:16  MSC Authorization Information - Checkout Successful (1016, 0)
+ 17:19:16  -------------------------------------------------------------
+ 17:19:16  Acquired 250 licenses for Group CAMPUS (MSC Nastran) from license server on host txblicftwp02.bh.textron.com
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 17:19:16  Reading INCLUDE file "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\fem.bdf"
+ 17:19:16  16966 records read from INCLUDE file "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\fem.bdf"
+ 17:19:16  Reading INCLUDE file "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\loads.dat"
+ 17:19:16  20 records read from INCLUDE file "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.0\loads.dat"
+ 17:19:16  53 records read from JID file "c:/users/bcrews/documents/github/cslm/ld00.0/cslm_test_1.exec"
+ 17:19:16  A total of 17039 records were read from 3 files.
+
+Processing of bulk data entries is complete.
+
+ 17:19:16  Analysis started.
+ 17:19:16  Geometry access/verification to CAD part initiated (if needed).
+ 17:19:16  Geometry access/verification to CAD part successfully completed (if needed).
+ 17:19:17  Finite element model generation started.
+ 17:19:17  Finite element model generated 50796 degrees of freedom.
+ 17:19:17  Finite element model generation successfully completed.
+ 17:19:17  Application of Loads and Boundary Conditions to the finite element model started.
+ 17:19:17  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 17:19:18  Solution of the system equations for linear statics started.
+ 17:19:18  Solution of the system equations for linear statics successfully completed.
+ 17:19:18  Linear static analysis completed.
+ 17:19:18  22 records read from JID file "c:/users/bcrews/documents/github/cslm/ld00.0/cslm_test_1.exec"
+ 17:19:18  NSEXIT: EXIT(0)
+ 17:19:18  Analysis complete  0
+Real:        4.941 seconds ( 0:00:04.941)
+User:        1.968 seconds ( 0:00:01.968)
+Sys:         1.359 seconds ( 0:00:01.359)
+ ==================================================
+ OS:              6.2
+ OEM ID:         9
+ Number of processors:         8
+ Page size:         4096
+ Processor type:         8664
+ Minimum application address:         10000
+ Maximum application address:         fffeffff
+ Active processor mask:         255
+ Nsocket:         1
+ Ncore:           8  ( 1 X 8 )
+ HyperThreading:  On
+ Ram:          32597 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ Consider using SOLVE=AUTO if you have not.
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished d:\msc.software\msc_nastran\20182\msc20182\win64i8\mscdate 

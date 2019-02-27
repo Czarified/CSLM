@@ -13,16 +13,17 @@ SUBCASE 1
 $ Subcase name : test_1
    SUBTITLE=test_1
    LOAD = 2
-   DISPLACEMENT(SORT1,REAL)=ALL
-   SPCFORCES(SORT1,REAL)=ALL
-   STRESS(SORT1,REAL,VONMISES,BILIN)=ALL
+   DISPLACEMENT(PLOT)=ALL
+   SPCFORCES(PLOT)=ALL
+   STRESS(SORT1,REAL,VONMISES,BILIN,PLOT)=ALL
    
 SPC = 1
 
 BEGIN BULK
 $ Direct Text Input for Bulk Data
+MDLPRM   HDF5    0
 PARAM    POST    0
-PARAM    AUTOSPC NO
+PARAM    AUTOSPC YES
 PARAM   PRTMAXIM YES
 
 $ Import the FEM
@@ -34,7 +35,7 @@ INCLUDE 'loads.dat'
 $   CBUSH Weak Springs for grounding
 $
 $ Elements and Element Properties for region : pbush.001
-PBUSH    1       K      1000.   1000.   1000.
+PBUSH    1       K      10E+10   10E+10  10E+10 
 $ Pset: "pbush.001" will be imported as: "pbush.1"
 CBUSH    8962    1       8436    10000                           0
 CBUSH    8963    1       50      10001                           0
@@ -44,9 +45,9 @@ $
 $ MODEL GROUND POINTS:
 $
 $
-SPC1    1       123     10000
-SPC1    1       23      10001
-SPC1    1       3       10002
+SPC1    1       123456  10000
+SPC1    1       123456  10001
+SPC1    1       123456  10002
 
 $ Referenced Coordinate Frames
 ENDDATA
