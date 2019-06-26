@@ -1,8 +1,9 @@
-$ MSC.Nastran input file created on February  26, 2019 at 18:03:56 by
-$ Patran 2017.0.3
-$ Direct Text Input for Nastran System Cell Section
-$ Direct Text Input for File Management Section
-$ Direct Text Input for Executive Control
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$ MSC.Nastran input file created on June  26, 2019 at 18:07:23 by $
+$ Benjamin Crews                                                  $
+$                                                                 $
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
 $ Linear Static Analysis, Database
 SOL 101
 CEND
@@ -21,10 +22,13 @@ SPC = 1
 
 BEGIN BULK
 $ Direct Text Input for Bulk Data
-MDLPRM   HDF5    0
+MDLPRM   HDF5    1
 PARAM    POST    0
 PARAM    AUTOSPC YES
 PARAM   PRTMAXIM YES
+
+$ Import materials
+INCLUDE '../mat/LD0.1.m'
 
 $ Import the FEM
 INCLUDE 'fem.bdf'
