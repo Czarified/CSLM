@@ -1,3 +1,10 @@
 06/26/19 Added - Basic Isotropic 301 SS
-06/26/19 TODO  - Groups file creation and better part groups.
-06/26/19 TODO  - Basic Uniaxial aero Loadcase and solve.
+         TODO  - Groups file creation and better part groups.
+         TODO  - Basic Uniaxial aero Loadcase and solve.
+
+07/07/19 Added - Groups Session File.
+         Added - Property card pshell.301.5
+         Added - New property applied to all shells.
+         Added - Nodal representation of center engine and RBE3 connection to octaweb. Engine node ID is
+                 15000 and is SPC'd in all DOF to counteract applied aero loads.
+       Removed - "Reaction" landing loads on fin-Legs.

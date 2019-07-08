@@ -15,9 +15,9 @@ $ Subcase name : test_1
    LOAD = 2
    DISPLACEMENT(PLOT)=ALL
    SPCFORCES(PLOT)=ALL
-   STRESS(SORT1,REAL,VONMISES,BILIN,PLOT)=ALL
    
 SPC = 1
+MPC = 1
 
 BEGIN BULK
 $ Direct Text Input for Bulk Data
@@ -38,7 +38,7 @@ INCLUDE 'loads.dat'
 $   CBUSH Weak Springs for grounding
 $
 $ Elements and Element Properties for region : pbush.001
-PBUSH    1       K      10E+10   10E+10  10E+10 
+PBUSH    1       K      1000.    1000.   1000.  
 $ Pset: "pbush.001" will be imported as: "pbush.1"
 CBUSH    8962    1       8436    10000                           0
 CBUSH    8963    1       50      10001                           0
@@ -51,6 +51,13 @@ $
 SPC1    1       123456  10000
 SPC1    1       123456  10001
 SPC1    1       123456  10002
+
+$
+$ TEMP CENTER ENGINE CONSTRAINT
+$
+$
+SPC1    1       123456  15000   
+
 
 $ Referenced Coordinate Frames
 ENDDATA

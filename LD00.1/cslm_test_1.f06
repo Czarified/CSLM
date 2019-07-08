@@ -1,0 +1,368 @@
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2018 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2018.2.1-CL598405   * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          SEP 11, 2018           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *   MODEL Xeon/2900 (AH900507)    * *
+                                              * *     Windows 10 Pro 6.2 9200     * *
+                                              * * Compiled for 8664 (SINGLE Mode) * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+1News file - (June 11, 2018)
+  
+               Welcome to MSC Nastran 2018.2
+  
+  
+   Details of the new capabilities can be found in the MSC Nastran 2018.2
+     Release Guide available online in the installation documentation
+     sub-directory.
+   Additional information can be found at the MSC Nastran Product Support page:
+  
+      http://simcompanion.mscsoftware.com
+  
+  
+   The support page provides links to these valuable information:
+      * A searchable Knowledge Base containing examples and answers to thousands
+        of frequently asked questions written by MSC Software subject-matter
+        experts.
+      * Peer-to-peer Discussion Forums enabling you to post questions for your
+        MSC Software products and receive answers from other users worldwide.
+      * A list of known issues with the product and any workarounds.
+      * Instructions on how to contact technical support
+      * A mechanism for sending us product feedback or enhancement requests.
+      * Hardware and software requirements.
+      * Examples and Tutorials
+      * and much more.
+  
+   For information on training, please visit our Training web site
+  
+      http://www.mscsoftware.com/Contents/Services/Training/
+  
+   MSC Nastran brings powerful new features and enhancements for engineering
+   solutions.
+  
+     Dynamics
+     -  Structural and Fluid Material property specification can now be
+        frequency dependent.
+     -  Anisotropic structural damping can be defined for composite
+        materials. Restriction removed that damping is proportional to
+        stiffness.
+     -  Spatial definition of property and material now available.
+     -  Direct export of AVL EXCITE .exb input file eliminating
+        the need for creation and translation of intermediate OP2 and OP4
+        files.
+     -  The AVL interface provides Efficient External Superelement based
+        Frequency Response and Transient Response data recovery. Virtual
+        mass is supported.
+     -  Structural damping in modal transient analysis now available using
+        all the requested analysis modes using PARAM,WMODAL.
+  
+     Linear Buckling
+1    -  Linear Buckling with local exclusion of differential stiffness in SOL
+        105 with use of PARAM,EXCLUDE. Subcases with different exclude
+        values are allowed.
+  
+     Rotordynamics
+     -  Enhanced Mode-Tracking for Campbell Diagrams. Two new methods
+        introduced: Numerical Slope-Continuity and Eigenvector-Based.
+     -  Rotors can now be included in upstream Part Superelements for
+        both single and multi-level assemblies for 1D, 2D and 3D rotors.
+     -  Support for definition of CBUSH2D element cross-coupling terms
+        for 1D rotor defined using ROTORG for both SYNC and ASYNC analysis.
+     -  Improved output in complex eigenvalue for rotor whirl for 1D rotor
+        defined using ROTORG for both SYNC and ASYNC analysis.
+     -  Account for PARAM,WTMASS in unbalance loads for frequency response
+        analysis.
+     -  Account for PARAM,WTMASS in rotor mass summary for 2D and 3D rotors.
+  
+     Multiple-Mass Configuration
+     -  Easy definition and analysis of multiple mass cases in a single run.
+        Supported in SOL 101, 103, 107/110, 108/111, 109/112, 144, 145, 146,
+        200 and 400 solution sequences.
+  
+     Optimization
+     -  Shell stress constraints can now be defined for Topology Optimization.
+  
+     Assembly
+     -  New modules that can assemble multiple Bulk Data sections to form a
+        single MSC Nastran input file. Modules are analogous to part
+        superelements without reduction and are supported in SOL 101 - 112.
+  
+     Implicit Nonlinear Analysis - SOL 400
+     -  GPFORCE Output with Contact.
+     -  Automatic Contact Generation.
+     -  External Superelements Creation, Assembly and Data Recovery.
+     -  CFAST Fastener element enabled to FUSE based on load criteria.
+     -  Support contact model check for Node-to-Surface contact:
+        -  Show the GRIDs movement in initial stress free.
+        -  Show the Contact bodies distance (overlap/gap).
+        -  Output Analytical analysis data.
+        -  Also fully support SOL 101; SOL 103 - SOL 112 in the initial
+           Condition.
+  
+     Linear Statics
+     - Bar end load calculations are available for PANEL(Shell)/STRINGER(bar or
+       beam) construction and associated shear flows with use of the Case
+       Control BENDL command.
+  
+     Explicit Nonlinear Analysis - SOL 700
+     -  Automated Coupling Surfaces.
+     -  New SOL 700 Dytran, Dytran under Nastran.
+1    -  A new translator, DEMATD, can convert materials where possible,
+        from old SOL 700 to the new SOL 700.
+     -  A new document is also published on which this translator is based upon.
+  
+  
+     HPC
+     -  Improved performance and scalability for [K4] reduction using ACMS
+     -  New MPYAD with better parallel performance and better method
+        selection.
+     -  New command line option, solve=auto and cpumax=N, to automatically
+        choose optimal solver and parallel options based on hardware and
+        the model.
+     -  Increased efficiency and reduced I/O for SOL 103 with full data recovery
+     -  SOLVE=AUTO enhancements for SOL 108 and 3D models.
+     -  Enhanced MPYAD for sparse matrices.
+  
+     Results HDF5 Database
+     -  Additional data blocks have been added to the HDF5 file: OEFTGV,
+        OMONPNT, TOMVAR, TOPVAR, R1TABRD, HISADD, RESP12, WETFACES, META,
+        OFCRFM, EPTFSP, MPTFSP, TRNUORD, and UHT, as well as modal and
+        Rotordynamic matrices.
+     -  Output Contact bodies distance and status check information.
+     -  Output Analytical spline table of deformable contact body.
+  
+  
+     Documentation
+  
+     The complete documentation set is provided in a separate installer and
+     when installed is available at:
+     MSC_DOC_DIR/doc/pdf_nastran directory.
+     Where MSC_DOC_DIR is the directory where documentation was installed
+     This help set has cross references between documents, links to how-to
+     videos, and example files.
+  
+     Individual MSC Nastran documents are available for download from the
+       Simcompanion Website at:
+       http://simcompanion.mscsoftware.com/
+  
+     These documents were updated for the MSC Nastran 2018 Release
+  
+         1.  MSC Nastran 2018.2 Installation and Operations Guide
+         2.  MSC Nastran 2018.2 Quick Reference Guide
+         3.  MSC Nastran 2018.2 Release Guide
+         4.  MSC Nastran 2018.0 Linear Statics Analysis User's Guide
+         5.  MSC Nastran 2018.2 Dynamic Analysis User's Guide
+         6.  MSC Nastran 2018.0 Superelements User's Guide
+         7.  MSC Nastran 2018.0 Rotordynamics User's Guide
+         8.  MSC Nastran 2018.0 Demonstration Problems Manual
+         9.  MSC Nastran 2018.0 Nastran Embedded Fatigue User's Guide
+        10.  MSC Nastran 2018.0 Design Sensitivity and Optimization
+1       11.  MSC Nastran 2018.0 Nonlinear User's Guide SOL 400
+        12.  MSC Nastran 2018.2 DMAP Programmer's Guide
+        13.  MSC Nastran 2018.2 High Performance Computing User's Guide
+        14.  MSC Nastran 2018.2 DEMATD Guide (New Document)
+        15.  MSC Nastran 2018.2 Explicit Nonlinear (SOL 700) User's Guide
+  
+  
+  
+    Please refer to:
+  
+    MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
+  
+1                                                                              JULY   8, 2019  MSC Nastran  9/11/18   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NAS
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NA
+     NASTRAN BUFFSIZE=32769 $(D:/MSC.SOFTWARE/MSC_NASTRAN/20182/CONF/NAST20182.RCF[6]
+     $ MSC.NASTRAN INPUT FILE CREATED ON FEBRUARY  26, 2019 AT 18:03:56 BY           
+     $ PATRAN 2017.0.3                                                               
+     $ DIRECT TEXT INPUT FOR NASTRAN SYSTEM CELL SECTION                             
+     $ DIRECT TEXT INPUT FOR FILE MANAGEMENT SECTION                                 
+     $ DIRECT TEXT INPUT FOR EXECUTIVE CONTROL                                       
+     $ LINEAR STATIC ANALYSIS, DATABASE                                              
+1                                                                              JULY   8, 2019  MSC Nastran  9/11/18   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL 101                                                                                 
+     CEND                                                                                    
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                          JULY   8, 2019  MSC Nastran  9/11/18   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $ DIRECT TEXT INPUT FOR GLOBAL CASE CONTROL DATA                                        
+                  2      TITLE = MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                                
+                  3      ECHO = NONE                                                                             
+                  4      SUBCASE 1                                                                               
+                  5      $ SUBCASE NAME : TEST_1                                                                 
+                  6         SUBTITLE=TEST_1                                                                      
+                  7         LOAD = 2                                                                             
+                  8         DISPLACEMENT(PLOT)=ALL                                                               
+                  9         SPCFORCES(PLOT)=ALL                                                                  
+                 10                                                                                              
+                 11      SPC = 1                                                                                 
+                 12      MPC = 1                                                                                 
+                 13                                                                                              
+                 14      BEGIN BULK                                                                              
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                          JULY   8, 2019  MSC Nastran  9/11/18   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+                              $INCLUDE "..\mat\LD0.1.m"
+ *** USER INFORMATION MESSAGE 9991 (SDLWIF)
+     Messages are being generated at include level 1.
+     File: ..\mat\LD0.1.m
+ *** USER WARNING MESSAGE 9994 (BULFUN)
+     MAT1 with MID=301 near line 18
+     User information:  Material has unreasonable or inconsistent values of E, G or NU.
+                              $END OF INCLUDE "..\mat\LD0.1.m"
+                              $INCLUDE "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.1\fem.bdf"
+                              $END OF INCLUDE "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.1\fem.bdf"
+                              $INCLUDE "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.1\loads.dat"
+                              $END OF INCLUDE "c:\Users\bcrews\Documents\GitHub\CSLM\LD00.1\loads.dat"
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                          JULY   8, 2019  MSC Nastran  9/11/18   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                        CBUSH                        3
+                                       CORD2R                        1
+                                       CQUAD4                     8320
+                                       CTRIA3                      161
+                                         GRID                     8467
+                                         LOAD                        1
+                                         MAT1                        1
+                                       MDLPRM                        1
+                                        PARAM                        3
+                                        PBUSH                        1
+                                       PLOAD4                        5
+                                       PSHELL                        1
+                                         RBE3                        1
+                                         SPC1                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     
+ *** USER FATAL MESSAGE 5289 (WRGMTS)
+     AN MPC OR RIGID ELEMENT BULK DATA ENTRY WITH DEPENDENT DEGREE-OF-FREEDOM GRID ID =15000 AND COMPONENT =1 CONTAINS
+     AN INDEPENDENT DEGREE-OF-FREEDOM --GRID ID =10138 AND COMPONENT =1-- THAT IS SPECIFIED MORE THAN ONCE.
+ *** USER FATAL MESSAGE 5289 (WRGMTS)
+     AN MPC OR RIGID ELEMENT BULK DATA ENTRY WITH DEPENDENT DEGREE-OF-FREEDOM GRID ID =15000 AND COMPONENT =1 CONTAINS
+     AN INDEPENDENT DEGREE-OF-FREEDOM --GRID ID =10138 AND COMPONENT =3-- THAT IS SPECIFIED MORE THAN ONCE.
+ *** USER FATAL MESSAGE 5289 (WRGMTS)
+     AN MPC OR RIGID ELEMENT BULK DATA ENTRY WITH DEPENDENT DEGREE-OF-FREEDOM GRID ID =15000 AND COMPONENT =1 CONTAINS
+     AN INDEPENDENT DEGREE-OF-FREEDOM --GRID ID =10138 AND COMPONENT =4-- THAT IS SPECIFIED MORE THAN ONCE.
+ *** USER FATAL MESSAGE 5289 (WRGMTS)
+     AN MPC OR RIGID ELEMENT BULK DATA ENTRY WITH DEPENDENT DEGREE-OF-FREEDOM GRID ID =15000 AND COMPONENT =1 CONTAINS
+     AN INDEPENDENT DEGREE-OF-FREEDOM --GRID ID =10138 AND COMPONENT =5-- THAT IS SPECIFIED MORE THAN ONCE.
+ *** USER FATAL MESSAGE 5289 (WRGMTS)
+     AN MPC OR RIGID ELEMENT BULK DATA ENTRY WITH DEPENDENT DEGREE-OF-FREEDOM GRID ID =15000 AND COMPONENT =1 CONTAINS
+     AN INDEPENDENT DEGREE-OF-FREEDOM --GRID ID =10138 AND COMPONENT =6-- THAT IS SPECIFIED MORE THAN ONCE.
+ *** USER WARNING MESSAGE 2047 (GP4)
+     UNDEFINED MULTI-POINT CONSTRAINT SET         1
+     User Information:
+     A multipoint constraint set selected in the Case Control could not
+     be found in either an MPC or MPCADD entry or a set referenced on an
+     MPCADD entry could not be found on an MPC entry.
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK PVT, TRAILER[101, 14, 0, 0, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK CASECC, TRAILER[102, 1, 0, 1000, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK CSTM, TRAILER[104, 8467, 1, 1, 1, 12, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM1Q, TRAILER[101, 0, 2048, 8, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK EPT, TRAILER[101, 4, 512, 0, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK MPT, TRAILER[102, 32768, 0, 0, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM2, TRAILER[103, 0, 64, 0, 8224, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3S, TRAILER[104, 0, 0, 0, 8, 256, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (DATA BLOCK GEOM3S IS NOT SUPPORTED)
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4S, TRAILER[105, 0, 0, 0, 64, 512, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (DATA BLOCK GEOM4S IS NOT SUPPORTED)
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM1, TRAILER[101, 0, 2048, 8, 0, 0, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK EDT, TRAILER[103, 0, 0, 0, 0, 0, 4])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3, TRAILER[101, 0, 0, 0, 8, 256, 0])
+ *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4, TRAILER[102, 0, 0, 0, 64, 512, 0])
+1    MSC.NASTRAN JOB CREATED ON 13-FEB-19 AT 17:37:31                          JULY   8, 2019  MSC Nastran  9/11/18   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     71
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+ 
+ No PARAM values were set in the Control File.
+ 
+1                                        * * * END OF JOB * * *
+ 
+ 
+ No Symbolic Replacement variables or values were specified.
+
