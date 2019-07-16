@@ -13,7 +13,7 @@ In typical aerospace vehicle design, a very coarse Finite Element Model is used 
 ## Why Are You Doing This?
 While, yes, it is a great deal of work to produce, and the results cannot be entirely utilized by the community, I am starting this project for a couple main reasons:
 1. I think it would be cool!
-2. I can't stop thinking about it!
+2. It develops my technical analysis skills.
 
 Hopefully the CLSM could lead to some interesting discussion or amateur analysis, but the intent of this project is not to do SpaceX's work for them, define the only way to design a vehicle, or commit corporate espionage.
 
