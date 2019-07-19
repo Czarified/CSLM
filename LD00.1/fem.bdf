@@ -8490,8 +8490,9 @@ CQUAD4   11730   3015    12840   7707    7566    12539   1
 
 $ Center Engine MPC connection
 $ Multipoint Constraints of Group : fem_bulkheads
-RBE3     1               15000   1      1.       123456  10154   10161
-         10160   10174   10170   10156   10138   10138   10138
+RBE3     1               15000   1      1.       123     10154   10161
+         10160   10174   10170   10156   10138
+         UM      15000   123
 
 $ Nodes of the Entire Model
 GRID     1              55.     4.5      0.

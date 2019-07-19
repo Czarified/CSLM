@@ -17,7 +17,7 @@ $ Subcase name : test_1
    SPCFORCES(PLOT)=ALL
    
 SPC = 1
-MPC = 1
+
 
 BEGIN BULK
 $ Direct Text Input for Bulk Data
@@ -26,7 +26,7 @@ PARAM    POST    0
 PARAM    AUTOSPC YES
 PARAM   PRTMAXIM YES
 
-$ Import materials
+$ Import materials and properties
 INCLUDE '..\mat\LD0.1.m'
 
 $ Import the FEM
