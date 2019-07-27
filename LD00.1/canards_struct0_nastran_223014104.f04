@@ -1,0 +1,284 @@
+1
+ MACHINE                          MODEL                 OPERATING SYSTEM       MSC Nastran       BUILD DATE         RUN DATE
+ Intel                            Xeon/3533 (Jarvis)    Windows 10 Home 6.2 92 VERSION 2018.1.0  MAR 12, 2018       JUL 26, 2019
+
+ 
+                               ===    M S C   N a s t r a n           E X E C U T I O N   S U M M A R Y    ===
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    Subroutine
+ 
+ 23:58:02     0:00        0.0         0.0        -0.0       -0.0    SEMTRN   BGN
+ 23:58:02     0:00        0.0         0.0        -0.0        0.0    SEMTRN   END
+ 23:58:02     0:00        0.0         0.0        -0.0        0.0    DBINIT   BGN
+      ** CURRENT PROJECT ID = ' "BLANK" '  ** CURRENT VERSION ID =          1
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   P R I M A R Y   D A T A B A S E     ( DBSNO   1, V2018.1 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    ...ards_struct0_nastran_223014104.MASTER     MASTER           MASTER       NEW           8193           1          190726235802
+    .../canards_struct0_nastran_223014104.DB     DBALL            DBALL        NEW           8193           1          190726235803
+    ...ct0_nastran_223014104.T17356_2.OBJSCR     OBJSCR           OBJSCR       NEW           8193           1          190726235804
+               **** MEM FILE ****                * N/A *          SCRATCH 
+    ...t0_nastran_223014104.T17356_2.SCRATCH     SCRATCH          SCRATCH      NEW           8193           1          190726235805
+    ...ct0_nastran_223014104.T17356_2.SCR300     SCR300           SCRATCH      NEW           8193           1          190726235806
+ 23:58:02     0:00        0.0         0.0        -0.0        0.0    DBINIT   END
+ 23:58:02     0:00        0.0         0.0        -0.0        0.0    EXTRUN   BGN
+ 23:58:02     0:00        0.0         0.0        -0.0        0.0    XCSA     BGN
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   D E L I V E R Y   D A T A B A S E   ( DBSNO   2, V2018.1 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    d:/msc.software/.../win64i4/SSS.MASTERA      MASTERA          MASTER       OLD           8193           1          180312051329
+   /./sss.MASTERA                           
+    d:/msc.software/.../win64i4/SSS.MSCOBJ       MSCOBJ           MSCOBJ       OLD           8193           1          180312051334
+   /./sss.MSCOBJ                            
+    d:/msc.software/.../win64i4/SSS.MSCSOU       MSCSOU           MSCSOU       OLD           8193           1          180312051335
+   /./sss.MSCSOU                            
+ 23:58:02     0:00        4.0         4.0         0.0        0.0    XCSA     END
+ 23:58:02     0:00        4.0         0.0         0.0        0.0    CGPI     BGN
+ 23:58:02     0:00        4.0         0.0         0.0        0.0    CGPI     END
+ 23:58:02     0:00        4.0         0.0         0.0        0.0    XGPI     BGN
+ 23:58:02     0:00        4.0         0.0         0.0        0.0    XGPI     END
+ 23:58:02     0:00        4.0         0.0         0.0        0.0    LINKER   BGN
+ 23:58:02     0:00        8.0         4.0         0.0        0.0    LINKER   END
+
+                    S U M M A R Y   O F   P H Y S I C A L   F I L E   I N F O R M A T I O N
+
+    ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  MODE  FLAGS  WSIZE  (WNUM)
+    ------------------------------------------------------------  ------------  ----  -----  -------------
+    c:/.../canards_struct0_nastran_223014104.T17356_2.SCRATCH            32768   R/W  M         128KB ( 4)
+    c:/.../canards_struct0_nastran_223014104.T17356_2.OBJSCR             32768   R/W  M         128KB ( 4)
+    ./canards_struct0_nastran_223014104.MASTER                           32768   R/W  M         128KB ( 4)
+    ./canards_struct0_nastran_223014104.DBALL                            32768   R/W  M         128KB ( 4)
+    c:/.../canards_struct0_nastran_223014104.T17356_2.SCR300             32768   R/W  M         128KB ( 4)
+    d:/msc.software/.../servermode/msc20181/win64i4/SSS.MASTERA          32768   R/O           N/A        
+    d:/msc.software/.../servermode/msc20181/win64i4/SSS.MSCOBJ           32768   R/O           N/A        
+
+    FLAG VALUES ARE --
+      A   ASYNCHRONOUS I/O USED TO PROCESS FILE
+      B   BUFFERED I/O USED TO PROCESS FILE
+      M   FILE MAPPING USED TO PROCESS FILE
+      R   FILE BEING ACCESSED IN 'RAW' MODE
+ 
+    ASSIGNED PHYSICAL FILE NAME                                   LOGICAL   UNIT  STATUS   ACCESS   RECL  FORM    FLAGS
+    ------------------------------------------------------------  --------  ----  -------  ------  -----  ------  -----
+    ./canards_struct0_nastran_223014104.f04                       LOGFL        4  NEW      SEQ      N/A   FMTD         
+    ./canards_struct0_nastran_223014104.f06                       PRINT        6  NEW      SEQ      N/A   FMTD         
+    ./canards_struct0_nastran_223014104.plt                       PLOT        14  NEW      SEQ      N/A   UNFMTD   Z   
+    ./canards_struct0_nastran_223014104.op2                       OP2         12  NEW      SEQ      N/A   UNFMTD   Z   
+    ./canards_struct0_nastran_223014104                           OPCASE      22  UNKNOWN  SEQ      N/A   FMTD        N
+    ./canards_struct0_nastran_223014104                           OUTPUT2F    19           SEQ      N/A   UNFMTD      P
+    ./canards_struct0_nastran_223014104.des                       TOPDES      21  UNKNOWN  SEQ      N/A   FMTD        N
+    ./canards_struct0_nastran_223014104.mnf                       MNF             NEW      SEQ      N/A   UNFMTD       
+    ./canards_struct0_nastran_223014104.pch                       PUNCH        7  NEW      SEQ      N/A   FMTD     Z   
+    ./canards_struct0_nastran_223014104.xdb                       DBC         40  NEW      DIRECT   1024  UNFMTD       
+    ./canards_struct0_nastran_223014104.asm                       ASM         16  NEW      SEQ      N/A   FMTD     Z   
+    ./canards_struct0_nastran_223014104.becho                     BULKECHO    18  NEW      SEQ      N/A   FMTD     Z   
+    ./canards_struct0_nastran_223014104.aeso                      AESO        23  NEW      SEQ      N/A   FMTD     Z   
+
+    FLAG VALUES ARE --
+      A   FILE HAS BEEN DEFINED BY AN 'ASSIGN' STATEMENT
+      D   FILE IS TO BE DELETED BEFORE RUN, IF IT EXISTS
+      N   'DEFER' SPECIFIED ON 'ASSIGN' STATEMENT OR FORCED FOR 'SLAVE' PROCESSES
+      P   PREFIX FILE NAME FOR OUTPUT2F FILE(S)
+      R   FILE IS READ-ONLY
+      T   FILE IS TEMPORARY AND WILL BE DELETED AT END OF RUN
+      Z   FILE WILL BE DELETED AT END OF RUN IF ZERO-LENGTH
+
+    ** THE NATIVE MODE FOR SEQUENTIAL UNFORMATTED FILES ON THIS PLATFORM IS LITTLE-ENDIAN (LTLEND)
+ 
+0    ** MASTER DIRECTORIES ARE LOADED IN MEMORY.
+        USER OPENCORE (HICORE)         =         727  MB
+        EXECUTIVE SYSTEM WORK AREA     =           3  MB
+        MASTER(RAM)                    =           0  MB
+        SCRATCH(MEM) AREA              =           3  MB (     100 BUFFERS)
+        BUFFER POOL AREA (BPOOL4)      =           4  MB (     150 BUFFERS)
+
+        TOTAL MSC NASTRAN MEMORY LIMIT =         740  MB
+
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    SubDMAP Line (S)SubDMAP/Module
+ 
+ 23:58:02     0:00       10.0         2.0         0.0        0.0    NIFIMP3 37      IFP1    BEGN *  
+ 23:58:02     0:00       10.0         0.0         0.0        0.0    NIFIMP3 44   (S)IFPSTAR BEGN    
+ 23:58:02     0:00       10.0         0.0         0.0        0.0    IFPSTAR 16      DBDELETEBEGN    
+ 23:58:02     0:00       10.0         0.0         0.0        0.0    IFPSTAR 18      NEWIFP  BEGN    
+ *** USER INFORMATION MESSAGE 200 (SCA.MDSolver.System.MemoryManager:MemoryManager::addPartition)
+A memory pool is provided by the application.
+Information: the application provided memory pool NastranMainPool will be used by the MDSolver service partition MDS00000.
+ *** SYSTEM INFORMATION MESSAGE 108 (SCA.MDSolver.Io.AccessAccess:AccessAccess)
+     The service SCA.MDSolver.Io.AccessAccess:AccessAccess has a partition name MDS00000 of size 600,000 bytes
+ *** USER INFORMATION MESSAGE 217 (SCA.MDSolver.Io.AccessAccess:AccessAccess::initPagingPool)
+     Static  working area for sdl : 100,000 INTEGER words, 400,000 bytes.
+ Dynamic working area for dbio: 424,860 INTEGER words, 1,699,440 bytes.
+ *** USER INFORMATION MESSAGE 218 (SCA.MDSolver.Io.AccessAccess:AccessAccess::initPagingPool)
+     AccessAccess service dbio paging pool initialized with maxbuf=4096 and maxddl=118004276
+ *** USER INFORMATION MESSAGE 207 (SCA.MDSolver.Io.AccessAccess:AccessAccess::StreamToBinary)
+     The stream input file: c:/users/czarified/desktop/openvsp-3.17.1-win32/canards_struct0_nastran_223014104.bdf 
+with include files path: ;D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\mscnastran_files\20181\servermode\msc20181\\nast\\tpl\include;D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\mscnastran_files\20181\servermode\msc20181\\nast\\tpl\include 
+was converted to its binary form in: ./canards_struct0_nastran_223014104.IFPDAT 
+using the schema contained in: d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/win64i4/SSS.IFPSDL for product: NASTRAN, version: 2018.1
+ *** USER INFORMATION MESSAGE 200 (SCA.MDSolver.System.MemoryManager:MemoryManager::addPartition)
+A memory pool is provided by the application.
+Information: the application provided memory pool NastranMainPool will be used by the MDSolver service partition MDS00001.
+ *** SYSTEM INFORMATION MESSAGE 205 (SCA.MDSolver.Util.QueryAccess:QueryAccess)
+The service SCA.MDSolver.Util.QueryAccess:QueryAccess has a partition name MDS00001 of size 65,536 bytes
+ *       COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY   *
+ *         197:CTRIA6           359:GRID               4:MAT1               1:PBAR              11:PSHELL  
+ 23:58:02     0:00       10.0         0.0         0.1        0.1    IFPSTAR 18      NEWIFP  END     
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 30      IFPDR   BEGN *  
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 100     PVT     BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 114     MATGEN  BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 124     IFPEXTRABEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 134     DBEQUIV BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    IFPSTAR 137     SEPR1   BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    NIFIMP3 73      PVT     BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    NIFIMP3 160     DTIIN   BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    NIFIMP3 167  (S)XIFPINDXBEGN *  
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX16      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX17      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX18      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX19      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX20      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX21      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX22      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX23      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX24      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX25      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    NIFIMP3 168  (S)XIFPINDXBEGN *  
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX16      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX17      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX18      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX19      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX20      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX21      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX22      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX23      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX24      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    XIFPINDX25      IFPINDX BEGN    
+ 23:58:02     0:00       10.0         0.0         0.1        0.0    NIFIMP3 169     EXIT    BEGN *  
+
+ *** TOTAL MEMORY AND DISK USAGE STATISTICS ***
+
+ +---------- SPARSE SOLUTION MODULES -----------+         +------------- MAXIMUM DISK USAGE -------------+
+    HIWATER               SUB_DMAP        DMAP               HIWATER               SUB_DMAP        DMAP
+    (WORDS)       DAY_TIME     NAME      MODULE                 (MB)   DAY_TIME      NAME         MODULE
+              0   23:58:02    PREFACE     0  PREFACE           3.438   23:58:02    NIFIMP3   169  EXIT    
+
+
+ *** DATABASE USAGE STATISTICS ***
+ 
+ +---------------- LOGICAL DBSETS ----------------+   +------------------------------ DBSET FILES -----------------------------+
+  DBSET     ALLOCATED  BLOCKSIZE       USED   USED     FILE      ALLOCATED  ALLOCATED    HIWATER       HIWATER  I/O TRANSFERRED
+             (BLOCKS)    (WORDS)   (BLOCKS)      %                (BLOCKS)       (GB)   (BLOCKS)          (GB)             (GB)
+ 
+  MASTER       300000       8192        102   0.03     MASTER       300000       9.16        102         0.003            0.005
+  DBALL       1000000       8192         12   0.00     DBALL       1000000      30.52         12         0.000            0.000
+  OBJSCR        25000       8192         52   0.21     OBJSCR        25000       0.76         54         0.002            0.000
+  SCRATCH     2000100       8192         21   0.00    (MEMFILE         100       0.00         27         0.001            0.000)
+                                                       SCRATCH     1000000      30.52          1         0.000            0.000
+                                                       SCR300      1000000      30.52          1         0.000            0.000
+                                                                                                                 ==============
+                                                                                                          TOTAL:          0.006
+ 
+ *** BUFFER POOL AND SCRATCH 300 USAGE STATISTICS ***
+ 
+ +----------------- BUFFER POOL -----------------+      +-------------------------- SCRATCH 300 --------------------------+ 
+   OPTION        BLOCKS      BLOCKS      BLOCKS           OPTION    HIWATER               SUB_DMAP        DMAP     OPN/CLS
+  SELECTED     ALLOCATED     REUSED     RELEASED         SELECTED  (BLOCKS)   DAY_TIME      NAME         MODULE    COUNTER
+   BPOOL4           150       12361         219              2           1    23:58:02    PREFACE     0  PREFACE       0
+
+
+ *** SUMMARY OF PHYSICAL FILE I/O ACTIVITY ***
+
+ ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  READ/WRITE COUNTS   WSIZE  (WNUM)  MAP-I/O CNT
+ ------------------------------------------------------------  -----------  -------------------  -------------  -----------
+ c:/.../canards_struct0_nastran_223014104.T17356_2.SCRATCH           32768          0/1             128KB ( 4)            1 (M)
+ c:/.../canards_struct0_nastran_223014104.T17356_2.OBJSCR            32768          4/12            128KB ( 4)            3 (M)
+ ./canards_struct0_nastran_223014104.MASTER                          32768         57/93            128KB ( 4)           49 (M)
+ ./canards_struct0_nastran_223014104.DBALL                           32768          7/10            128KB ( 4)            3 (M)
+ c:/.../canards_struct0_nastran_223014104.T17356_2.SCR300            32768          0/1             128KB ( 4)            1 (M)
+ d:/msc.software/.../servermode/msc20181/win64i4/SSS.MASTERA         32768         97/0            N/A            N/A          
+ d:/msc.software/.../servermode/msc20181/win64i4/SSS.MSCOBJ          32768         47/0            N/A            N/A          
+ 
+
+
+ *** PARALLEL PROCESSES CPU INFORMATION (SECONDS) ***
+
+  MODULE     PROCESS-1     PROCESS-2     PROCESS-3     PROCESS-4
+  --------   -----------   -----------   -----------   -----------
+  ========   ===========   ===========   ===========   ===========
+  
+ *** SYSTEM WARNING MESSAGE 6299 (PARCPU)
+     NO PARALLEL PROCESS CREATED
+
+*** SUMMARY OF COMPONENT SERVICES USAGE ACTIVITY ***
+
+           SERVICE                         LOAD  IMPLEMENTATION    GENERIC             COMPONENT  
+            NAME                           COUNT    LANGUAGE     LIBRARY NAME         LIBRARY NAME 
+
+SCA.Framework.ErrorPolicyManager             1       C++         SCAKernel            SCAKernel                                 
+SCA.Framework.Logger                         1       C++         SCAKernel            SCAKernel                                 
+SCA.Framework.MessageDispatcher              65      C++         SCA/...spatcher_20_0 d:/m...amework/MessageDispatcher_20_0.dll 
+SCA.Framework.ResourceManager                1       C++         SCAKernel            SCAKernel                                 
+SCA.Framework.SecurityManager                1       C++         SCAKernel            SCAKernel                                 
+SCA.Framework.ServiceManager                 28      C++         SCAKernel            SCAKernel                                 
+SCA.Framework.SharedLibraryManager           32      C++         SCAKernel            SCAKernel                                 
+SCA.Framework.TextTranslation                3       C++         SCAKernel            SCAKernel                                 
+SCA.MDSolver.Io.AccessAccess                 11      C++         SCA/...ssAccess_20_0 d:/m.../MDSolver/Io/AccessAccess_20_0.dll 
+SCA.MDSolver.Io.UtilAccess                   6       C++         SCA/...ilAccess_20_0 d:/m...CA/MDSolver/Io/UtilAccess_20_0.dll 
+SCA.MDSolver.Obj.DataAccess                  16      C++         SCA/...taAccess_20_0 d:/m...A/MDSolver/Obj/DataAccess_20_0.dll 
+SCA.MDSolver.Obj.FileAccess                  5       C++         SCA/...leAccess_20_0 d:/m...A/MDSolver/Obj/FileAccess_20_0.dll 
+SCA.MDSolver.Obj.InputFile                   1       C++         SCA/...nputFile_20_0 d:/m...CA/MDSolver/Obj/InputFile_20_0.dll 
+SCA.MDSolver.System.MemoryManager            2       C++         SCA/...yManager_20_0 d:/m...lver/System/MemoryManager_20_0.dll 
+SCA.MDSolver.System.PrintServer              16      C++         SCA/...ntServer_20_0 d:/m...Solver/System/PrintServer_20_0.dll 
+SCA.MDSolver.Util.DML                        1       C++         SCA/...Util/Dml_20_0 d:/m...4i4/SCA/MDSolver/Util/Dml_20_0.dll 
+SCA.MDSolver.Util.QueryAccess                3       C++         SCA/...ryAccess_20_0 d:/m...MDSolver/Util/QueryAccess_20_0.dll 
+SCA.MXP.MXPDOMParser                         19      C++         SCA/MXP_20_0         d:/m.../msc20181/win64i4/SCA/MXP_20_0.dll 
+SCA.Util.SystemUtils                         21      C++         SCA/...temUtils_20_0 d:/m...64i4/SCA/Util/SystemUtils_20_0.dll 
+
+ *** TOTAL MEMORY AND DISK USAGE STATISTICS ***
+
+ +---------- SPARSE SOLUTION MODULES -----------+         +------------- MAXIMUM DISK USAGE -------------+
+    HIWATER               SUB_DMAP        DMAP               HIWATER               SUB_DMAP        DMAP
+    (WORDS)       DAY_TIME     NAME      MODULE                 (MB)   DAY_TIME      NAME         MODULE
+              0   23:58:02    PREFACE     0  PREFACE           3.938   23:58:02    NIFIMP3   169  EXIT    
+
+
+ *** DATABASE USAGE STATISTICS ***
+ 
+ +---------------- LOGICAL DBSETS ----------------+   +------------------------------ DBSET FILES -----------------------------+
+  DBSET     ALLOCATED  BLOCKSIZE       USED   USED     FILE      ALLOCATED  ALLOCATED    HIWATER       HIWATER  I/O TRANSFERRED
+             (BLOCKS)    (WORDS)   (BLOCKS)      %                (BLOCKS)       (GB)   (BLOCKS)          (GB)             (GB)
+ 
+  MASTER       300000       8192        103   0.03     MASTER       300000       9.16        103         0.003            0.005
+  DBALL       1000000       8192         12   0.00     DBALL       1000000      30.52         12         0.000            0.001
+  OBJSCR        25000       8192         52   0.21     OBJSCR        25000       0.76         54         0.002            0.000
+  SCRATCH     2000100       8192         21   0.00    (MEMFILE         100       0.00         27         0.001            0.000)
+                                                       SCRATCH     1000000      30.52          1         0.000            0.000
+                                                       SCR300      1000000      30.52          1         0.000            0.000
+                                                                                                                 ==============
+                                                                                                          TOTAL:          0.007
+ 
+ *** BUFFER POOL AND SCRATCH 300 USAGE STATISTICS ***
+ 
+ +----------------- BUFFER POOL -----------------+      +-------------------------- SCRATCH 300 --------------------------+ 
+   OPTION        BLOCKS      BLOCKS      BLOCKS           OPTION    HIWATER               SUB_DMAP        DMAP     OPN/CLS
+  SELECTED     ALLOCATED     REUSED     RELEASED         SELECTED  (BLOCKS)   DAY_TIME      NAME         MODULE    COUNTER
+   BPOOL4           150       12393         220              2           1    23:58:02    PREFACE     0  PREFACE       0
+
+
+ *** SUMMARY OF PHYSICAL FILE I/O ACTIVITY ***
+
+ ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  READ/WRITE COUNTS   WSIZE  (WNUM)  MAP-I/O CNT
+ ------------------------------------------------------------  -----------  -------------------  -------------  -----------
+ c:/.../canards_struct0_nastran_223014104.T17356_2.SCRATCH           32768          0/1             128KB ( 4)            1 (M)
+ c:/.../canards_struct0_nastran_223014104.T17356_2.OBJSCR            32768          4/12            128KB ( 4)            3 (M)
+ ./canards_struct0_nastran_223014104.MASTER                          32768         57/114           128KB ( 4)           58 (M)
+ ./canards_struct0_nastran_223014104.DBALL                           32768          7/19            128KB ( 4)            5 (M)
+ c:/.../canards_struct0_nastran_223014104.T17356_2.SCR300            32768          0/1             128KB ( 4)            1 (M)
+ d:/msc.software/.../servermode/msc20181/win64i4/SSS.MASTERA         32768         97/0            N/A            N/A          
+ d:/msc.software/.../servermode/msc20181/win64i4/SSS.MSCOBJ          32768         47/0            N/A            N/A          
+ 

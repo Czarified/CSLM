@@ -8,3 +8,21 @@
          Added - Nodal representation of center engine and RBE3 connection to octaweb. Engine node ID is
                  15000 and is SPC'd in all DOF to counteract applied aero loads.
        Removed - "Reaction" landing loads on fin-Legs.
+       
+07/22/19 Added - OpenVSP model and mesh.
+       Removed - Old mesh files and lines drawings.
+         Added - Load Development Notebook with basic functions for pressure derivation and EID list
+                 extraction.
+         
+07/23/19 Added - Initial properties in VSP model for export and grouping. VSP automatically creates
+                 SETs for each sub part, so this isn't completely necessary, but may make grouping easier.
+ 
+07/26/19 Added - Importing multiple parts into a single Patran database seems to exceed the entity limits
+                 on the Student Edition license. Unverified, but elements import and then disappear. Error
+                 message upon closing seems to verify, but the numerical limit is still unknown. Some
+                 simplification can be done on the wings and canards, but if just 3 "items" run into the
+                 limit, major coarsening may be necessary just to stay under limit. Will try with
+                 extremely coarse mesh.
+
+07/26/19 Added - Mesh coarsened overall. 2 elements in the canard deck seemed to cause issues, so they
+                 were commented out and import  was successful.
