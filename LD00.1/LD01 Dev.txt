@@ -26,3 +26,21 @@
 
 07/26/19 Added - Mesh coarsened overall. 2 elements in the canard deck seemed to cause issues, so they
                  were commented out and import  was successful.
+                 
+07/27/19 Added - Group for work on the fin joint. Manually modifying elements to join all structural
+                 items represents a massive amount of tedious work, and would have to be repeated, for
+                 each geometry change, defeating the purpose of using the OpenVSP model.
+         Added - Surfaces can be extracted from the mesh, for mesh seeding and remeshing as quads. This
+                 is also labor-intensive, but is probably easier than keeping the individual part meshes
+                 and manually joining them.
+                 
+07/28/19 Added - Imported surfaces of VSP structure in Patran. Crashed Patran when trying to trim. :(
+
+07/29/19 Added - Imported IGES OML. Cut surface to have coincident edges, then mesh seeded, meshed, and
+                 equivalenced, for a joined wing and fuselage section. :)
+         TODO  - Cleanup fin mesh, so ribs and spars can be easily created.
+         TODO  - Cleanup trias near aft edge.
+         TODO  - Verify and standardize procedure to cut surfaces.
+         TODO  - Create fin ribs and spars.
+         TODO  - Mesh canards, equivalenced with fuse.
+         TODO  - Mesh tail, equivalenced with fuse (and all spars+ribs)
