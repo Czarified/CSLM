@@ -39,8 +39,22 @@
 07/29/19 Added - Imported IGES OML. Cut surface to have coincident edges, then mesh seeded, meshed, and
                  equivalenced, for a joined wing and fuselage section. :)
          TODO  - Cleanup fin mesh, so ribs and spars can be easily created.
-         TODO  - Cleanup trias near aft edge.
-         TODO  - Verify and standardize procedure to cut surfaces.
-         TODO  - Create fin ribs and spars.
-         TODO  - Mesh canards, equivalenced with fuse.
-         TODO  - Mesh tail, equivalenced with fuse (and all spars+ribs)
+                    To keep lines from "curling" keep root nodes equal to tip.
+                    To orient rib nodes in line (without importing rib mesh), need to seed an
+                    additional line in plane with the upper skin root edge.
+
+08/09/19 Added - Trimmed fin surfaces at rib locations for rib meshes creation in proper planes.
+         ERROR - Mesh seeds on the new cuts don't line up with the fuselage joint curves. For some reason
+                 there seem to be 3 "hard points" at the fin leading edge, even when using uniform
+                 seed settings. Meshing without the seeds seems to give the same results.
+         FIX   - Global tolerance increase to 0.003 reduced automatic hard point creation during seeding.
+                 Mesh seeds created for each edge of each surface and meshes match! :)
+
+08/10/19 Added - Mesh for actuated fin and tail fin skins complete. Mesh for engine skirt and thrust plate.
+
+08/13/19 Added - Mesh for skin regions connecting engine skirt to Lower Bulkhead Staion.
+
+08/17/19 Added - Geometry for skin and remaining bulkheads/domes.
+
+08/18/19 Added - Mesh for remaining skins and bulkheads. Equivalences all nodes.
+                 Somehow deleted all progress from the past 2 days by closing after saving?

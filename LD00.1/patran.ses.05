@@ -1,0 +1,75 @@
+$# Session file patran.ses.05 started recording at 09-Aug-19 14:01:51
+$# Build: 24.0.554811 Fri Mar 16 22:44:43 PDT 2018
+$# Recorded by: Patran 2018  (Student Edition)
+uil_file_open.go( "D:\Czarified\Documents\GitHub\CSLM\LD00.1\bravoTest.db" )
+$# Question from application FILE
+$#     Old backup files exists for 
+$# D:\Czarified\Documents\GitHub\CSLM\LD00.1\bravoTest.db. 
+$# Do you want to update them with the current database and journal file ?
+$? NO 36000011 
+$# Database version 3.19 created by Patran 2018  (Student Edition) 
+$# successfully opened.
+$# Appending to existing journal file 
+$# D:\Czarified\Documents\GitHub\CSLM\LD00.1\bravoTest.db.jou at 09-Aug-19 
+$# 14:02:03
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2018  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node JARVIS(d8cb8a3c22bc) (
+$# Windows 6.2 (Build 9200: Service Pack 0)) at 09-Aug-19 14:02:03.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library 
+$# D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\bin\ex
+$# e\loads_browser.dll
+$# €é? shared library 'Loads Browser', Version 2018, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_view_center_set( 1.090437, -0.600024 )
+ga_view_zoom_set( 3.044092 )
+ga_view_center_set( 0.046335, -0.468911 )
+ga_view_zoom_set( 4.185627 )
+ga_view_center_set( -1.389305, -0.288629 )
+ga_view_zoom_set( 5.755237 )
+ga_view_center_set( -3.363308, -0.040743 )
+ga_view_zoom_set( 7.913450 )
+ga_view_center_set( -1.489369, -0.274986 )
+ga_view_zoom_set( 5.755237 )
+ga_view_center_set( -0.129813, -0.445345 )
+ga_view_zoom_set( 4.185627 )
+uil_primary_file.db_save(  )
+$# Reclaimed 1.93 MB of 5.70 MB.
+ga_view_center_set( 1.069727, -0.129800 )
+ga_view_zoom_set( 3.044092 )
+ga_view_aa_set( -86.833839, -3.924608, 83.567856 )
+ga_view_center_set( -0.220299, -0.004512 )
+ga_view_zoom_set( 4.185627 )
+ga_view_center_set( -1.994086, 0.167761 )
+ga_view_zoom_set( 5.755237 )
+ga_view_center_set( -4.433044, 0.404637 )
+ga_view_zoom_set( 7.913450 )
+ga_view_center_set( -7.786609, 0.730341 )
+ga_view_zoom_set( 10.880994 )
+ga_view_aa_set( -68.872223, -1.743817, 85.119789 )
+ga_view_aa_set( -73.940788, -2.414541, 83.234436 )
+ga_view_center_set( -0.169913, -2.207527 )
+ga_view_center_set( 2.429700, -2.744338 )
+ga_view_zoom_set( 7.913450 )
+ga_view_center_set( 4.302786, -3.104038 )
+ga_view_zoom_set( 5.755237 )
+ga_view_center_set( 2.288453, -0.686838 )
+ga_view_aa_set( -76.794113, -0.739812, 83.930908 )
+ga_view_aa_set( -71.517151, 0.100829, 90.652748 )
+ga_view_center_set( 2.786135, -0.753819 )
+ga_view_zoom_set( 4.185627 )
+ga_view_center_set( 3.150404, -0.804848 )
+ga_view_zoom_set( 3.044092 )
+ga_view_aa_set( -78.533310, 2.184344, 84.924995 )
+ga_view_center_set( 3.329270, -0.968522 )
+ga_view_zoom_set( 2.213885 )
+ga_view_center_set( 3.459353, -1.087557 )
+ga_view_zoom_set( 1.610098 )
+ga_view_center_set( 3.267908, -0.973422 )
+ga_view_zoom_set( 2.213885 )
+STRING sgm_associate_cu_associated_ids[VIRTUAL]
+sgm_associate_curve_surface( "Curve 4", "Surface 50",  @
+sgm_associate_cu_associated_ids )

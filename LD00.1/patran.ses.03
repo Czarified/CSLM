@@ -1,0 +1,389 @@
+$# Session file patran.ses.03 started recording at 07-Aug-19 21:24:39
+$# Build: 24.0.554811 Fri Mar 16 22:44:43 PDT 2018
+$# Recorded by: Patran 2018  (Student Edition)
+uil_file_open.go( "D:\Czarified\Documents\GitHub\CSLM\LD00.1\bravoTest.db" )
+$# Creating database backup files.
+$# Database version 3.19 created by Patran 2018  (Student Edition) 
+$# successfully opened.
+$# Appending to existing journal file 
+$# D:\Czarified\Documents\GitHub\CSLM\LD00.1\bravoTest.db.jou at 07-Aug-19 
+$# 21:24:40
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2018  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node JARVIS(d8cb8a3c22bc) (
+$# Windows 6.2 (Build 9200: Service Pack 0)) at 07-Aug-19 21:24:40.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library 
+$# D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\bin\ex
+$# e\loads_browser.dll
+$#  shared library 'Loads Browser', Version 2018, Revision 3, Patch 0, has 
+$# been loaded for: MSC.Patran.
+ga_view_aa_set( -65.568253, 6.367998, 45.577858 )
+ga_view_center_set( -0.018583, 1.791892 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( -3.165565, 2.561685 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( -7.492668, 3.620147 )
+ga_view_zoom_set( 16.225090 )
+ga_view_aa_set( -69.566345, 10.063245, 59.227642 )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -58.581848, 8.796280, 121.867752 )
+ga_view_center_set( -7.348757, 3.296359 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( -7.244095, 3.060875 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( -7.158461, 2.865829 )
+ga_view_zoom_set( 6.241356 )
+ga_view_aa_set( -72.282875, 20.635967, 146.981888 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 14", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 14
+ga_view_aa_set( -64.822395, 16.569229, 136.194473 )
+ga_view_aa_set( -89.007034, 17.706902, 140.191345 )
+ga_view_aa_set( -100.497543, 16.869516, 148.518234 )
+ga_view_aa_set( -139.274521, 32.819431, 102.183197 )
+ga_view_aa_set( -85.219833, -45.403835, -164.777237 )
+ga_view_center_set( -6.596738, -5.310348 )
+ga_view_aa_set( -113.309547, -38.468189, 144.174866 )
+fem_delete_mesh_from_surface( "Surface 13", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 13
+ga_view_aa_set( -113.239723, -35.849380, 136.023041 )
+fem_delete_mesh_from_surface( "Surface 1", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 1
+ga_view_center_set( -7.847863, -4.463580 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( -9.568160, -3.299275 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( -11.933578, -1.698353 )
+ga_view_zoom_set( 16.225090 )
+ga_view_center_set( -15.186013, 0.502916 )
+ga_view_zoom_set( 22.309498 )
+ga_view_aa_set( -77.620003, 1.003674, 55.971008 )
+ga_view_center_set( -3.361981, 0.279821 )
+ga_view_aa_set( -58.727921, 2.864183, 58.492199 )
+ga_view_center_set( 0.113061, 0.193257 )
+ga_view_zoom_set( 16.225090 )
+ga_view_center_set( 2.640367, 0.130302 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( 4.478399, 0.084514 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( 5.800882, 0.075000 )
+ga_view_zoom_set( 6.241356 )
+ga_view_aa_set( -77.689049, 2.344787, 57.636784 )
+ga_view_center_set( -3.124258, 0.075000 )
+ga_view_center_set( -0.190820, 0.823963 )
+ga_view_center_set( -2.859572, 0.467180 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( -6.529102, -0.023397 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( -11.574711, -0.697941 )
+ga_view_zoom_set( 16.225090 )
+ga_view_center_set( -18.512424, -1.625441 )
+ga_view_zoom_set( 22.309498 )
+ga_view_center_set( -4.457443, -0.286871 )
+gm_plot_erase_all( 1 )
+STRING fem_delete_node_deleted_ids[VIRTUAL]
+STRING fem_delete_node_not_found_ids[VIRTUAL]
+fem_delete_free_node( "Node 1:21:10 33:57:12 68 80 93 103 110 130 140:176:" // @
+"12 187 203 214 223", fem_delete_node_deleted_ids,  @
+fem_delete_node_not_found_ids )
+$# 20 Nodes deleted: Node 1:21:10,33:57:12,68,80,93,103,110,130,140:176:12,
+$# 187,203,214,223
+ga_view_center_set( -4.680538, -1.402345 )
+ga_view_center_set( -2.664772, -0.536677 )
+ga_view_zoom_set( 16.225090 )
+ga_view_center_set( -1.198757, 0.092904 )
+ga_view_zoom_set( 11.800065 )
+ga_view_center_set( -0.132568, 0.550779 )
+ga_view_zoom_set( 8.581865 )
+ga_view_center_set( 0.048200, 0.227297 )
+ga_view_zoom_set( 6.241356 )
+ga_view_aa_set( -72.412392, 6.676464, 79.276428 )
+ga_view_aa_set( -77.276878, -3.133668, 56.078148 )
+$# Error reported from application FEM
+$#     Curve list is blank.
+$? NO 2001006 
+ga_view_aa_set( -71.289063, -6.314375, 50.351776 )
+modify_mesh_seed( "Curve 1", 1, 15, 0., 0., 0. )
+mesh_seed_display_mgr.plot(  )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_seeds_from_edge( "Curve 1", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Curve 1
+fem_delete_seeds_from_edge( "Curve 2", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Curve 2
+fem_delete_seeds_from_edge( "Surface 14.1", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Surface 14.1
+fem_delete_seeds_from_edge( "Surface 13.1", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Surface 13.1
+fem_delete_seeds_from_edge( "Surface 13.3", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Surface 13.3
+fem_delete_seeds_from_edge( "Surface 14.3", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh seeds deleted from 1 edge: Surface 14.3
+ga_view_aa_set( -47.938267, 15.722223, 40.579094 )
+ga_view_zoom_set( 17.943899 )
+ga_view_aa_set( -54.669716, -1.382576, -127.687370 )
+ga_view_center_set( 0.515702, -1.185139 )
+ga_view_zoom_set( 13.050109 )
+ga_view_center_set( 0.884639, -2.234067 )
+ga_view_zoom_set( 9.490989 )
+ga_view_center_set( -1.583019, -3.183166 )
+ga_view_aa_set( -74.240784, 3.266751, -71.531822 )
+gm_visibility_widget( "Surface 1", FALSE )
+ga_view_aa_set( -54.161423, 1.245008, -73.880058 )
+gm_visibility_widget( "Surface 4", FALSE )
+gm_visibility_widget( "Point 31 Surface 45 46", FALSE )
+gm_visibility_widget( "Surface 47 48", FALSE )
+ga_view_aa_set( -86.536049, 1.645388, -55.576019 )
+ga_view_center_set( -2.067695, -3.371249 )
+ga_view_zoom_set( 13.050110 )
+ga_view_center_set( -2.744071, -3.629863 )
+ga_view_zoom_set( 17.943901 )
+ga_view_center_set( -1.998067, -3.271780 )
+ga_view_zoom_set( 13.050110 )
+ga_view_center_set( -1.455519, -3.011356 )
+ga_view_zoom_set( 9.490989 )
+ga_view_aa_set( -68.570496, 2.266396, -54.698788 )
+ga_view_center_set( 7.655829, -4.909553 )
+ga_view_aa_set( 114.525124, 73.003860, 127.684486 )
+ga_view_center_set( -4.207907, -8.895765 )
+ga_view_center_set( -3.838972, -7.991514 )
+ga_view_zoom_set( 13.050110 )
+ga_view_center_set( -3.331691, -6.748173 )
+ga_view_zoom_set( 17.943901 )
+ga_view_center_set( -2.634176, -5.038578 )
+ga_view_zoom_set( 24.672863 )
+ga_view_center_set( -1.693899, -2.687887 )
+ga_view_zoom_set( 33.925186 )
+ga_view_aa_set( -41.100803, 5.172431, -7.586491 )
+ga_view_aa_set( -60.676594, 3.159403, 45.012142 )
+ga_view_center_set( -0.772427, -1.728793 )
+ga_view_zoom_set( 24.672863 )
+ga_view_center_set( -0.102266, -1.031266 )
+ga_view_zoom_set( 17.943901 )
+ga_view_center_set( 0.355286, -0.593598 )
+ga_view_zoom_set( 13.050110 )
+ga_view_center_set( 0.688048, -0.296993 )
+ga_view_zoom_set( 9.490989 )
+ga_view_center_set( 0.023679, 2.550304 )
+ga_view_aa_set( -66.972946, -4.344369, 52.671951 )
+gm_visibility_widget( "Surface 14", FALSE )
+ga_view_aa_set( -72.449356, -0.465692, 65.093224 )
+ga_view_aa_set( -69.548012, 5.663490, 62.218781 )
+gm_visibility_widget( "Surface 14", TRUE )
+ga_view_aa_set( -74.032898, 4.448054, 56.334446 )
+ga_view_center_set( 5.082696, -2.196538 )
+ga_view_zoom_set( 13.258198 )
+ga_view_center_set( 6.604007, -2.924123 )
+ga_view_zoom_set( 9.642325 )
+ga_view_center_set( 7.710417, -3.453275 )
+ga_view_zoom_set( 7.012600 )
+ga_view_center_set( 8.709438, -3.737044 )
+ga_view_zoom_set( 5.100073 )
+ga_view_center_set( 9.444483, -3.943420 )
+ga_view_zoom_set( 3.709144 )
+ga_view_aa_set( -79.642418, 5.380645, 63.284473 )
+ga_view_aa_set( -78.762688, 3.124565, 51.465034 )
+uil_toolbar.shaded_smooth(  )
+ga_view_aa_set( -79.068100, 7.533191, 76.183662 )
+ga_view_center_set( 5.957887, -3.424138 )
+ga_view_aa_set( -76.096153, 8.254822, 76.067520 )
+ga_view_aa_set( -73.920876, 5.594279, 66.356178 )
+ga_view_center_set( 6.662623, -2.941949 )
+STRING asm_delete_surface_deleted_ids[VIRTUAL]
+asm_delete_surface( "Surface 49", asm_delete_surface_deleted_ids )
+$# 1 Surface Deleted: Surface 49
+ga_view_aa_set( -77.654968, 4.874687, 63.432270 )
+ga_view_center_set( 7.441543, -4.128875 )
+ga_view_aa_set( -79.985069, 5.454440, 80.473198 )
+ga_view_aa_set( -74.044579, 1.733773, 65.913818 )
+ga_view_aa_set( -77.016991, 1.509340, 64.938942 )
+ga_view_center_set( 7.775364, -2.979040 )
+uil_toolbar.wireframe(  )
+STRING asm_delete_curve_deleted_ids[VIRTUAL]
+asm_delete_curve( "Curve 1 2", asm_delete_curve_deleted_ids )
+$# 2 Curves Deleted: Curve 1 2
+ga_view_center_set( 8.109186, -3.127406 )
+ga_view_center_set( 7.701181, -3.127406 )
+mesh_seed_display_mgr.plot(  )
+mesh_seed_create( "Surface 14.1", 1, 15, 0., 0., 0. )
+mesh_seed_create( "Surface 13.1", 1, 15, 0., 0., 0. )
+mesh_seed_create( "Surface 14.3", 1, 15, 0., 0., 0. )
+mesh_seed_create( "Surface 13.3", 1, 15, 0., 0., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 14", 1, ["1.43595"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 176 nodes and 150 elements created for Surface 14.
+$# === 176 nodes created.  IDs  = 1:176.
+$# === 150 elements created.  IDs  = 1:150.
+ga_view_aa_set( -74.897919, -0.378963, 41.039257 )
+ga_view_center_set( 12.931075, -3.498321 )
+ga_view_aa_set( -80.866302, 0.376856, 41.906296 )
+ga_view_center_set( 11.794593, -2.723697 )
+ga_view_zoom_set( 5.100073 )
+ga_view_center_set( 10.231929, -1.658588 )
+ga_view_zoom_set( 7.012600 )
+ga_view_center_set( 8.083257, -0.194067 )
+ga_view_zoom_set( 9.642324 )
+ga_view_aa_set( -76.410835, 2.551015, 66.776360 )
+ga_view_center_set( -7.826580, -1.447570 )
+ga_view_aa_set( -60.794666, 9.744277, 99.148369 )
+ga_view_aa_set( -64.614342, 15.859831, 96.155182 )
+ga_view_center_set( -7.537311, 4.819941 )
+ga_view_aa_set( -65.189461, 8.937506, 80.245697 )
+ga_view_center_set( -1.655492, -0.579761 )
+ga_view_zoom_set( 6.122110 )
+ga_view_aa_set( -70.189453, 8.937505, 80.245697 )
+ga_view_rotation_center_set( "default_viewport", [42.835724, 5.0917177,  @
+-1.8152815] )
+ga_view_aa_set( -72.887306, -2.139931, 57.384773 )
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 13", 1, ["1.48408"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 176 nodes and 150 elements created for Surface 13.
+$# === 176 nodes created.  IDs  = 177:352.
+$# === 150 elements created.  IDs  = 151:300.
+ga_view_aa_set( -84.764153, 2.254626, 92.131714 )
+ga_view_center_set( -6.694357, 2.162498 )
+ga_view_zoom_set( 8.417902 )
+ga_view_center_set( -8.978485, 3.638196 )
+ga_view_zoom_set( 11.574615 )
+ga_view_center_set( -12.119158, 5.667282 )
+ga_view_zoom_set( 15.915096 )
+ga_view_center_set( -8.987305, 3.638195 )
+ga_view_zoom_set( 11.574615 )
+ga_view_center_set( -6.709594, 2.162495 )
+ga_view_zoom_set( 8.417902 )
+ga_view_center_set( -5.053079, 1.089258 )
+ga_view_zoom_set( 6.122110 )
+ga_view_center_set( -3.848338, 0.308723 )
+ga_view_zoom_set( 4.452444 )
+ga_view_aa_set( -68.764099, 2.420606, 92.078270 )
+ga_view_aa_set( -87.725128, 1.916940, 91.152039 )
+mesh_seed_display_mgr.erase(  )
+ga_view_aa_set( -73.503731, 0.519914, 82.289200 )
+STRING fem_delete_mesh__deleted_labels[VIRTUAL]
+STRING fem_delete_mes_not_found_labels[VIRTUAL]
+fem_delete_mesh_from_surface( "Surface 13", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 13
+ga_view_aa_set( -78.546745, -1.146609, 75.492241 )
+fem_delete_mesh_from_surface( "Surface 14", fem_delete_mesh__deleted_labels,  @
+fem_delete_mes_not_found_labels )
+$# Mesh deleted from 1 surface: Surface 14
+ga_view_aa_set( -79.513626, -0.783138, 77.459221 )
+ga_view_aa_set( -79.513626, -0.783139, 77.459221 )
+ga_view_center_set( -2.868801, -0.181046 )
+ga_view_aa_set( -73.793159, 1.801272, 73.197563 )
+ga_view_center_set( -2.067361, 0.130625 )
+mesh_seed_display_mgr.plot(  )
+ga_view_aa_set( -82.663361, 0.799571, 67.282227 )
+ga_view_aa_set( -79.847733, 1.948320, 75.200195 )
+mesh_seed_create( "Surface 13.2 14.2", 1, 15, 0., 0., 0. )
+ga_view_aa_set( -90.791573, 12.707314, 90.534607 )
+ga_view_center_set( -3.404451, 0.408902 )
+ga_view_zoom_set( 6.122110 )
+ga_view_center_set( -5.242948, 0.791533 )
+ga_view_zoom_set( 8.417902 )
+ga_view_center_set( -7.770885, 1.317652 )
+ga_view_zoom_set( 11.574615 )
+ga_view_center_set( -4.845149, 0.560553 )
+ga_view_zoom_set( 8.417902 )
+ga_view_center_set( -2.717342, 0.005269 )
+ga_view_zoom_set( 6.122110 )
+ga_view_center_set( -1.169846, -0.401967 )
+ga_view_zoom_set( 4.452444 )
+ga_view_center_set( -0.049330, -0.698139 )
+ga_view_zoom_set( 3.238141 )
+ga_view_aa_set( -89.787262, 12.777770, 90.531570 )
+ga_view_center_set( 0.246842, -0.667624 )
+ga_view_zoom_set( 2.355012 )
+ga_view_center_set( 0.462240, -0.645431 )
+ga_view_zoom_set( 1.712736 )
+ga_view_center_set( 0.618892, -0.629291 )
+ga_view_zoom_set( 1.245626 )
+ga_view_center_set( 0.731440, -0.658290 )
+ga_view_zoom_set( 0.905910 )
+ga_view_aa_set( -94.071465, 12.815525, 78.228951 )
+ga_view_center_set( 0.429010, -0.583029 )
+ga_view_zoom_set( 1.245626 )
+ga_view_center_set( 0.013168, -0.479544 )
+ga_view_zoom_set( 1.712736 )
+ga_view_center_set( -0.558614, -0.337252 )
+ga_view_zoom_set( 2.355011 )
+ga_view_center_set( -1.344815, -0.141600 )
+ga_view_zoom_set( 3.238141 )
+ga_view_center_set( -2.425841, 0.127421 )
+ga_view_zoom_set( 4.452444 )
+ga_view_aa_set( 139.782379, 31.515650, 90.676910 )
+ga_view_center_set( -4.044605, 0.351391 )
+ga_view_zoom_set( 6.122110 )
+ga_view_center_set( -6.270405, 0.659355 )
+ga_view_zoom_set( 8.417901 )
+ga_view_center_set( -12.391349, 1.506266 )
+ga_view_zoom_set( 14.731327 )
+ga_view_center_set( -17.747177, 2.247317 )
+ga_view_zoom_set( 20.255575 )
+ga_view_center_set( -24.926168, 3.575038 )
+ga_view_zoom_set( 27.851416 )
+ga_view_center_set( -34.754829, 5.549253 )
+ga_view_zoom_set( 38.295696 )
+ga_view_center_set( -48.269241, 8.322171 )
+ga_view_zoom_set( 52.656582 )
+ga_view_center_set( -35.134285, 3.476823 )
+ga_view_zoom_set( 38.295696 )
+ga_view_center_set( -25.539131, 0.080293 )
+ga_view_zoom_set( 27.851416 )
+ga_view_center_set( -18.560846, -2.312715 )
+ga_view_zoom_set( 20.255575 )
+ga_view_center_set( -13.485723, -4.008174 )
+ga_view_zoom_set( 14.731327 )
+ga_view_center_set( -9.794725, -5.224904 )
+ga_view_zoom_set( 10.713693 )
+ga_view_aa_set( 100.613144, 20.658340, -50.349022 )
+ga_view_aa_set( -78.494484, 21.216057, 78.085114 )
+ga_view_center_set( -3.687921, 0.131943 )
+ga_view_aa_set( -77.202354, 5.926392, 89.950165 )
+ga_view_center_set( -1.692468, 0.327950 )
+ga_view_zoom_set( 7.791777 )
+ga_view_center_set( -0.245546, 0.474827 )
+ga_view_zoom_set( 5.666747 )
+ga_view_center_set( -3.475592, 0.644829 )
+ga_view_aa_set( -89.639679, 6.659891, 93.899353 )
+ga_view_aa_set( -89.639679, 6.659891, 93.899353 )
+ga_view_aa_set( -82.391396, 5.964629, 91.924721 )
+ga_view_center_set( -2.228529, 0.176788 )
+ga_view_zoom_set( 4.121270 )
+ga_view_center_set( -1.317004, -0.161321 )
+ga_view_zoom_set( 2.997288 )
+ga_view_center_set( -0.647432, -0.403896 )
+ga_view_zoom_set( 2.179846 )
+ga_view_aa_set( -85.774078, 6.391584, 85.929192 )
+ga_view_aa_set( -81.032028, 5.673495, 78.929321 )
+ga_view_aa_set( -80.446037, 6.300221, 82.901497 )
+mesh_seed_display_mgr.erase(  )
+$# UNDO: Create Curve Project for Surface 14.1Surface 13
+ga_view_aa_set( -87.073883, 9.322894, 88.914909 )
+ga_view_aa_set( -80.747040, 9.249964, 86.889687 )
+STRING sgm_create_curve_pr_created_ids[VIRTUAL]
+sgm_const_curve_project_v1( "1", "Surface 14.1", "Surface 13", 1, FALSE, 3,  @
+"<0 0 -1>", "Coord 0", 3.0000001E-07, sgm_create_curve_pr_created_ids )
