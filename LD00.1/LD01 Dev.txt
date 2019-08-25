@@ -58,3 +58,16 @@
 
 08/18/19 Added - Mesh for remaining skins and bulkheads. Equivalences all nodes.
                  Somehow deleted all progress from the past 2 days by closing after saving?
+                 
+08/23/19 Added - Mesh for canard and fuse skin. Equivalenced all existing mesh.
+                 Almost recovered from crash!
+                 
+08/25/19 Added - Mesh for all airframe surfaces! Half mesh model equivalenced and verified.
+                 Model Summary: 2252 nodes, 2589 elements.
+                 
+         TODO  - Compile as Exec Deck.
+         TODO  - Assign basic properties (mat already defined)
+         TODO  - Assign uniaxial balanced test loadcase.
+         TODO  - Mirror Mesh.
+         
+08/25/19 Added - Test loadcase with fuel pressures solved successfully! Still need other 3 items above.
