@@ -71,3 +71,6 @@
          TODO  - Mirror Mesh.
          
 08/25/19 Added - Test loadcase with fuel pressures solved successfully! Still need other 3 items above.
+
+09/01/19 Added - Mirrored FEM for a full aircraft model. Inital rework on the thrustplate for proper
+                 mirroring. Inner mesh still a little messy, but acceptable for now.
