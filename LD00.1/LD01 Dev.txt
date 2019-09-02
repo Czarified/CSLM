@@ -74,3 +74,39 @@
 
 09/01/19 Added - Mirrored FEM for a full aircraft model. Inital rework on the thrustplate for proper
                  mirroring. Inner mesh still a little messy, but acceptable for now.
+                 
+         Added - Renumbering by part group:
+                
+                Fuselage:       1XXXX
+                    Skins:      11XXX
+                    Bulkheads:  15XXX
+                    Domes:      16XXX
+                
+                Fins:           2XXXX
+                    Skins:      21XXX
+                    Internal:   23XXX
+                    
+                    
+                Canards:        3XXXX
+                    Skins:      31XXX
+                    Internal:   33XXX
+                 
+                Tail:           4XXXX
+                    Skins:      41XXX
+                    Internal:   43XXX
+                 
+                 
+         ERROR - Fuselage skins have id conflicts? Fix later. Perhaps offset all of fuselage to 60000 series.
+
+         Added - Different property groups for each part. Currently only 1 property per part.
+         
+         Added - 1st "official" loadcase: 100, "Launch Config, Full Prop, On Stack, No Crosswind"
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 

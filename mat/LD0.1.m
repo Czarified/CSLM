@@ -1,7 +1,7 @@
 $$ CLSM Material Properties
 $ Benjamin Crews
 $
-$ Updated: 26JUN19
+$ Updated: 01SEP19
 $           Initial Property creation.
 
 
@@ -14,13 +14,9 @@ $       on temperature, and the CTE used is for 100deg F.
 $       For allowables, the lower value between L and LT directions is given,
 $       and the values are for a temperature of 70deg F. The tensile ultimate
 $       value is given, and the yield for compression and shear.
-$       All data in US units, as standard for CSLM LD0 (lb, in, psi)
-MAT1    301     29.0E+6 11.2E+6 0.27    0.29     8E-6   100.
-        73E+3   23E+3   50E+3
+$       All data in SI units, as standard for CSLM LD0.1 (m, kg, Pa)
+MAT1    301     1.99E+117.72E+10 0.27   8027.   16.9    100.
+        5.03E+8 1.59E+8 3.45E+8
         
-        
-
-$ Property Record : pshell.301.5
-$ Description of Material :
-$       Shell of 5mm thickness made of m_301SS.
-PSHELL  3015    301     0.005
+       
+       
