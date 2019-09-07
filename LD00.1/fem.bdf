@@ -1,3 +1,13 @@
+$ Engine RBE's
+RBE3     1               10      123456 1.       123     15089   15318
+         15319   15320   15321   15322   15323   15324   15325   15326
+         15327   15328   15329   15330   15331   15332   15333   15334
+         15335   15336   15337   15338   15339   15340   15341   15342
+         15343   15344
+
+$ Engine Grid locations
+GRID     10             48.77727 0.     -.007102
+
 $ Elements and Element Properties for region : pCanard.001
 PSHELL   1       301    .005     301             301
 $ Pset: "pCanard.001" will be imported as: "pshell.1"

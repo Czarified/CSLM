@@ -101,6 +101,27 @@
          Added - Different property groups for each part. Currently only 1 property per part.
          
          Added - 1st "official" loadcase: 100, "Launch Config, Full Prop, On Stack, No Crosswind"
+         
+09/05/19 Added - CONM2 element to represent engine mass. Initial engine mass created for center engine
+                 only. Offset from thrust plate 0.5m and RBE3 created to tie in with thrust plate.
+                 
+         TODO  - Thrust Plate needs an entire rework. Mesh is ugly and a single plate does not represent
+                 the likely design.
+                 
+         TODO  - Add static pressure from propellant mass in direction of gravity. This is something that will
+                 will have to be updated for each flight condition (weight condition and attitude).
+                 
+09/06/19Removed- Acceleration load doesn't export properly out of Patran. For some reason it comes in as SPC's.
+                 Need to create some tools to create the acceleration cards in code.
+         
+         Added - Solved for new subcase with added center engine mass.
+         
+         Added - Custom accelerations applied to every node, to fix LC 100.
+         
+         TODO  - Fins need closeouts and ribs. Unrealistic deformations currently result with the
+                 simplified geometry.
+                 
+RELEASE  -  LD0.1 Release!
                  
                  
                  

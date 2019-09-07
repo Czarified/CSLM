@@ -1,8 +1,12 @@
 $ Loads for Load Case : LD01.100
-SPCADD   2       1       3
+SPCADD   2       3
 LOAD     3      1.      1.       2      1.       4      1.       5
         1.       6
-$ Displacement Constraints of Load Set : p.1gX
+$ Acceleration of Load Set : p.1gX
+$ Acceleration cards don't work well. Didn't export from patran,
+$ and they aren't easy to apply manually. Need code to apply automatically.
+INCLUDE 'p.1gX.dat'
+
 $ Displacement Constraints of Load Set : pDisp.StackAttach
 SPC1     3       123456  11096   11113   11121   11135   11136   11137
          11138   11139   11140   11149   11150   11151   11152   11153

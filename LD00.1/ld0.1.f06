@@ -172,7 +172,7 @@
   
     MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
   
-1                                                       **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     1
+1                                                       **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -185,7 +185,7 @@
      $ DIRECT TEXT INPUT FOR FILE MANAGEMENT SECTION                                 
      $ DIRECT TEXT INPUT FOR EXECUTIVE CONTROL                                       
      $ LINEAR STATIC ANALYSIS, DATABASE                                              
-1                                                       **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     2
+1                                                       **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -193,7 +193,7 @@
                                                                                                                                     
      SOL 101                                                                                 
      CEND                                                                                    
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     3
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -211,7 +211,7 @@
                  10         SPCFORCES(PLOT)=ALL                                                                  
                  11         STRESS(PLOT)=ALL                                                                     
                  12      BEGIN BULK                                                                              
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     4
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
                                               I N P U T   B U L K   D A T A   E C H O                                               
@@ -228,34 +228,32 @@
      User information:  Material has unreasonable or inconsistent values of E, G or NU.
                               $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\fem.bdf"
                               $INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\loads.dat"
-                              $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\loads.dat"
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     5
+                              $INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\p.1gX.dat"
+                              $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\p.1gX.dat"
+                              $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.1\p.1gX.dat"
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
                                         M O D E L   S U M M A R Y          BULK = 0
                                    ENTRY NAME        NUMBER OF ENTRIES
                                    ----------        -----------------
+                                       ACCEL1                     3366
                                        CQUAD4                     3363
                                        CTRIA3                       67
-                                         GRID                     3681
+                                         GRID                     3682
                                          LOAD                        1
                                          MAT1                        1
                                        MDLPRM                        1
                                         PARAM                        3
                                        PLOAD4                       12
                                        PSHELL                       10
+                                         RBE3                        1
                                          SPC1                        1
                                        SPCADD                        1
 
  ^^^     
  ^^^ >>> IFP OPERATIONS COMPLETE <<< 
  ^^^     
- *** USER WARNING MESSAGE 2053 (GP4)
-     UNDEFINED SINGLE-POINT CONSTRAINT SET         1
-     User Information:
-     A single point constraint set selected in the Case Control could
-     not be found on either an SPCADD, SPC or SPC1 entry, or a set referenced
-     on an SPCADD entry could not be found on either an SPC or SPC1 entry.
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
  *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK PVT, TRAILER[101, 14, 0, 0, 0, 0, 0])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
@@ -269,11 +267,11 @@
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
  *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM2, TRAILER[103, 0, 0, 0, 8224, 0, 0])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3S, TRAILER[104, 0, 0, 0, 8, 256, 0])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3S, TRAILER[104, 0, 1073741824, 0, 8, 256, 0])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
  *** USER INFORMATION MESSAGE  (DATA BLOCK GEOM3S IS NOT SUPPORTED)
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4S, TRAILER[105, 0, 0, 0, 96, 0, 0])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4S, TRAILER[105, 0, 0, 0, 96, 512, 0])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
  *** USER INFORMATION MESSAGE  (DATA BLOCK GEOM4S IS NOT SUPPORTED)
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
@@ -281,9 +279,9 @@
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
  *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK EDT, TRAILER[103, 0, 0, 0, 0, 0, 4])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3, TRAILER[101, 0, 0, 0, 8, 256, 0])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM3, TRAILER[101, 0, 1073741824, 0, 8, 256, 0])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeInput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4, TRAILER[102, 0, 0, 0, 96, 0, 0])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK GEOM4, TRAILER[102, 0, 0, 0, 96, 512, 0])
  *** USER INFORMATION MESSAGE 7555 (GMTSTS)
      FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.  METRIC VALUES THAT EXCEED
      TEST TOLERANCE LIMITS ARE IDENTIFIED BY ONE OF THE FOLLOWING FLAGS PLACED TO THE RIGHT OF THE METRIC VALUE.
@@ -304,7 +302,7 @@
                              PLACED AFTER THE VALUE METRIC FOR THE TEST.
      USER INFORMATION: THE MAXIMUM MESSAGE COUNT FOR ANY ONE ELEMENT ERROR TEST COULD BE EXCEEDED BY THE 
      CUMULATIVE EFFECT OF ALL THE MESSAGES GENERATED FOR ALL OF THE DIFFERENT TESTS PERFORMED.
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     6
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -351,7 +349,7 @@
     QUAD4       60547        53.65             30.10            163.68 ++++         0.02              0.76 ++++
     QUAD4       60574        83.18             62.16            144.36              0.00              0.62 ++++
     QUAD4       60578        76.54             63.59            141.88              0.01              0.59 ++++
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     7
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -369,7 +367,7 @@
     QUAD4       61064        42.86             31.37            163.01 ++++         0.00              0.69 ++++
     QUAD4       61065        83.55             60.81            134.45              0.00              0.50 ++++
     QUAD4       61107        53.65             30.10            163.68 ++++         0.02              0.76 ++++
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     8
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
 
@@ -389,7 +387,7 @@
          QUAD4    ELEMENT ID    21587 PRODUCED SMALLEST INTERIOR ANGLE   OF      21.43 (TOLERANCE =       30.00).
          QUAD4    ELEMENT ID    60547 PRODUCED LARGEST  INTERIOR ANGLE   OF     163.68 (TOLERANCE =      150.00).
          QUAD4    ELEMENT ID    60719 PRODUCED LARGEST  WARP FACTOR      OF       0.05 (TOLERANCE =        0.05).
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE     9
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -406,7 +404,7 @@
                MY       ----          ----          ----          ----       0.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
              TOTALS -1.576547E+04 -2.817251E-08 -1.033424E+02 -9.540436E+00  3.987840E+04 -4.096680E+00
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    10
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    10
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -462,7 +460,7 @@
                                98        G      6         0.00E+00          B        F         B        F     
                                99        G      1         0.00E+00          B        F         B        F     
                                99        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    11
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    11
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -518,7 +516,7 @@
                               173        G      2         0.00E+00          B        F         B        F     
                               173        G      3         0.00E+00          B        F         B        F     
                               173        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    12
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    12
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -574,7 +572,7 @@
                               247        G      4         0.00E+00          B        F         B        F     
                               247        G      5         0.00E+00          B        F         B        F     
                               247        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    13
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    13
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -630,7 +628,7 @@
                               355        G      6         0.00E+00          B        F         B        F     
                               356        G      1         0.00E+00          B        F         B        F     
                               356        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    14
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    14
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -686,7 +684,7 @@
                               364        G      2         0.00E+00          B        F         B        F     
                               364        G      3         0.00E+00          B        F         B        F     
                               364        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    15
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    15
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -742,7 +740,7 @@
                               380        G      4         0.00E+00          B        F         B        F     
                               380        G      5         0.00E+00          B        F         B        F     
                               380        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    16
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    16
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -798,7 +796,7 @@
                             10004        G      6         0.00E+00          B        F         B        F     
                             10005        G      1         0.00E+00          B        F         B        F     
                             10005        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    17
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    17
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -854,7 +852,7 @@
                             10014        G      2         0.00E+00          B        F         B        F     
                             10014        G      3         0.00E+00          B        F         B        F     
                             10014        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    18
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    18
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -910,7 +908,7 @@
                             10023        G      4         0.00E+00          B        F         B        F     
                             10023        G      5         0.00E+00          B        F         B        F     
                             10023        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    19
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    19
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -966,7 +964,7 @@
                             10031        G      6         0.00E+00          B        F         B        F     
                             10032        G      1         0.00E+00          B        F         B        F     
                             10032        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    20
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    20
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1022,7 +1020,7 @@
                             10041        G      2         0.00E+00          B        F         B        F     
                             10041        G      3         0.00E+00          B        F         B        F     
                             10041        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    21
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    21
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1078,7 +1076,7 @@
                             10050        G      4         0.00E+00          B        F         B        F     
                             10050        G      5         0.00E+00          B        F         B        F     
                             10050        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    22
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    22
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1134,7 +1132,7 @@
                             10058        G      6         0.00E+00          B        F         B        F     
                             10059        G      1         0.00E+00          B        F         B        F     
                             10059        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    23
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    23
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1190,7 +1188,7 @@
                             10067        G      2         0.00E+00          B        F         B        F     
                             10067        G      3         0.00E+00          B        F         B        F     
                             10067        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    24
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    24
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1246,7 +1244,7 @@
                             10078        G      4         0.00E+00          B        F         B        F     
                             10078        G      5         0.00E+00          B        F         B        F     
                             10078        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    25
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    25
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1302,7 +1300,7 @@
                             10087        G      6         0.00E+00          B        F         B        F     
                             10088        G      1         0.00E+00          B        F         B        F     
                             10088        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    26
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    26
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1358,7 +1356,7 @@
                             10097        G      2         0.00E+00          B        F         B        F     
                             10097        G      3         0.00E+00          B        F         B        F     
                             10097        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    27
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    27
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1414,7 +1412,7 @@
                             10108        G      4         0.00E+00          B        F         B        F     
                             10108        G      5         0.00E+00          B        F         B        F     
                             10108        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    28
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    28
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1470,7 +1468,7 @@
                             10123        G      6         0.00E+00          B        F         B        F     
                             10124        G      1         0.00E+00          B        F         B        F     
                             10124        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    29
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    29
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1526,7 +1524,7 @@
                             10137        G      2         0.00E+00          B        F         B        F     
                             10137        G      3         0.00E+00          B        F         B        F     
                             10137        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    30
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    30
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1582,7 +1580,7 @@
                             10150        G      4         0.00E+00          B        F         B        F     
                             10150        G      5         0.00E+00          B        F         B        F     
                             10150        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    31
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    31
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1638,7 +1636,7 @@
                             10159        G      6         0.00E+00          B        F         B        F     
                             10160        G      1         0.00E+00          B        F         B        F     
                             10160        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    32
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    32
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1694,7 +1692,7 @@
                             10171        G      2         0.00E+00          B        F         B        F     
                             10171        G      3         0.00E+00          B        F         B        F     
                             10171        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    33
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    33
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1750,7 +1748,7 @@
                             10200        G      4         0.00E+00          B        F         B        F     
                             10200        G      5         0.00E+00          B        F         B        F     
                             10200        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    34
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    34
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1806,7 +1804,7 @@
                             10211        G      6         0.00E+00          B        F         B        F     
                             10212        G      1         0.00E+00          B        F         B        F     
                             10212        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    35
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    35
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1862,7 +1860,7 @@
                             10225        G      2         0.00E+00          B        F         B        F     
                             10225        G      3         0.00E+00          B        F         B        F     
                             10225        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    36
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    36
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1918,7 +1916,7 @@
                             10235        G      4         0.00E+00          B        F         B        F     
                             10235        G      5         0.00E+00          B        F         B        F     
                             10235        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    37
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    37
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -1974,7 +1972,7 @@
                             10252        G      6         0.00E+00          B        F         B        F     
                             10253        G      1         0.00E+00          B        F         B        F     
                             10253        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    38
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    38
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2030,7 +2028,7 @@
                             10261        G      2         0.00E+00          B        F         B        F     
                             10261        G      3         0.00E+00          B        F         B        F     
                             10261        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    39
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    39
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2086,7 +2084,7 @@
                             10273        G      4         0.00E+00          B        F         B        F     
                             10273        G      5         0.00E+00          B        F         B        F     
                             10273        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    40
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    40
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2142,7 +2140,7 @@
                             10282        G      6         0.00E+00          B        F         B        F     
                             10283        G      1         0.00E+00          B        F         B        F     
                             10283        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    41
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    41
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2198,7 +2196,7 @@
                             10292        G      2         0.00E+00          B        F         B        F     
                             10292        G      3         0.00E+00          B        F         B        F     
                             10292        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    42
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    42
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2254,7 +2252,7 @@
                             10302        G      4         0.00E+00          B        F         B        F     
                             10302        G      5         0.00E+00          B        F         B        F     
                             10302        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    43
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    43
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2310,7 +2308,7 @@
                             10318        G      6         0.00E+00          B        F         B        F     
                             10320        G      1         0.00E+00          B        F         B        F     
                             10320        G      2         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    44
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    44
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2366,7 +2364,7 @@
                             10329        G      2         0.00E+00          B        F         B        F     
                             10329        G      3         0.00E+00          B        F         B        F     
                             10329        G      4         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    45
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    45
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2422,7 +2420,7 @@
                             10338        G      4         0.00E+00          B        F         B        F     
                             10338        G      5         0.00E+00          B        F         B        F     
                             10338        G      6         0.00E+00          B        F         B        F     
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    46
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    46
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -2479,14 +2477,14 @@
   
  *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
      THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    5.759979E+02
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    47
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    47
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
  *** USER INFORMATION MESSAGE 5293 (SSG3A)
     FOR DATA BLOCK KLL     
     LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
                 1         -7.2699800E-14          2.0235842E+06
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    48
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    48
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -2503,21 +2501,21 @@
                MY       ----          ----          ----          ----      -1.231502E+03     ----                                  
                MZ       ----          ----          ----          ----          ----      -8.921677E-01                             
              TOTALS  1.576547E+04 -1.250788E-06  1.033424E+02  9.540431E+00 -3.987840E+04  4.096597E+00
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    49
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    49
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  SPCFORCES       
   SUBCASE/
   DAREA ID        T1             T2             T3             R1             R2             R3
 0      100   1.0199341E+06  5.1912979E+05  4.7614824E+05  9.4648008E+02  2.0970834E+03  8.1775507E+02
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    50
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    50
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  DISPLACEMENTS   
   SUBCASE/
   DAREA ID        T1             T2             T3             R1             R2             R3
 0      100   1.8491066E-01  6.6617489E-01  7.1315693E-01  9.4026398E-01  4.7084311E-01  5.3404910E-01
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    51
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    51
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  APPLIED LOADS   
@@ -2525,12 +2523,12 @@
   DAREA ID        T1             T2             T3             R1             R2             R3
 0      100   3.6480774E+05  5.1795027E+05  6.3374465E+05  0.0000000E+00  0.0000000E+00  0.0000000E+00
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OUG1, TRAILER[101, 0, 29448, 0, 0, 0, 2])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OUG1, TRAILER[101, 0, 29456, 0, 0, 0, 2])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OES1X, TRAILER[102, 63, 9, 1, 19, 0, 2])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OES1X, TRAILER[102, 63, 9, 6, 19, 0, 2])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OQG1, TRAILER[102, 0, 29448, 0, 0, 0, 2])
-1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   1, 2019  MSC Nastran  3/11/18   PAGE    52
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OQG1, TRAILER[102, 0, 29456, 0, 0, 0, 2])
+1    MSC.NASTRAN JOB CREATED ON 01-SEP-19 AT 22:26:35   **STUDENT EDITION*SEPTEMBER   6, 2019  MSC Nastran  3/11/18   PAGE    52
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     71
