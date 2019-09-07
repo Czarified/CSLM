@@ -7,7 +7,8 @@ RBE3     1               10      123456 1.       123     15089   15318
 
 $ Engine Grid locations
 GRID     10             48.77727 0.     -.007102
-
+$ Elements and Element Properties for region : pMass.RaptorSL
+CONM2    61122   10             660.
 $ Elements and Element Properties for region : pCanard.001
 PSHELL   1       301    .005     301             301
 $ Pset: "pCanard.001" will be imported as: "pshell.1"

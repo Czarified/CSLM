@@ -121,6 +121,10 @@
          TODO  - Fins need closeouts and ribs. Unrealistic deformations currently result with the
                  simplified geometry.
                  
+09/07/19 FIX   - CONM2 element for raptor previously did not export. Corrected and re-solved.
+         
+         Added - Mass Properties report.
+                 
 RELEASE  -  LD0.1 Release!
                  
                  
