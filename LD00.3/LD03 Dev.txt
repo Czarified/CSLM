@@ -1,0 +1,10 @@
+10/04/19    Added   - LD0.3 Folder structure. New Dev Log.
+                      This version represents first update with the 2019 Mk3 Starship configuration.
+
+            TODO    - Update VSP geometry with 2 fins 2 swept canards and FEA parts.
+            TODO    - Import OML in Patran.
+            
+                 
+                 
+                 
+                 

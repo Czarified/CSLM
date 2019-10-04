@@ -1,0 +1,158 @@
+ *** BEGIN MESSAGE ECHO (NIFIMP) 
+
+
+ *** END MESSAGE ECHO (NIFIMP) 
+
+Beginning Analysis
+
+ *** START OF CONTROL FILE ECHO ***
+ $ sysfield=SCR*(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/conf/nast20181.rcf[2])
+ $ sysfield=DBALL(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/conf/nast20181.rcf[3])
+ $sdir=C:\SCRATCH $(d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/conf/nast20181.rcf[8])
+ Nastran SYSTEM(444)=6 $([5])
+ JID='d:/czarified/documents/github/cslm/mat/ld0.1_22229880.bdf'
+ OUT='./ld0.1_22229880'
+ MEM=740MB      $
+ MACH='Intel'
+ OPER='Windows 10 Home'
+ OSV='6.2 9200'
+ MODEL='Xeon/3533 (Jarvis)'
+ CONFIG=6
+ NPROC=4
+ symbol=DELDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/nast/del' $(program default)
+ symbol=DEMODIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/nast/demo' $(program default)
+ symbol=MKL_INTERFACE_LAYER=ILP64 $(d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/conf/nast20181.rcf[1])
+ symbol=SSSALTERDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/nast/sssalter' $(program default)
+ symbol=TPLDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/nast/tpl' $(program default)
+ symbol=VENDBLASLIB=MSCblas.dll $(command line[7])
+ SDIR='c:/users/czarif~1/appdata/local/temp/ld0.1_22229880.T13016_45'
+ DBS='./ld0.1_22229880'
+ SCR='no'
+ SMEM=100
+ BPOOL=150
+ NEWDEL='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/win64i4/SSS'
+ DEL='MSCDEF'
+ AUTH='EDU'
+ AUTHQUE=20
+ MSGCAT='d:/msc.software/msc_nastran_and_patran_student_editions/20181/patran/mscnastran_files/20181/servermode/msc20181/win64i4/analysis.msg'
+ MSGDEST='f06'
+ *** END OF CONTROL FILE ECHO ***
+
+1
+ 
+ 
+ 
+ 
+                      Warning: This computer program is protected by copyright law and international treaties.       
+                  Unauthorized use, reproduction or distribution of this computer program, or any portion of it, may 
+                                          result in severe civil and criminal penalties.                             
+                         Copyright (C) 2017 MSC Software Corporation and its licensors. All rights reserved.         
+ 
+ 
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * *                                 * *
+                                              * *           MSC Software          * *
+                                              * *               CORP              * *
+                                              * *                                 * *
+                                              * *      M S C   N a s t r a n      * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *     Version 2018.1.0-CL553137   * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *                                 * *
+                                              * *          MAR 12, 2018           * *
+                                              * *                                 * *
+                                              * *              Intel              * *
+                                              * *    MODEL Xeon/3533 (Jarvis)     * *
+                                              * *    Windows 10 Home 6.2 9200     * *
+                                              * *        Compiled for 8664        * *
+                                              * *                                 * *
+                                              * * * * * * * * * * * * * * * * * * * *
+                                              * * * * * * * * * * * * * * * * * * * *
+ *** USER WARNING MESSAGE 333 (GETLIN)
+     THE BEGIN BULK STATEMENT IS MISSING. A BEGIN BULK STATEMENT WILL BE INSERTED BY THE PROGRAM
+1                                                                         SEPTEMBER  15, 2019  MSC Nastran  3/12/18   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     $ SYSFIELD=SCR*(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NAS
+     $ SYSFIELD=DBALL(RAW=YES,BUFFIO=YES,WNUM=16,WSIZE=16MB) $(D:/MSC.SOFTWARE/MSC_NA
+     $SDIR=C:\SCRATCH $(D:/MSC.SOFTWARE/MSC_NASTRAN_AND_PATRAN_STUDENT_EDITIONS/20181
+     NASTRAN SYSTEM(444)=6 $([5])                                                    
+     $                                                                               
+     $ ORIGINAL INPUT FILE: D:\CZARIFIED\DOCUMENTS\GITHUB\CSLM\MAT\LD0.1.M           
+     $                                                                               
+     NASTRAN  SYSTEM(316)=5 SYSTEM(357)=0 SYSTEM(732)=1                              
+     INIT MASTER, LOGICAL=(MASTER(300000))                                           
+1                                                                         SEPTEMBER  15, 2019  MSC Nastran  3/12/18   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     SOL NIFIMP3                                                                             
+     COMPILE NIFIMP3 NOLIST                                                                  
+     (SEE NASTRAN SOURCE PROGRAM COMPILATION FOR LISTING OF DMAP SEQUENCE)
+     END $ NIFIMP                                                                            
+     ALTER 'IFP1 .*/ICASECC.*' (1), 'IFP1 .*/ICASECC.*' (1) $                                
+     IFP1     /ICASECC,IPCDB,IXYCDB,IPOSTCDB,IFORCE,,,                                       
+              /S,N,NOGOIFP1/// $                                                             
+     CEND                                                                                    
+1   PATRAN NIFIMP BDF READER - TITLE                                      SEPTEMBER  15, 2019  MSC Nastran  3/12/18   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      TITLE=PATRAN NIFIMP BDF READER - TITLE                                                  
+                  2      ECHO = NONE                                                                             
+                  3      $$ CLSM MATERIAL PROPERTIES                                                             
+                  4      $ BENJAMIN CREWS                                                                        
+                  5      $                                                                                       
+                  6      $ UPDATED: 01SEP19                                                                      
+                  7      $           INITIAL PROPERTY CREATION.                                                  
+                  8                                                                                              
+                  9                                                                                              
+                 10      $ MATERIAL RECORD : M_301SS                                                             
+                 11      $ DESCRIPTION OF MATERIAL :                                                             
+                 12      $       BASIC ISOTROPIC STAINLESS STEEL 301. MATERIAL DATA COMES FROM                   
+                 13      $       MMPDS-13. FORM IS ASSUMED TO BE SHEET, AND S-BASIS ALLOWABLES AR        E TAKEN.
+                 14      $       BASIC DENSITY VALUE IS TAKEN FROM MATWEB. THIS MATERIAL IS NOT D        EPENDENT
+                 15      $       ON TEMPERATURE, AND THE CTE USED IS FOR 100DEG F.                               
+                 16      $       FOR ALLOWABLES, THE LOWER VALUE BETWEEN L AND LT DIRECTIONS IS G        IVEN,   
+                 17      $       AND THE VALUES ARE FOR A TEMPERATURE OF 70DEG F. THE TENSILE ULT        IMATE   
+                 18      $       VALUE IS GIVEN, AND THE YIELD FOR COMPRESSION AND SHEAR.                        
+                 19      $       ALL DATA IN SI UNITS, AS STANDARD FOR CSLM LD0.1 (M, KG, PA)                    
+                 20      BEGIN BULK $ GENERATED BY GETLIN                                                        
+ *** USER WARNING MESSAGE 112 (SCA.MDSolver.Obj.InputFile:InputFile::read)
+The include directory D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\mscnastran_files\20181\servermode\msc20181\\nast\\tpl\include is not readable.
+ *** USER WARNING MESSAGE 112 (SCA.MDSolver.Obj.InputFile:InputFile::read)
+The include directory D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\mscnastran_files\20181\servermode\msc20181\\nast\\tpl\include is not readable.
+
+*** USER WARNING MESSAGE (fn: GETLIN)
+    The BEGIN BULK statement is missing.
+1   PATRAN NIFIMP BDF READER - TITLE                                      SEPTEMBER  15, 2019  MSC Nastran  3/12/18   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+                                              I N P U T   B U L K   D A T A   E C H O                                               
+                 ENTRY                                                                                                              
+                 COUNT        .   1  ..   2  ..   3  ..   4  ..   5  ..   6  ..   7  ..   8  ..   9  ..  10  .                      
+ *** USER WARNING MESSAGE 9994 (BULFUN)
+     MAT1 with MID=301 near line -1
+     User information:  Material has unreasonable or inconsistent values of E, G or NU.
+1   PATRAN NIFIMP BDF READER - TITLE                                      SEPTEMBER  15, 2019  MSC Nastran  3/12/18   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+                                        M O D E L   S U M M A R Y          BULK = 0
+                                   ENTRY NAME        NUMBER OF ENTRIES
+                                   ----------        -----------------
+                                         MAT1                        1
+
+ ^^^     
+ ^^^ >>> IFP OPERATIONS COMPLETE <<< 
+ ^^^     

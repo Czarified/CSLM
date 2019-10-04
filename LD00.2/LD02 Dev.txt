@@ -1,0 +1,24 @@
+09/15/19    Added   - LD0.2 Folder structure. New Dev Log.
+            
+            Added   - Fill in the gaps on the wing joints.
+            Added   - Fill in the gaps on the wing tips.
+            TODO    - Create at least 2 reinforcing rings (BAR elements)
+            TODO    - Recreate Thrust Plate mesh.
+            TODO    - Increase mass of "engine"
+            TODO    - Check material density!
+
+                 
+09/16/19    Added   - T-section rings around LOX tank and mid-section. Rings are modeled as CBEAM elements
+                      and the element line is at the neutral OML. No offsets are used. Thus, the outer
+                      caps slightly extend beyond the aircraft OML.
+                      
+                      
+09/20/19    Added   - Clean iso-mesh in aft section. Ready for structural ring creation.
+                      Equivalenced mesh in aft bays.
+            Added   - Structural ring supports for wing joint.
+                 
+                 
+                 
+                 
+                 
+                 
