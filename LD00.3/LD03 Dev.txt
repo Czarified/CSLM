@@ -4,7 +4,7 @@
             TODO    - Update VSP geometry with 2 fins 2 swept canards and FEA parts.
             TODO    - Import OML in Patran.
             
-                 
-                 
-                 
-                 
+            Added   - Updated VSP geometry with 2 fins, 2 swept canards, moved prop domes, and header dome.
+            
+10/06/19    Added   - Pulled geometry into Patran for meshing prep work. Fins split and updated for a full
+                      wingbox structure. Edges merged with fuselage skin.

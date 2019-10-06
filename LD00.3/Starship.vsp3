@@ -8,15 +8,15 @@
       <AdjustView>
         <CORX Value="2.540909004211425781e+01" ID="UOPYNSBBJHD"/>
         <CORY Value="0.000000000000000000e+00" ID="ZYJILALIKJX"/>
-        <CORZ Value="-0.000000000000000000e+00" ID="ISILKEOJDUV"/>
+        <CORZ Value="0.000000000000000000e+00" ID="ISILKEOJDUV"/>
         <PanX Value="1.639742088317871094e+01" ID="ZYASTBOVVRY"/>
         <PanY Value="-1.060128211975097656e+00" ID="SYTPVQALAOJ"/>
-        <RotationX Value="2.783425542449444023e+01" ID="TKSLLIKEJZC"/>
-        <RotationY Value="-6.078258425418466260e+01" ID="EMHYQEHHBIQ"/>
-        <RotationZ Value="-6.739185095549335358e+01" ID="VDDTQDRTVRQ"/>
+        <RotationX Value="3.874343868948068348e+01" ID="TKSLLIKEJZC"/>
+        <RotationY Value="-1.486887103063253868e+01" ID="EMHYQEHHBIQ"/>
+        <RotationZ Value="-2.441446337688638835e+01" ID="VDDTQDRTVRQ"/>
         <ViewportX Value="1.718000000000000000e+03" ID="ZGQARHDIWOU"/>
         <ViewportY Value="1.328000000000000000e+03" ID="JXTOMKZESJW"/>
-        <Zoom Value="3.301474824547767639e-02" ID="YAZAMDLRXSN"/>
+        <Zoom Value="1.329672895371913910e-02" ID="YAZAMDLRXSN"/>
       </AdjustView>
       <AirfoilExport>
         <AFAppendGeomIDFlag Value="1.000000000000000000e+00" ID="VUDIABOGAWW"/>
@@ -422,7 +422,7 @@
                 <Name>ThrustPlate</Name>
                 <FeaPart>
                   <AbsCenterLocation Value="4.827727272727272378e+01" ID="IFOINXFFOCU"/>
-                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="FNKIPADURXR"/>
+                  <AbsRelParmFlag Value="0.000000000000000000e+00" ID="FNKIPADURXR"/>
                   <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="XUHYYQQDISC"/>
                   <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="CCJHMPJRGFX"/>
                   <FeaPropertyIndex Value="3.000000000000000000e+00" ID="YTNIFOROEFX"/>
@@ -443,7 +443,7 @@
               <FeaPartType>4</FeaPartType>
               <ParmContainer>
                 <ID>EOCTDOUMVA</ID>
-                <Name>LowerCH4</Name>
+                <Name>LowerLOX</Name>
                 <FeaDome>
                   <A_Radius Value="3.000000000000000000e+00" ID="MPQHNTWMCHR"/>
                   <B_Radius Value="4.599999999999999645e+00" ID="DKVGOVUGKXP"/>
@@ -451,7 +451,7 @@
                   <FlipDirectionFlag Value="0.000000000000000000e+00" ID="YDFYQYFTKZG"/>
                   <SpineAttachFlag Value="0.000000000000000000e+00" ID="PCZVUMJUMRY"/>
                   <USpineLoc Value="7.557251908396946938e-01" ID="CEPQJIHACED"/>
-                  <X_Location Value="4.445000000000000284e+01" ID="FZOIIQKAJWO"/>
+                  <X_Location Value="4.460000000000000142e+01" ID="FZOIIQKAJWO"/>
                   <X_Rotation Value="0.000000000000000000e+00" ID="GBAOUVDLUVE"/>
                   <Y_Location Value="0.000000000000000000e+00" ID="QNYPOAIIERE"/>
                   <Y_Rotation Value="0.000000000000000000e+00" ID="VTLAFZHLQAI"/>
@@ -482,7 +482,7 @@
                   <FlipDirectionFlag Value="0.000000000000000000e+00" ID="DUPBXEDYIBM"/>
                   <SpineAttachFlag Value="0.000000000000000000e+00" ID="HIOTHCPAGLC"/>
                   <USpineLoc Value="0.000000000000000000e+00" ID="GUQEMJCRIVU"/>
-                  <X_Location Value="3.550000000000000000e+01" ID="NVINSIYKFQF"/>
+                  <X_Location Value="3.000000000000000000e+01" ID="NVINSIYKFQF"/>
                   <X_Rotation Value="0.000000000000000000e+00" ID="HJDLZDRQSXX"/>
                   <Y_Location Value="0.000000000000000000e+00" ID="VXUKUQWQWMF"/>
                   <Y_Rotation Value="0.000000000000000000e+00" ID="PQVTUTHVAPK"/>
@@ -505,7 +505,7 @@
               <FeaPartType>4</FeaPartType>
               <ParmContainer>
                 <ID>EQDVYXBIIW</ID>
-                <Name>UpperLox</Name>
+                <Name>UpperCH4</Name>
                 <FeaDome>
                   <A_Radius Value="3.000000000000000000e+00" ID="YJSNPAVIYIJ"/>
                   <B_Radius Value="4.599999999999999645e+00" ID="DSFGFERENRE"/>
@@ -513,7 +513,7 @@
                   <FlipDirectionFlag Value="1.000000000000000000e+00" ID="WMPLWTAMTLV"/>
                   <SpineAttachFlag Value="0.000000000000000000e+00" ID="UDVBOZQDFRX"/>
                   <USpineLoc Value="0.000000000000000000e+00" ID="CGVSIVEAEEB"/>
-                  <X_Location Value="2.800000000000000000e+01" ID="WDHJYBUQPDR"/>
+                  <X_Location Value="2.580000000000000071e+01" ID="WDHJYBUQPDR"/>
                   <X_Rotation Value="0.000000000000000000e+00" ID="IGLRUAUQZKW"/>
                   <Y_Location Value="0.000000000000000000e+00" ID="LEFYBDFECTC"/>
                   <Y_Rotation Value="0.000000000000000000e+00" ID="NUVZVXJTYEE"/>
@@ -538,14 +538,14 @@
                 <ID>UDCFWZJMAS</ID>
                 <Name>CargoBulkhead</Name>
                 <FeaPart>
-                  <AbsCenterLocation Value="2.413863636363636189e+01" ID="BTDARRFZKQB"/>
-                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="OOGBSVZEZGM"/>
+                  <AbsCenterLocation Value="2.250000000000000000e+01" ID="BTDARRFZKQB"/>
+                  <AbsRelParmFlag Value="0.000000000000000000e+00" ID="OOGBSVZEZGM"/>
                   <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="LSCSPCRUSUW"/>
                   <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="VSJXPATQLIL"/>
                   <FeaPropertyIndex Value="7.000000000000000000e+00" ID="ERZEJKSFLTY"/>
                   <IncludedElements Value="0.000000000000000000e+00" ID="WONRFBFDMRG"/>
                   <MainSurfIndx Value="0.000000000000000000e+00" ID="NHKEOVQVRKH"/>
-                  <RelCenterLocation Value="4.749999999999999778e-01" ID="DAXKSTBZUJU"/>
+                  <RelCenterLocation Value="4.427549194991055037e-01" ID="DAXKSTBZUJU"/>
                 </FeaPart>
                 <FeaSlice>
                   <OrientationPlane Value="1.000000000000000000e+00" ID="HDDFQCOPDDM"/>
@@ -553,78 +553,6 @@
                   <XRot Value="0.000000000000000000e+00" ID="LTAUXEGRXCQ"/>
                   <YRot Value="0.000000000000000000e+00" ID="QARUKCGWODH"/>
                   <ZRot Value="0.000000000000000000e+00" ID="ZQJNQDSKXOJ"/>
-                </FeaSlice>
-              </ParmContainer>
-            </FeaPartInfo>
-            <FeaPartInfo>
-              <FeaPartType>0</FeaPartType>
-              <ParmContainer>
-                <ID>PUPFRPUJAU</ID>
-                <Name>CraneBulkhead</Name>
-                <FeaPart>
-                  <AbsCenterLocation Value="1.321272727272727288e+01" ID="WIYOSHHHAJK"/>
-                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="MMJBTWPFEVG"/>
-                  <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="HQGMIYNKXTL"/>
-                  <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="EEQMGLQZBNC"/>
-                  <FeaPropertyIndex Value="8.000000000000000000e+00" ID="QQKSIVVTWVV"/>
-                  <IncludedElements Value="0.000000000000000000e+00" ID="EIZDKHNNJAF"/>
-                  <MainSurfIndx Value="0.000000000000000000e+00" ID="URFHMBBSJSA"/>
-                  <RelCenterLocation Value="2.600000000000000089e-01" ID="EQIVERGWQKF"/>
-                </FeaPart>
-                <FeaSlice>
-                  <OrientationPlane Value="1.000000000000000000e+00" ID="HOSNEQXVXIY"/>
-                  <RotationAxis Value="0.000000000000000000e+00" ID="LSEADANJQYF"/>
-                  <XRot Value="0.000000000000000000e+00" ID="XFAULNSYCXM"/>
-                  <YRot Value="0.000000000000000000e+00" ID="VUKSVNKYSCZ"/>
-                  <ZRot Value="0.000000000000000000e+00" ID="JDAUPJKXYIE"/>
-                </FeaSlice>
-              </ParmContainer>
-            </FeaPartInfo>
-            <FeaPartInfo>
-              <FeaPartType>0</FeaPartType>
-              <ParmContainer>
-                <ID>EEAYOVXDPL</ID>
-                <Name>CanardAftBulkhead</Name>
-                <FeaPart>
-                  <AbsCenterLocation Value="9.147272727272726556e+00" ID="MNPIVPEJYNI"/>
-                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="OSJNHDOCOQQ"/>
-                  <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="UHRKWQXUFMQ"/>
-                  <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="JTDRKSORDRF"/>
-                  <FeaPropertyIndex Value="9.000000000000000000e+00" ID="YAQIVIDAMCU"/>
-                  <IncludedElements Value="0.000000000000000000e+00" ID="YUXSESEEGBP"/>
-                  <MainSurfIndx Value="0.000000000000000000e+00" ID="YXTITZWUMQM"/>
-                  <RelCenterLocation Value="1.799999999999999933e-01" ID="REKDLKLRNEI"/>
-                </FeaPart>
-                <FeaSlice>
-                  <OrientationPlane Value="1.000000000000000000e+00" ID="QHIYEBYQFVW"/>
-                  <RotationAxis Value="0.000000000000000000e+00" ID="SPIJXKHQZSE"/>
-                  <XRot Value="0.000000000000000000e+00" ID="ZRLGWJMVHFN"/>
-                  <YRot Value="0.000000000000000000e+00" ID="TZEAXSDVGSA"/>
-                  <ZRot Value="0.000000000000000000e+00" ID="GVYNDBQSWNA"/>
-                </FeaSlice>
-              </ParmContainer>
-            </FeaPartInfo>
-            <FeaPartInfo>
-              <FeaPartType>0</FeaPartType>
-              <ParmContainer>
-                <ID>JKTCWMXHPB</ID>
-                <Name>CanardFwdBulkhead</Name>
-                <FeaPart>
-                  <AbsCenterLocation Value="5.589999999999999858e+00" ID="PTJKWXMQUHY"/>
-                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="SGSJSEIAWRV"/>
-                  <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="DOLAWXGEHXC"/>
-                  <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="QNHMZBODERV"/>
-                  <FeaPropertyIndex Value="1.000000000000000000e+01" ID="QVEYCFPZHNJ"/>
-                  <IncludedElements Value="0.000000000000000000e+00" ID="VZFDNXXAZPE"/>
-                  <MainSurfIndx Value="0.000000000000000000e+00" ID="EDNVXEEHQIF"/>
-                  <RelCenterLocation Value="1.100000000000000006e-01" ID="IFCHKXGCEFO"/>
-                </FeaPart>
-                <FeaSlice>
-                  <OrientationPlane Value="1.000000000000000000e+00" ID="OXMJSFIIUCI"/>
-                  <RotationAxis Value="0.000000000000000000e+00" ID="BLTNOVAICKO"/>
-                  <XRot Value="0.000000000000000000e+00" ID="NDITHLUGEAK"/>
-                  <YRot Value="0.000000000000000000e+00" ID="WVWAEUCQCJP"/>
-                  <ZRot Value="0.000000000000000000e+00" ID="UBLDVFTUDHR"/>
                 </FeaSlice>
               </ParmContainer>
             </FeaPartInfo>
@@ -650,6 +578,37 @@
                   <YRot Value="0.000000000000000000e+00" ID="TVGQORSPQCZ"/>
                   <ZRot Value="0.000000000000000000e+00" ID="TNAJGTLRTWH"/>
                 </FeaSlice>
+              </ParmContainer>
+            </FeaPartInfo>
+            <FeaPartInfo>
+              <FeaPartType>4</FeaPartType>
+              <ParmContainer>
+                <ID>MNOBJFJFJZ</ID>
+                <Name>HeaderDome</Name>
+                <FeaDome>
+                  <A_Radius Value="1.000000000000000000e+00" ID="XLSHFPLTVLW"/>
+                  <B_Radius Value="2.500000000000000000e+00" ID="RWQNUJECDWA"/>
+                  <C_Radius Value="2.500000000000000000e+00" ID="NACNBNVMFAO"/>
+                  <FlipDirectionFlag Value="0.000000000000000000e+00" ID="BEIIHFYGDKA"/>
+                  <SpineAttachFlag Value="0.000000000000000000e+00" ID="YEKPTOKMUGG"/>
+                  <USpineLoc Value="0.000000000000000000e+00" ID="LGNCDSZVTRS"/>
+                  <X_Location Value="4.000000000000000000e+00" ID="KFFVOVLLRES"/>
+                  <X_Rotation Value="0.000000000000000000e+00" ID="PJJCDSWLPON"/>
+                  <Y_Location Value="0.000000000000000000e+00" ID="KIYMZTMFYLH"/>
+                  <Y_Rotation Value="0.000000000000000000e+00" ID="BRJQFBBUVWA"/>
+                  <Z_Location Value="0.000000000000000000e+00" ID="MDKPZLTQZLI"/>
+                  <Z_Rotation Value="0.000000000000000000e+00" ID="SBMSERXGHMP"/>
+                </FeaDome>
+                <FeaPart>
+                  <AbsCenterLocation Value="0.000000000000000000e+00" ID="ODQAYWCTWIM"/>
+                  <AbsRelParmFlag Value="1.000000000000000000e+00" ID="ZGLLEBLVBHQ"/>
+                  <CapFeaPropertyIndex Value="1.000000000000000000e+00" ID="ROCHQJIAAKB"/>
+                  <DrawFeaPartFlag Value="1.000000000000000000e+00" ID="ODOXOEFNBAB"/>
+                  <FeaPropertyIndex Value="0.000000000000000000e+00" ID="NXGJDPFAMMU"/>
+                  <IncludedElements Value="0.000000000000000000e+00" ID="RYHFEGEKAPI"/>
+                  <MainSurfIndx Value="0.000000000000000000e+00" ID="UQWPMORENVB"/>
+                  <RelCenterLocation Value="5.000000000000000000e-01" ID="VFQNEBTEOSS"/>
+                </FeaPart>
               </ParmContainer>
             </FeaPartInfo>
             <StructSettings>
@@ -1954,8 +1913,8 @@
           <Name>Default</Name>
           <Color_Parm>
             <Alpha Value="2.550000000000000000e+02" ID="CKEEIPBMZXB"/>
-            <Blue Value="2.550000000000000000e+02" ID="ZHQRUSYGUOD"/>
-            <Green Value="0.000000000000000000e+00" ID="UFKBNZSSUMV"/>
+            <Blue Value="0.000000000000000000e+00" ID="ZHQRUSYGUOD"/>
+            <Green Value="2.550000000000000000e+02" ID="UFKBNZSSUMV"/>
             <Red Value="0.000000000000000000e+00" ID="MSZZHVBYGMA"/>
           </Color_Parm>
         </ParmContainer>
@@ -3325,7 +3284,7 @@
         </FeaProperty>
       </ParmContainer>
     </FeaPropertyInfo>
-    <CurrStructIndex>1</CurrStructIndex>
+    <CurrStructIndex>0</CurrStructIndex>
   </StructureMgr>
   <ClippingMgr>
     <ParmContainer>

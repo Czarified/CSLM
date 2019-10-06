@@ -1,0 +1,54 @@
+
+ IGES Import Model Initiated
+
+ IGES file: D:\Czarified\Documents\GitHub\CSLM\LD00.3\OML.igs
+ Starting Time: October   06, 2019 14:16:23
+
+
+                    Global Section of the IGES file
+                    -------------------------------
+
+
+  ,,4Hnone,7HOML.igs,14HOpenVSP 3.17.1,19HlibIGES Version 0.3,32,38,6,308,
+  15,,1.0,6,1HM,1,1.0,15H20191006.191123,0.0,0.0,,,11,0,15H20191006.191123
+  ;                                                                       
+
+  Product identification from sending system:
+  none
+
+  File name of IGES file from sending system:
+  OML.igs
+
+  Model space scale:
+       1.00000
+
+  Date and time of IGES file generation by sending system:
+  10-XXX-20       6.:19:11
+ Group "OML.igs_L0" has been created.
+ Adding geometry to group "OML.igs_L0"...
+
+
+ + ------------------------------------------- October   06, 2019 14:16:24 -- +
+ |                                                                            |
+ |                       IGES Geometric Entity Summary                        |
+ |                                                                            |
+ + -------------------------------------------------------------------------- +
+
+        Entity Type Number     Entity Type                     Quantity
+        ------------------     -----------                     --------
+               128             Rational B-Spline Surface      :      36
+               --------------------------------------------------------
+               Total IGES Geometric entities processed        :      36
+
+
+ + ------------------------------------------- October   06, 2019 14:16:24 -- +
+ |                                                                            |
+ |                           Import Model Summary                             |
+ |                                                                            |
+ + -------------------------------------------------------------------------- +
+
+               Surfaces written to database                   :      36
+               --------------------------------------------------------
+               Total PATRAN entities written to database      :      36
+
+ IGES Import Model Terminated.
