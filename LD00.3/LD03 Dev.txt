@@ -8,3 +8,8 @@
             
 10/06/19    Added   - Pulled geometry into Patran for meshing prep work. Fins split and updated for a full
                       wingbox structure. Edges merged with fuselage skin.
+                      
+10/12/19    Added   - Basic skin and fin meshes created in separate groups.
+
+10/13/19    Added   - Basic mesh for all bulkheads and domes. Equivalenced. No issues so far.
+            Added   - Basic mesh for Canard and all fuse skins. Equivalenced. No issues so far.
