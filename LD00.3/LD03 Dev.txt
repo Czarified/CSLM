@@ -13,3 +13,8 @@
 
 10/13/19    Added   - Basic mesh for all bulkheads and domes. Equivalenced. No issues so far.
             Added   - Basic mesh for Canard and all fuse skins. Equivalenced. No issues so far.
+
+10/14/19    Added   - Header tank dome added, and equivalenced.
+            Added   - Propellant tank baffles added. T-Section, with web pointed inwards.
+            Added   - Mirrored each group and equivalenced final product. No issues! Ready to apply loads!
+            Added   - 3 SL Raptor lump masses, offset 0.5m aft of thrust plate. Mass = 2050 kg
