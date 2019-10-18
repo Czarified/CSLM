@@ -18,3 +18,9 @@
             Added   - Propellant tank baffles added. T-Section, with web pointed inwards.
             Added   - Mirrored each group and equivalenced final product. No issues! Ready to apply loads!
             Added   - 3 SL Raptor lump masses, offset 0.5m aft of thrust plate. Mass = 2050 kg
+            
+10/18/19    Added   - Solved test loadcase. No FATALS!
+            Added   - Solved Static Pad loadcase
+            ERROR   - No FATALS, but deformations and stresses are highly unreasonable!
+            
+            TODO    - Liftoff?

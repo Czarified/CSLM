@@ -1,0 +1,50 @@
+$ MSC.Nastran input file created on September 01, 2019 at 22:27:28 by
+$ Patran 2018  (Student Edition)
+$ Direct Text Input for Nastran System Cell Section
+$ Direct Text Input for File Management Section
+$ Direct Text Input for Executive Control
+$ Linear Static Analysis, Database
+SOL 101
+CEND
+$ Direct Text Input for Global Case Control Data
+TITLE = MSC.Nastran job created on 17-Oct-19 at 13:11:30
+ECHO = NONE
+SUBCASE 100
+$ Subcase name : LD02.100
+   SUBTITLE=100, Launch Config, Full Prop, On Stack, No Crosswind
+   SPC = 2
+   LOAD = 3
+   DISPLACEMENT(PLOT)=ALL
+   SPCFORCES(PLOT)=ALL
+   STRESS(PLOT)=ALL
+BEGIN BULK
+$ Direct Text Input for Bulk Data
+MDLPRM   HDF5    1
+PARAM    POST    0
+PARAM    AUTOSPC NO
+PARAM   PRTMAXIM YES
+
+$ Import materials and properties
+INCLUDE '..\mat\LD0.1.m'
+
+$ Import the FEM
+INCLUDE 'fem.bdf'
+
+$ Import the Loads
+INCLUDE '100.tankPressures.dat'
+INCLUDE 'a.1gX.dat'
+
+$ Loads for Load Case : 100
+SPCADD   2       1
+LOAD     3      1.      1.       1      1.       2
+
+$ Displacement Constraints of Load Set : fix @ interstage joint
+SPC1     1       123456  3       6       9       12      15      18
+         21      24      27      30      33      36      39      42
+         45      48      583     2082    2085    2319    2790    2793
+         2796    2799    2802    2805    2814    2817    2820    2823
+         2826    2829
+
+
+$ Referenced Coordinate Frames
+ENDDATA
