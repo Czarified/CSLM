@@ -24,3 +24,5 @@
             ERROR   - No FATALS, but deformations and stresses are highly unreasonable!
             
             TODO    - Liftoff?
+
+10/21/19    Added   - Fixed pressure loads (was applying 50ksi instead of psi, and in opposite direction).

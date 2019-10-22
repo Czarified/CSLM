@@ -1,0 +1,280 @@
+$# Session file patran.ses.01 started recording at 21-Oct-19 21:15:52
+$# Build: 24.0.554811 Fri Mar 16 22:44:43 PDT 2018
+$# Recorded by: Patran 2018  (Student Edition)
+uil_file_open.go( "D:\Czarified\Documents\GitHub\CSLM\LD00.3\LD0.3.db" )
+$# Creating database backup files.
+$# Database version 3.19 created by Patran 2018  (Student Edition) 
+$# successfully opened.
+$# Warning reported from application Results
+$#     Direct Results Access file time stamp has changed. To re-attach, 
+$# please detach the file using the Analysis form option Delete "Attachment" 
+$# then re-attach. File: "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5"
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported from application Results
+$#     Direct Results Access file time stamp has changed. To re-attach, 
+$# please detach the file using the Analysis form option Delete "Attachment" 
+$# then re-attach. File: "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5"
+$# Warning reported from application Results
+$#     Direct Results Access file time stamp has changed. To re-attach, 
+$# please detach the file using the Analysis form option Delete "Attachment" 
+$# then re-attach. File: "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5"
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported in application FILE by application Journal
+$#     Journal file D:\Czarified\Documents\GitHub\CSLM\LD00.3\LD0.3.db.jou 
+$# does not exist. No journal file will be created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2018  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node JARVIS(d8cb8a3c22bc) (
+$# Windows 6.2 (Build 9200: Service Pack 0)) at 21-Oct-19 21:15:54.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library 
+$# D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\bin\ex
+$# e\loads_browser.dll
+$# –Í†è shared library 'Loads Browser', Version 2018, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_view_aa_set( -53.785358, 5.018047, 22.718937 )
+ga_view_center_set( 3.780869, -2.826162 )
+ga_view_aa_set( -46.772129, -3.755859, 4.311348 )
+$# MSC.Patran Analysis Manager NOT licensed or installed!
+$# Question from application Results
+$#     Detach from Direct Results Access file: 
+$# "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5". This operation 
+$# cannot be undone. Do you want to continue?
+$? YESFORALL 4012012 
+$# Detach external results file:  
+$# D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h
+$# 5
+res_dra_detach_file( 1, 150, 27 )
+$# Warning reported from application Results
+$#     Direct Results Access file time stamp has changed. To re-attach, 
+$# please detach the file using the Analysis form option Delete "Attachment" 
+$# then re-attach. File: "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5"
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Czarified\Documents\GitHub\CSLM\LD00.3\" // @
+"LD0.3.db" )
+msc_dra_add_param( "JOBNAME", "LD0.3.Test" )
+msc_dra_add_param( "RESULTS FILE", "D:\Czarified\Documents\GitHub\CSLM\LD0" // @
+"0.3\ld0.3.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.003" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "NASTRAN VERSION", "2018." )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "LD0.3.Test", "Attach HDF5 Results File",  @
+"D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5", TRUE )
+$# Attaching Direct Results Access file: 
+$# "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar",  @
+"SC100:100, LAUNCH CONFIG, FULL PROP, ON STACK, NO CROSSWIND",  @
+"A1:Static subcase", "Stress Tensor", "", "At Z1", "VONM", "Default",  @
+"DeriveAverage", "All", "ShapeFunc" )
+res_data_dbres_list( 0, "Nodal", "Scalar", 1, [ @
+"SC100:100, LAUNCH CONFIG, FULL PROP, ON STACK, NO CROSSWIND"], [ @
+"A1:Static subcase"], ["Stress Tensor"], [""], ["At Z2"] )
+res_data_list_max( 0, "Nodal", "Scalar", "Algebraic", "VONM" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, 2 of 2 layers " // @
+"(Maximum)"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Vector",  @
+"SC100:100, LAUNCH CONFIG, FULL PROP, ON STACK, NO CROSSWIND",  @
+"A1:Static subcase", "Displacements", "Translational", "(NON-LAYERED)", "",  @
+"Global", "", "", "" )
+res_data_title( 0, "Nodal", "Vector", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL"] )
+res_display_deformation_create( "", "Elements", 0, [""], 9, [ @
+"DeformedStyle:White,Solid,1,Wireframe", "DeformedScale:True=1.",  @
+"UndeformedStyle:ON,Blue,Solid,1,Wireframe", "TitleDisplay:ON",  @
+"MinMaxDisplay:ON", "ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3",  @
+"DeformDisplay:Resultant", "DeformComps:OFF,OFF,OFF"] )
+res_display_deformation_post( "", 0 )
+ga_view_aa_set( -54.732761, -35.771267, -34.491444 )
+ga_view_aa_set( -93.429337, -7.392038, 94.614426 )
+ga_view_aa_set( -46.290737, 13.943757, 19.899597 )
+ga_view_aa_set( -48.068352, -24.608509, -17.369534 )
+ga_view_aa_set( -39.322239, -9.735071, -1.821284 )
+ga_view_aa_set( 14.669821, 22.014242, 28.307913 )
+ga_view_aa_set( -40.962505, 18.251043, 34.938141 )
+ga_view_aa_set( -110.334831, -1.963231, 30.638208 )
+ga_view_aa_set( -155.871307, -9.535139, 35.374428 )
+ga_view_aa_set( -33.521999, -22.269552, -24.869495 )
+ga_view_aa_set( -97.045105, -38.406586, -89.289680 )
+ga_view_center_set( 4.939786, -5.159973 )
+ga_view_zoom_set( 28.836939 )
+ga_view_center_set( 6.533283, -8.368961 )
+ga_view_zoom_set( 39.650791 )
+ga_view_center_set( 8.724349, -12.781319 )
+ga_view_zoom_set( 54.519836 )
+ga_view_center_set( 11.737067, -18.848320 )
+ga_view_zoom_set( 74.964775 )
+ga_view_center_set( 8.724349, -12.989098 )
+ga_view_zoom_set( 54.519836 )
+ga_view_center_set( 6.533278, -8.727848 )
+ga_view_zoom_set( 39.650791 )
+ga_view_center_set( 4.939780, -5.628750 )
+ga_view_zoom_set( 28.836939 )
+ga_view_center_set( 3.764880, -3.374868 )
+ga_view_zoom_set( 20.972319 )
+ga_view_center_set( 2.875530, -1.689177 )
+ga_view_zoom_set( 15.252595 )
+ga_view_center_set( 1.729895, -0.860600 )
+ga_view_zoom_set( 11.092796 )
+ga_view_center_set( 0.896707, -0.257998 )
+ga_view_zoom_set( 8.067489 )
+ga_view_aa_set( -60.220242, -20.606894, -12.940505 )
+ga_view_aa_set( 0., 0., 0. )
+gu_fit_view(  )
+gm_visibility_widget( "Node 2074:2091 2093:2120 2129:2156 2167:2306 2317:2" // @
+"350 2359:2413 2422:2445 2450:2501 2506:2537 2547:2586 2588:2591 2593:2596" // @
+" 2598:2601 2603:2606 2608:2611 2613:2616 2618:2621 2623:2626 2628:2663 26" // @
+"74:2703 2705:2741 2756:2784 2789 2790 2792 2793 2795 2796 2798 2799 2801 " // @
+"2802 2804 2805 2813 2814 2816 2817 2819 2820 2822 2823 2825 2826 2828 282" // @
+"9 2834:2840 2842:2845 2847:2852 2854:2858 2860:2867 2869:2872 2874:2877 2" // @
+"880:2882 2884:2890 2892:2895 2897:2902 2904:2908 2910:2917 2919:2922 2924" // @
+":2927 2930:2932 2953:2989 3014:3056 3085:3133 3159:3172 3175:3188 3191:32" // @
+"04 3209:3218 3243:3285 3326:3491 3493:3505 3507:3510 3512:3521 3538:3566 " // @
+"3568 Elm 1728:2739 2742:2753 2755:3220 3222 Mpc 1 2", FALSE )
+ga_view_aa_set( -79.188423, -5.769586, 25.257442 )
+ga_view_aa_set( -65.112923, -1.716814, 8.544587 )
+ga_view_center_set( 5.536205, -0.331113 )
+ga_view_zoom_set( 17.376789 )
+ga_view_center_set( 9.572178, -0.562289 )
+ga_view_zoom_set( 12.637665 )
+ga_view_aa_set( -81.690208, 4.058649, 27.616592 )
+ga_view_center_set( 12.745602, -0.702395 )
+ga_view_zoom_set( 9.191029 )
+ga_view_center_set( 15.053545, -0.804291 )
+ga_view_zoom_set( 6.684384 )
+ga_view_center_set( 16.732048, -0.878397 )
+ga_view_zoom_set( 4.861371 )
+ga_view_center_set( 17.952772, -0.932292 )
+ga_view_zoom_set( 3.535542 )
+ga_view_center_set( 18.840570, -0.969528 )
+ga_view_zoom_set( 2.571303 )
+ga_view_aa_set( -87.656349, 5.001941, 39.614353 )
+ga_view_center_set( 18.385891, -0.834299 )
+ga_view_zoom_set( 3.535542 )
+ga_view_center_set( 17.760706, -0.648360 )
+ga_view_zoom_set( 4.861370 )
+ga_view_center_set( 16.901083, -0.392694 )
+ga_view_zoom_set( 6.684384 )
+ga_view_center_set( 15.693619, 0.025080 )
+ga_view_zoom_set( 9.191028 )
+ga_view_center_set( 14.033348, 0.599519 )
+ga_view_zoom_set( 12.637663 )
+ga_view_aa_set( -66.408920, 0.962072, 20.122925 )
+ga_view_center_set( 9.736538, -2.559897 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 11, ["fem.Canard", @
+ "fem.Cargo", "fem.Common", "fem.Engines", "fem.LowerLOX", "fem.UpperCH4",  @
+"fem.fin.skin", "fem.fuse.int", "fem.fuse.skin", "fem.header",  @
+"fem.tankBaffles"] )
+ga_view_aa_set( -72.018204, 5.135365, 31.391066 )
+ga_view_center_set( 4.934225, -2.812651 )
+ga_view_aa_set( -86.111198, -2.988848, -18.824633 )
+ga_view_aa_set( -72.648140, 0.212969, -3.174767 )
+ga_view_aa_set( -124.003540, -0.139129, 13.289658 )
+ga_view_aa_set( -140.323425, -8.956591, 22.803942 )
+ga_view_aa_set( -67.406845, -4.151602, -6.230579 )
+ga_view_aa_set( -67.319260, 3.613433, 12.214845 )
+ga_view_center_set( 11.000304, -4.202794 )
+ga_view_aa_set( -58.684101, 5.998527, 16.620975 )
+ga_view_aa_set( -62.916710, -2.150347, 31.186420 )
+ga_view_aa_set( -70.042473, -5.044517, 9.409603 )
+ga_view_center_set( 6.956251, -1.422508 )
+ga_view_aa_set( -60.554138, -0.290011, 19.331717 )
+ga_view_center_set( 8.346395, -2.559897 )
+ga_view_aa_set( -66.786766, -3.291249, 9.750282 )
+ga_view_aa_set( -108.677788, -11.469873, 71.355995 )
+ga_view_aa_set( -68.201660, -4.311223, 21.662481 )
+ga_view_aa_set( -87.399796, -10.201043, -66.835678 )
+ga_view_aa_set( -44.201302, 9.190455, -129.324249 )
+ga_view_center_set( -10.230971, -13.301916 )
+ga_view_center_set( -9.390327, -11.809784 )
+ga_view_zoom_set( 9.191028 )
+ga_view_center_set( -8.773856, -10.719500 )
+ga_view_zoom_set( 6.684384 )
+ga_view_aa_set( -51.712849, 13.782419, -117.127274 )
+ga_view_aa_set( -88.262901, 26.898510, -64.310577 )
+ga_view_center_set( 2.322222, -4.235646 )
+ga_view_aa_set( -79.517242, 13.305554, 15.370162 )
+ga_view_center_set( 0.784813, -1.829267 )
+ga_view_center_set( 0.789909, -0.433286 )
+ga_view_zoom_set( 9.191028 )
+ga_view_center_set( 0.796910, 1.486187 )
+ga_view_zoom_set( 12.637663 )
+ga_view_aa_set( -88.525070, -0.116313, 45.216511 )
+ga_view_center_set( 6.862989, -1.673229 )
+ga_view_aa_set( -68.943375, -3.928377, 11.957795 )
+ga_view_aa_set( -86.479889, 9.097966, 75.735046 )
+ga_view_aa_set( -103.120453, -6.205633, 35.999943 )
+ga_view_aa_set( -69.048859, -2.345743, 7.115521 )
+ga_view_center_set( 6.211492, -0.153069 )
+ga_view_zoom_set( 9.191028 )
+ga_view_center_set( 5.579734, 0.463401 )
+ga_view_zoom_set( 6.684384 )
+ga_view_center_set( 5.157328, 0.452284 )
+ga_view_zoom_set( 4.861370 )
+ga_view_center_set( 4.852817, 0.428029 )
+ga_view_zoom_set( 3.535542 )
+ga_view_aa_set( -35.300232, 4.511842, 33.131516 )
+ga_view_center_set( 5.079179, 0.570850 )
+ga_view_zoom_set( 4.861370 )
+ga_view_center_set( 5.701669, 0.963608 )
+ga_view_zoom_set( 8.507398 )
+ga_view_center_set( 6.246347, 1.307272 )
+ga_view_zoom_set( 11.697672 )
+ga_view_aa_set( -67.253540, 3.748900, 32.483349 )
+ga_view_aa_set( -77.546150, 4.924751, 36.314953 )
+ga_view_aa_set( -65.448891, -1.013917, 8.955835 )
+ga_view_aa_set( -65.531319, 2.309357, 16.234398 )
+ga_view_aa_set( -56.723736, 6.480755, 24.965290 )
+ga_view_center_set( 9.053789, -2.319007 )
+ga_view_aa_set( -66.787102, -0.710647, 30.448210 )
+ga_view_center_set( 7.767045, 0.020528 )
+ga_view_aa_set( -71.661354, -6.170862, 16.452484 )
+ga_view_aa_set( -80.928497, -5.067302, 163.722931 )
+ga_view_aa_set( -59.510120, -5.273727, -30.168976 )
+ga_view_center_set( 10.678500, -1.230937 )
+ga_view_zoom_set( 8.507398 )
+ga_view_center_set( 13.008142, -2.084502 )
+ga_view_zoom_set( 6.187198 )
+ga_view_aa_set( -75.978622, -0.709018, -19.083530 )
+ga_view_aa_set( -67.199097, 2.108144, -15.625798 )
+ga_view_aa_set( -68.324539, 12.280058, 9.609483 )
+ga_view_center_set( 12.575039, -4.559382 )
+ga_view_aa_set( -64.785202, 0.632626, -2.079883 )
+ga_view_center_set( 17.277309, -2.579479 )
+ga_view_aa_set( -59.941383, -4.550477, 35.438904 )
+ga_view_aa_set( -61.183323, -6.032709, 32.819530 )
+ga_view_center_set( 12.327555, 2.679641 )
+ga_view_center_set( 12.445444, 3.740710 )
+ga_view_zoom_set( 8.507398 )
+ga_view_aa_set( -67.083130, -3.749278, 11.848780 )
+ga_view_center_set( 12.105146, -0.002545 )
+ga_view_aa_set( -72.345024, -5.787140, 28.371445 )
+ga_view_center_set( 11.339480, -0.342841 )
+ga_view_aa_set( -64.529312, -2.091196, 39.805702 )
+ga_view_center_set( 10.403666, -0.427915 )
+ga_view_aa_set( -68.994637, -3.261460, 24.886719 )

@@ -172,7 +172,7 @@
   
     MSC_DOC_DIR/doc/pdf_nastran/nastran_library.pdf
   
-1                                                       **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     1
+1                                                       **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -185,7 +185,7 @@
      $ DIRECT TEXT INPUT FOR FILE MANAGEMENT SECTION                                 
      $ DIRECT TEXT INPUT FOR EXECUTIVE CONTROL                                       
      $ LINEAR STATIC ANALYSIS, DATABASE                                              
-1                                                       **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     2
+1                                                       **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -193,7 +193,7 @@
                                                                                                                                     
      SOL 101                                                                                 
      CEND                                                                                    
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     3
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -211,7 +211,7 @@
                  10         SPCFORCES(PLOT)=ALL                                                                  
                  11         STRESS(PLOT)=ALL                                                                     
                  12      BEGIN BULK                                                                              
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     4
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
                                               I N P U T   B U L K   D A T A   E C H O                                               
@@ -231,7 +231,7 @@
                               $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.3\100.tankPressures.dat"
                               $INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.3\a.1gX.dat"
                               $END OF INCLUDE "d:\Czarified\Documents\GitHub\CSLM\LD00.3\a.1gX.dat"
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     5
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
                                         M O D E L   S U M M A R Y          BULK = 0
@@ -305,7 +305,7 @@
                              PLACED AFTER THE VALUE METRIC FOR THE TEST.
      USER INFORMATION: THE MAXIMUM MESSAGE COUNT FOR ANY ONE ELEMENT ERROR TEST COULD BE EXCEEDED BY THE 
      CUMULATIVE EFFECT OF ALL THE MESSAGES GENERATED FOR ALL OF THE DIFFERENT TESTS PERFORMED.
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     6
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -352,7 +352,7 @@
     QUAD4        1037        47.12             44.96            152.20 ++++         0.02              0.44     
     QUAD4        1092        47.12             44.96            152.20 ++++         0.02              0.44     
     QUAD4        1183        21.12 ++++        20.21 ++++       159.33 ++++         0.00              0.05     
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     7
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -399,7 +399,7 @@
     QUAD4        1238        30.02             28.87 ++++       151.48 ++++         0.00              0.06     
     QUAD4        1239        31.05             28.00 ++++       150.65 ++++         0.00              0.11     
     QUAD4        1240        30.67             28.81 ++++       151.68 ++++         0.00              0.07     
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     8
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     8
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -446,7 +446,7 @@
     QUAD4        2453        21.12 ++++        20.21 ++++       159.33 ++++         0.00              0.05     
     QUAD4        2454        22.58 ++++        21.66 ++++       157.44 ++++         0.00              0.04     
     QUAD4        2455        23.67 ++++        22.68 ++++       156.37 ++++         0.00              0.05     
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE     9
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE     9
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
@@ -493,13 +493,13 @@
     QUAD4        2951        19.15 ++++        16.73 ++++       162.93 ++++         0.00              0.18     
     QUAD4        2959        29.84 ++++        28.34 ++++       157.06 ++++         0.00              0.24     
     QUAD4        2960        20.41 ++++        17.83 ++++       169.13 ++++         0.00              0.46     
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    10
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    10
                                                                                                                                     
 0                                                                                                                                   
      TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50 (FLAG = LIMIT VIOLATED)
  ELEMENT TYPE    ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO  
     QUAD4        2961        25.28 ++++        17.07 ++++       157.01 ++++         0.00              0.42     
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    11
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    11
                                                                                                                                     
 0                                                                                                                                   
 
@@ -519,7 +519,7 @@
          QUAD4    ELEMENT ID     1362 PRODUCED LARGEST  TAPER RATIO      OF       0.56 (TOLERANCE =        0.50).
          QUAD4    ELEMENT ID      363 PRODUCED SMALLEST INTERIOR ANGLE   OF      16.73 (TOLERANCE =       30.00).
          QUAD4    ELEMENT ID      372 PRODUCED LARGEST  INTERIOR ANGLE   OF     169.13 (TOLERANCE =      150.00).
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    12
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    12
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -529,14 +529,14 @@
 0                                                  OLOAD    RESULTANT       
   SUBCASE/    LOAD
   DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
-0      100     FX    4.351003E+10     ----          ----          ----       2.080816E+04 -6.481604E+04                             
-               FY       ----      -9.616092E-05     ----      -2.716153E-06     ----      -3.319707E-03                             
-               FZ       ----          ----       2.294779E-05 -1.491424E-05 -8.108725E-04     ----                                  
+0      100     FX   -6.433868E+07     ----          ----          ----       1.015247E+03  1.722849E+04                             
+               FY       ----       8.476491E-08     ----       2.388633E-09     ----       2.128524E-06                             
+               FZ       ----          ----      -2.293382E-08  6.702639E-09  1.462941E-06     ----                                  
                MX       ----          ----          ----       0.000000E+00     ----          ----                                  
                MY       ----          ----          ----          ----       0.000000E+00     ----                                  
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
-             TOTALS  4.351003E+10 -9.616092E-05  2.294779E-05 -1.763040E-05  2.080816E+04 -6.481604E+04
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    13
+             TOTALS -6.433868E+07  8.476491E-08 -2.293382E-08  9.091271E-09  1.015247E+03  1.722849E+04
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    13
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
 0                                         G R I D   P O I N T   S I N G U L A R I T Y   T A B L E
@@ -554,14 +554,14 @@
   
  *** SYSTEM INFORMATION MESSAGE 4159 (DFMSA)
      THE DECOMPOSITION OF KLL      YIELDS A MAXIMUM MATRIX-TO-FACTOR-DIAGONAL RATIO OF    2.206608E+03
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    14
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    14
                                                                                                                                     
 0                                                                                                            SUBCASE 100            
  *** USER INFORMATION MESSAGE 5293 (SSG3A)
     FOR DATA BLOCK KLL     
     LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
-                1          2.6916322E-16          7.7494259E+11
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    15
+                1          5.1675344E-13          1.5326257E+06
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    15
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -571,41 +571,41 @@
 0                                                  SPCFORCE RESULTANT       
   SUBCASE/    LOAD
   DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
-0      100     FX   -4.351003E+10     ----          ----          ----      -2.256762E+04  6.481393E+04                             
-               FY       ----       2.819095E-04     ----      -1.508133E+03     ----       1.408851E-02                             
-               FZ       ----          ----       2.257153E-05  1.508440E+03 -1.129847E-03     ----                                  
-               MX       ----          ----          ----      -3.066273E-01     ----          ----                                  
-               MY       ----          ----          ----          ----       1.759456E+03     ----                                  
-               MZ       ----          ----          ----          ----          ----       2.105035E+00                             
-             TOTALS -4.351003E+10  2.819095E-04  2.257153E-05  3.633455E-05 -2.080816E+04  6.481605E+04
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    16
+0      100     FX    6.433868E+07     ----          ----          ----      -9.731703E+02 -1.722813E+04                             
+               FY       ----      -2.960114E-07     ----       2.750898E+01     ----      -1.478717E-05                             
+               FZ       ----          ----      -2.611341E-08 -2.750845E+01  1.308144E-06     ----                                  
+               MX       ----          ----          ----      -5.318348E-04     ----          ----                                  
+               MY       ----          ----          ----          ----      -4.207645E+01     ----                                  
+               MZ       ----          ----          ----          ----          ----      -3.538975E-01                             
+             TOTALS  6.433868E+07 -2.960114E-07 -2.611341E-08  4.014150E-08 -1.015247E+03 -1.722849E+04
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    16
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  SPCFORCES       
   SUBCASE/
   DAREA ID        T1             T2             T3             R1             R2             R3
-0      100   1.6317070E+09  2.5910034E+08  1.3124745E+08  1.8399435E+04  6.0622858E+04  1.7545012E+05
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    17
+0      100   2.5395562E+06  5.0561462E+05  2.0450637E+05  1.9400686E+01  4.6827338E+02  1.3758121E+03
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    17
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  DISPLACEMENTS   
   SUBCASE/
   DAREA ID        T1             T2             T3             R1             R2             R3
-0      100   2.2195147E+01  3.8462265E+01  2.2122137E+01  1.0413560E+02  2.9585116E+01  2.0432451E+01
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    18
+0      100   8.9142381E+00  9.4671369E-01  1.0783044E+00  1.0430743E-01  2.9450831E+00  2.9670184E+00
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    18
                                                                                                                                     
 0                                                                                                                                   
 0                                                  MAXIMUM  APPLIED LOADS   
   SUBCASE/
   DAREA ID        T1             T2             T3             R1             R2             R3
-0      100   2.8882050E+08  3.8893025E+08  4.2362400E+08  0.0000000E+00  0.0000000E+00  0.0000000E+00
+0      100   2.8829436E+05  3.8249103E+05  4.2367070E+05  0.0000000E+00  0.0000000E+00  0.0000000E+00
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
  *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OUG1, TRAILER[101, 0, 20024, 0, 0, 0, 2])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
- *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OES1X, TRAILER[102, 63, 10, 18, 19, 0, 2])
+ *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OES1X, TRAILER[102, 63, 10, 21, 19, 0, 2])
  *** USER INFORMATION MESSAGE 3 (crdb::nastran::Processor::writeOutput)
  *** USER INFORMATION MESSAGE  (WRITE DATA BLOCK OQG1, TRAILER[102, 0, 20024, 0, 0, 0, 2])
-1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  18, 2019  MSC Nastran  3/11/18   PAGE    19
+1    MSC.NASTRAN JOB CREATED ON 17-OCT-19 AT 13:11:30   **STUDENT EDITION*  OCTOBER  21, 2019  MSC Nastran  3/11/18   PAGE    19
                                                                                                                                     
 0                                                                                                                                   
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     71
