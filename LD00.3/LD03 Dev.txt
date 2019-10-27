@@ -26,3 +26,9 @@
             TODO    - Liftoff?
 
 10/21/19    Added   - Fixed pressure loads (was applying 50ksi instead of psi, and in opposite direction).
+
+10/27/19    Added   - Thrust plate thickness changed to 0.010m
+            Added   - Engine beam mounts added as square tubes (0.100m x 0.150m, 0.007m)
+            Added   - Engine struts added as square stock (0.050m x 0.050m)
+            Added   - 3 Vac Raptors offset 0.625m aft of thrust plate. Mass = 2250 kg.
+            Added   - Re-solved with LC100 (Note that no accl applied to new engine nodes.)
