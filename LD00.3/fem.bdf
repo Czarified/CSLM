@@ -2,7 +2,7 @@ $$ Elements, properties, and nodes of fem
 
 $ Direct Text Input for Bulk Data
 $ Elements and Element Properties for region : pFuse.Interstage
-PSHELL   3       301    .005     301             301
+PSHELL   3       8301    .005    301             301
 $ Pset: "pFuse.Interstage" will be imported as: "pshell.3"
 CQUAD4   1       3       1       2       5       4
 CQUAD4   2       3       2       3       6       5

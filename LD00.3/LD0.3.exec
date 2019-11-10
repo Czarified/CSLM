@@ -25,7 +25,7 @@ PARAM    AUTOSPC NO
 PARAM   PRTMAXIM YES
 
 $ Import materials and properties
-INCLUDE '..\mat\LD0.1.m'
+INCLUDE '..\mat\LD0.3.m'
 
 $ Import the FEM
 INCLUDE 'fem.bdf'

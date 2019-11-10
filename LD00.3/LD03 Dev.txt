@@ -32,3 +32,6 @@
             Added   - Engine struts added as square stock (0.050m x 0.050m)
             Added   - 3 Vac Raptors offset 0.625m aft of thrust plate. Mass = 2250 kg.
             Added   - Re-solved with LC100 (Note that no accl applied to new engine nodes.)
+            
+11/10/19    Added   - Orthotropic interstage skind properties to provide additional axial stiffness.
+            Added   - Re-solved with new properties.
