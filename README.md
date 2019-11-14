@@ -19,7 +19,7 @@ Hopefully the CLSM could lead to some interesting discussion or amateur analysis
 
 &#x200B;
 ## Who is the Intended Audience? What is the "Community?"
-In my mind, the main audience are the wonderful nerds over at [r/spacex](https://www.reddit.com/r/spacex), but anyone is welcome to join in.
+In my mind, the main audience are the wonderful nerds over at [r/SpaceX](https://www.reddit.com/r/spacex), but anyone is welcome to join in.
 
 &#x200B;
 ## How!??
