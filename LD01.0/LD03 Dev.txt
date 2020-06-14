@@ -1,0 +1,37 @@
+10/04/19    Added   - LD0.3 Folder structure. New Dev Log.
+                      This version represents first update with the 2019 Mk3 Starship configuration.
+
+            TODO    - Update VSP geometry with 2 fins 2 swept canards and FEA parts.
+            TODO    - Import OML in Patran.
+            
+            Added   - Updated VSP geometry with 2 fins, 2 swept canards, moved prop domes, and header dome.
+            
+10/06/19    Added   - Pulled geometry into Patran for meshing prep work. Fins split and updated for a full
+                      wingbox structure. Edges merged with fuselage skin.
+                      
+10/12/19    Added   - Basic skin and fin meshes created in separate groups.
+
+10/13/19    Added   - Basic mesh for all bulkheads and domes. Equivalenced. No issues so far.
+            Added   - Basic mesh for Canard and all fuse skins. Equivalenced. No issues so far.
+
+10/14/19    Added   - Header tank dome added, and equivalenced.
+            Added   - Propellant tank baffles added. T-Section, with web pointed inwards.
+            Added   - Mirrored each group and equivalenced final product. No issues! Ready to apply loads!
+            Added   - 3 SL Raptor lump masses, offset 0.5m aft of thrust plate. Mass = 2050 kg
+            
+10/18/19    Added   - Solved test loadcase. No FATALS!
+            Added   - Solved Static Pad loadcase
+            ERROR   - No FATALS, but deformations and stresses are highly unreasonable!
+            
+            TODO    - Liftoff?
+
+10/21/19    Added   - Fixed pressure loads (was applying 50ksi instead of psi, and in opposite direction).
+
+10/27/19    Added   - Thrust plate thickness changed to 0.010m
+            Added   - Engine beam mounts added as square tubes (0.100m x 0.150m, 0.007m)
+            Added   - Engine struts added as square stock (0.050m x 0.050m)
+            Added   - 3 Vac Raptors offset 0.625m aft of thrust plate. Mass = 2250 kg.
+            Added   - Re-solved with LC100 (Note that no accl applied to new engine nodes.)
+            
+11/10/19    Added   - Orthotropic interstage skind properties to provide additional axial stiffness.
+            Added   - Re-solved with new properties.

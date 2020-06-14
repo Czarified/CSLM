@@ -1,0 +1,134 @@
+MSC Nastran V2018.1 (Intel Windows 10 Home 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+Nastran BUFFSIZE=8193 $(d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/conf/nast20181.rcf[2])
+JID='d:/czarified/documents/github/cslm/ld00.3/ld0.3.exec'
+OUT='./ld0.3'
+MEM=271MB      $ 
+MACH='Intel'
+OPER='Windows 10 Home'
+OSV='6.2 9200'
+MODEL='Xeon/3633 (Jarvis)'
+NPROC='4'
+CONFIG=6
+NPROC=4
+symbol=DELDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/nast/del' $(program default)
+symbol=DEMODIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/nast/demo' $(program default)
+symbol=SSSALTERDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/nast/sssalter' $(program default)
+symbol=TPLDIR='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/nast/tpl' $(program default)
+SDIR='d:/scratch/ld0.3.T6504_5'
+DBS='./ld0.3'
+SCR='no'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/win64i8/SSS'
+DEL='MSCDEF'
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='EDU'
+AUTHQUE=20
+MSGCAT='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=d:\czarified\documents\github\cslm\ld00.3 
+MSC_JIDPATH= 
+PATH=d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\nCode\bin;d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\nvidia;d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\lib;d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\WINDOWS\System32\OpenSSH\;C:\Users\Czarified\AppData\Local\Microsoft\WindowsApps;D:\Czarified\Documents\Python Scripts;C:\Users\Czarified\AppData\Local\GitHubDesktop\bin;C:\Users\Czarified\AppData\Local\Microsoft\WindowsApps;D:\Program Files (x86)\Graphviz2.38\bin\dot.exe;D:\Program Files (x86)\Graphviz2.38\bin;C:\Users\Czarified\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64\ 
+SCA_SERVICE_CATALOG=d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\res 
+Cmd Line:    D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Nastran\msc20181\win64i8\nastran.exe JID=D:\Czarified\Documents\GitHub\CSLM\LD00.3\LD0.3.exec 
+Current Dir: D:\Czarified\Documents\GitHub\CSLM\LD00.3 
+Time Cmd:    d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\msctime 
+Executable:  d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                     8109 MB
+ Physical memory available:           3156 MB
+ Paging file size:                   13782 MB
+ Paging file size available:          3378 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213510 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         Jarvis.RAC2V1A
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Home 6.2 9200 (Windows Compute Cluster)
+ Model:            Xeon/3725
+ Clock freq.:      3725 MHz
+ Number of CPUs:   4
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  8109 MB
+ Virtual memory:   13782 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "d:/msc.software/msc_nastran_and_patran_student_editions/20181/nastran/msc20181/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Sun Nov 10 15:14:06 CST 2019 
+ 15:14:11  Beginning Analysis
+SCA Kernel 20.0.520419 successfully initialized
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\mkl_core.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\mkl_intel_thread.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\mkl_rt.dll" has been loaded.
+BLAS/LAPACK .dll "d:\msc.software\msc_nastran_and_patran_student_editions\20181\nastran\msc20181\win64i8\MSCblas.dll" has been loaded.
+
+ 15:14:14  MSC Authorization Information - Checkout Successful (1016, 0)
+ 15:14:14  -------------------------------------------------------------
+ 15:14:14  Acquired 1 license for Student Edition Nastran
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 15:14:18  Reading INCLUDE file "..\mat\LD0.3.m"
+ 15:14:18  35 records read from INCLUDE file "..\mat\LD0.3.m"
+ 15:14:18  Reading INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\fem.bdf"
+ 15:14:18  5652 records read from INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\fem.bdf"
+ 15:14:18  Reading INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\100.tankPressures.dat"
+ 15:14:18  1024 records read from INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\100.tankPressures.dat"
+ 15:14:18  Reading INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\a.1gX.dat"
+ 15:14:18  4864 records read from INCLUDE file "d:\Czarified\Documents\GitHub\CSLM\LD00.3\a.1gX.dat"
+ 15:14:18  50 records read from JID file "d:/czarified/documents/github/cslm/ld00.3/ld0.3.exec"
+ 15:14:18  A total of 11625 records were read from 5 files.
+ 15:14:19  Analysis started.
+ 15:14:19  Geometry access/verification to CAD part initiated (if needed).
+ 15:14:19  Geometry access/verification to CAD part successfully completed (if needed).
+ ================================================== 
+ Warning/Fatal Message Summary           Occurrence
+         USER FATAL MESSAGE     9002.2          1 
+ ================================================== 
+ 15:14:19  20 records read from JID file "d:/czarified/documents/github/cslm/ld00.3/ld0.3.exec"
+ 15:14:19  NSEXIT: EXIT(0)
+ 15:14:19  Analysis complete  0
+Real:       12.754 seconds ( 0:00:12.754)
+User:        0.656 seconds ( 0:00:00.656)
+Sys:         0.593 seconds ( 0:00:00.593)
+ ==================================================
+ OS:              6.2
+ OEM ID:         9
+ Number of processors:         4
+ Page size:         4096
+ Processor type:         8664
+ Minimum application address:         10000
+ Maximum application address:         fffeffff
+ Active processor mask:         15
+ Nsocket:         1
+ Ncore:           4  ( 1 X 4 )
+ HyperThreading:  Off
+ Ram:          8109 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ Consider using SOLVE=AUTO if you have not.
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished Sun Nov 10 15:14:20 CST 2019 

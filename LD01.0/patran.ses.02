@@ -1,0 +1,43 @@
+$# Session file patran.ses.02 started recording at 13-Jun-20 18:24:45
+$# Build: 24.0.554811 Fri Mar 16 22:44:43 PDT 2018
+$# Recorded by: Patran 2018  (Student Edition)
+uil_file_open.go( "D:\Czarified\Documents\GitHub\CSLM\LD01.0\LD0.3.db" )
+$# Creating database backup files.
+$# Database version 3.19 created by Patran 2018  (Student Edition) 
+$# successfully opened.
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "D:\Czarified\Documents\GitHub\CSLM\LD00.3\ld0.3.h5". Please i) verify 
+$# that the file exists and is a valid results file for the current analysis 
+$# preference; or ii) delete the attachment using the Analysis form option 
+$# Delete "Attachment" then re-attach.
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported in application FILE by application Journal
+$#     Journal file D:\Czarified\Documents\GitHub\CSLM\LD01.0\LD0.3.db.jou 
+$# does not exist. No journal file will be created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2018  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node JARVIS(d8cb8a3c22bc) (
+$# Windows 6.2 (Build 9200: Service Pack 0)) at 13-Jun-20 18:24:47.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library 
+$# D:\MSC.Software\MSC_Nastran_and_Patran_Student_Editions\20181\Patran\bin\ex
+$# e\loads_browser.dll
+$# `Óü3Å shared library 'Loads Browser', Version 2018, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+uil_file_close.goquit(  )
+$# Question from application FILE
+$#     Do you wish to save changes made to the Patran 2018  (Student Edition) 
+$# database during this session ?
+$? NO 36000012 
+$# Flushing the User Data Manager
+$# Restoring the database from the backup files.
+$# Acknowledgement requested from application FILE
+$#     Unable to restore 
+$# D:\Czarified\Documents\GitHub\CSLM\LD01.0\LD0.3.db.jou file from backup.  
+$# Check file permissions.
+$? NO 36000022 
+$# Session file patran.ses.02 stopped recording at 13-Jun-20 18:25:05
