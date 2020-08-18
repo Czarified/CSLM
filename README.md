@@ -36,7 +36,7 @@ After a loads drop release, the fem can be refined and modified to better repres
 
 &#x200B;
 ## Latest Updates
-I'm alive and working on this package again! If you're following this page, please post any requests in the Issues of this repo. Next steps are mesh refinement, and checking load paths.
+I'm alive and working on this package again! If you're following this page, please post any requests in the Issues of this repo. Next steps are loads development, and checking load paths.
 
 
 &#x200B;
