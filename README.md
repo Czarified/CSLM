@@ -33,3 +33,13 @@ After initial fem creation, loads development will commence. Loadcases will be d
 
 &#x200B;
 After a loads drop release, the fem can be refined and modified to better represent the necessary structure and design changes known by the community. This may be the area where effects of design decisions can be explored, and result here could be very insightful.
+
+&#x200B;
+## Latest Updates
+I'm alive and working on this package again! If you're following this page, please post any requests in the Issues of this repo. Next steps are loads development, and checking load paths.
+
+
+&#x200B;
+&#x200B;
+Like this package or my work? Feel free to [buy me a coffee](https://www.buymeacoffee.com/czarified).
+All donations will be used as developer fuel!
